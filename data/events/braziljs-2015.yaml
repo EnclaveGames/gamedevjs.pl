@@ -1,0 +1,31 @@
+kind: workshop
+title: BrazilJS 2015
+time: 2015-08-20T14:00:00-03:00 - 2015-08-20T18:00:00-03:00
+venue: br/porto-alegre/faculdade-senac
+
+description: |-
+  BrazilJS to największa konferencja dla programistów JavaScript na świecie. Odbywa się co roku w mieście Porto Alegre 
+  w Brazylii. To jeden dzień warsztatów i dwa dni konferencji - prelegentami w tym roku są między innymi Brendan Eich, 
+  Chris Heilmann czy Andreas Gal. Warsztat tworzenia mobilnych gier HTML5 z użyciem frameworka Phaser poprowadzi 
+  Andrzej Mazur.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe**
+  - label: Rejestracja
+    ~markdown(content): "[wymagana](http://www.eventick.com.br/braziljs-workshops-mozilla-bui)"
+  - label: Zobacz
+    ~markdown(content): "[wydarzenie](http://braziljs.com.br/#workshop) na stronie BrazilJS"
+
+people:
+  - Andrzej Mazur
+
+links:
+  - label: Strona konferencji BrazilJS
+    href: http://braziljs.com.br
+  - label: Strona warsztatów
+    href: http://www.eventick.com.br/braziljs-workshops-mozilla-bui
+  - label: Strona frameworka Phaser
+    href: http://phaser.io
+  - label: Materiały wykorzystywane podczas warsztatów
+    href: http://end3r.github.io/Gamedev-Phaser-workshop

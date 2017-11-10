@@ -1,0 +1,55 @@
+kind: meetup
+title: "Warszawa #8"
+time: 2017-10-17T18:30:00+02:00 - 2017-10-17T21:00:00+02:00
+venue: pl/warszawa/crux-kawiarnia
+
+description: |-
+  Zapraszamy na ósme spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5! Spotkanie jest w pełni darmowe, 
+  przyjść może każdy, prelekcje zostaną nagrane i udostępnione a uczestnicy będą mieli okazję wykorzystać darmowe 
+  kupony na piwo lub inne napoje w barze. Oprócz prelekcji będzie więc miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: kupony na piwo lub inne napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/128033591177862)
+
+schedule:
+
+  - kind: talk
+    title: AR.js - co to takiego?
+    description: |-
+      Jak poszerzyć horyzonty? Za co musimy podziękować Mozilli? Czy ciemna materia istnieje?
+      Kto nie musi się za wiele uczyć, żeby użyć AR.js? Jakie jest pytanie o życie, wszechświat i całą resztę?
+      Czy drugi zwiastun "Ostatnich Jedi" podobał mi się "bardzo" czy "bardzo bardzo"? Jak żyć?
+      Na które z tych pytań otrzymasz odpowiedzi?
+    people:
+     - Piotr Bogdan
+
+  - kind: talk
+    title: Pisanie własnego silnika do gier to najgorszy pomysł świata.
+    description: |-
+      Czym różni się Game Dev od Game Engine Dev? Dlaczego tylko to pierwsze ma sens? Dlaczego drugie obsysa i nigdy 
+      nie powinniśmy go ruszać? Na te i inne pytania postaram się odpowiedzieć na najbliższym, 8mym już spotkaniu z serii GamedevJS.
+      Zapraszam, Michał Budzyński.
+    people:
+     - Michał Budzyński
+
+  - title: Showcase
+    description: Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - ITMAGINATION
+
+~resolve(partners|kind organization|by name|flat):
+  - Enclave Games
+  - Whitestream
+
+~resolve(friends|kind organization|by name|flat):
+  - WarsawJS

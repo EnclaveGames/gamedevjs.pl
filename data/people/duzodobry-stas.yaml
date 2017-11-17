@@ -1,0 +1,10 @@
+name:
+  given: Staś
+  family: Małolepszy
+photo:
+  normal: img/people/stas-duzodobry.png
+bio:
+  full: |-
+      Na co dzień pracuje w Mozilli, gdzie odpowiada za [Project Fluent](http://projectfluent.io/) — kolekcję bibliotek
+      do internacjonalizacji. W czasie wolnym tworzy aplikacje miejskie ([Warszawski Ninja](https://warszawskininja.pl/),
+      ostatnio: [Rowerynka](https://rowerynka.pl/)) oraz proste gry, w które gra z przyjaciółmi.

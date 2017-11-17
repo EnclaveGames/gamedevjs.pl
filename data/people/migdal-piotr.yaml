@@ -1,0 +1,16 @@
+name:
+  given: Piotr
+  family: Migdał
+facebook: piotr.migdal.9
+photo:
+  normal: img/people/piotr-migdal.png
+bio:
+  summary: |-
+    Data scientist, z doktoratem z fizyki kwantowej. Trenuje sztuczne sieci neuronowe w [deepsense.io](http://deepsense.io/),
+    freelancuje z analizy danych, prowadzi szkolenia z uczenia maszynowego (Python, R).
+  full: |-
+    Data scientist, z doktoratem z fizyki kwantowej. Trenuje sztuczne sieci neuronowe w [deepsense.io](http://deepsense.io/),
+    freelancuje z analizy danych, prowadzi szkolenia z uczenia maszynowego (Python, R).
+
+    JavaScript wykorzystuje głównie do interaktywnych wizualizacji danych w D3.js.
+    Blog i lista projektów na: [p.migdal.pl](http://p.migdal.pl/).

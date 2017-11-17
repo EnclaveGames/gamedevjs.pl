@@ -1,0 +1,10 @@
+name:
+  given: Łukasz
+  family: Jagodziński
+photo:
+  normal: img/people/lukasz-jagodzinski.png
+bio:
+  full: |-
+      Full-stack JavaScript developer z 10-letnim stażem. Pasjonat programowania od najmłodszych lat - swoją przygodę
+      rozpoczynał od programowania gier. Twórca [Astronomy](http://jagi.github.io/meteor-astronomy/) - open source'owego narzędzia dla Meteor.js.
+      W wolnych chwilach prowadzi swój [kanał na YouTube'ie](https://www.youtube.com/user/jagi88) o JavaScript'cie.

@@ -1,0 +1,61 @@
+kind: meetup
+title: "Warszawa #2"
+time: 2017-02-22T18:30:00+02:00 - 2017-02-22T21:00:00+02:00
+venue: pl/warszawa/crux-kawiarnia
+
+description: |-
+  Zapraszamy na drugie spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5! Spotkanie jest w pełni darmowe,
+  przyjść może każdy, prelekcje zostaną nagrane i udostępnione a uczestnicy będą mieli okazję wykorzystać darmowe
+  kupony na piwo w barze. Oprócz prelekcji będzie więc miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: kupony na piwo lub inne napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1807171672869620/)
+
+schedule:
+
+  - kind: talk
+    title: Mechanika kwantowa w przeglądarce
+    description: |-
+      [Quantum Game with Photons](http://quantumgame.io/) - z jednej strony logiczna łamigłówka, z drugiej - bazująca na prawdziwej
+      symulacji stanu kwantowego fotonu. Opowiem o projekcie open source’owej gry, którą rozwijam.
+      Co to są gry naukowe i dlaczego chcemy ich więcej? Dlaczego nie skorzystałem z żadnego silnika/frameworku
+      do gier? Czemu SVG, a nie jak normalny człowiek - Canvas lub WebGL?
+    people:
+      - Piotr Migdał
+
+  - kind: talk
+    title: Szybkie tworzenie prototypów gier
+    description: |-
+      Macie pomysł na grę ale nie macie czasu go zrealizować? Chcielibyście zrobić grę multiplayer ale brakuje
+      wam backendowca? Opowiem wam o edytorze Construct 2, w którym tworzę szybkie prototypy mechaniki gier,
+      a czasami również końcowe produkty dla klientów. Powiem co możemy zrobić szybko korzystając z wbudowanych
+      funkcji edytora i opowiem o możliwości pisania rozszerzeń do edytora korzystając z JavaScript.
+    people:
+      - Anna Olchowik
+
+  - kind: talk
+    title: Jak nie tworzyć gry pod ważne wydarzenie
+    description: |-
+      We wszystkich wiadomościach trąbią o tym samym. Gdzieś wydarzyło się coś co warto skomentować, co warto wykorzystać.
+      Dolary przelatują przed oczami gdy otwieracie edytor i zaczynacie tworzyć grę opartą o to wydarzenie.
+      Miesiąc później nadal walczycie z prototypem. Znacie to? Postaram się opowiedzieć którymi drogami nie iść
+      by nie minąć się z hype'em na przykładzie własnej gry.
+    people:
+      - Jakub Siemiątkowski
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - 10Clouds
+  - Luxoft
+  - BLUR
+
+~resolve(partners|kind organization|by name|flat):
+  - Enclave Games
+  - Whitestream

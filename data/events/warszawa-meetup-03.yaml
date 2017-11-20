@@ -1,0 +1,59 @@
+kind: meetup
+title: "Warszawa #3"
+time: 2017-03-22T18:30:00+02:00 - 2017-03-22T21:00:00+02:00
+venue: pl/warszawa/crux-kawiarnia
+
+description: |-
+  Zapraszamy na trzecie spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5! Spotkanie jest w pełni darmowe,
+  przyjść może każdy, prelekcje zostaną nagrane i udostępnione a uczestnicy będą mieli okazję wykorzystać darmowe
+  kupony na piwo lub inne napoje w barze. Oprócz prelekcji będzie więc miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: kupony na piwo lub inne napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/386213398422191/)
+
+schedule:
+
+  - kind: talk
+    title: Phaser - pierwsza gra, łatwizna czy droga przez mękę
+    description: |-
+      Pierwsza gra - marzenie każdego początkującego programisty. Szukasz, myślisz, rwiesz włosy z głowy.
+      A tu nagle cud - framework do gier - Phaser. Tylko, czy na pewno? Czy nie wrócisz do pętli 'szukasz...'?
+      Opowiem o plusach i minusach wykorzystywania tego frameworku i o pracy przy pierwszej grze w JSie.
+    people:
+      - Jakub Kosior
+
+  - kind: talk
+    title: Agenty reaktywne
+    description: |-
+      O systemach agentowych w wersji reaktywnej tj. prostej sztucznej inteligencji czasu rzeczywistego
+      oraz nieoczekiwanych zjawiskach emergentnych związanych z heurystyczną implementacją logiki.
+    people:
+      - Jacek Głodek
+
+  - kind: talk
+    title: Pałki z Gamedev.js - o marketingu w grach, czyli od czego zacząć, żeby się sprzedawało
+    description: |-
+      Szanowni, żeby lepiej przygotować materiał do swojej prezentacji chcielibyśmy poprosić wszystkich
+      zainteresowanych o wypełnienie krótkiej ankiety. Pozwoli nam to odpowiednio dobrać materiał pod
+      prezentację tak, żeby wszyscy byli zadowoleni i wynieśli coś z naszego "mądrzenia się" ^^
+      Ankietę znajdziecie [pod tym linkiem](https://goo.gl/forms/5NmE7U9bptLKZ7Tn2).
+    people:
+      - Albert Pałka
+      - Joanna Buganik
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - Codility
+  - 10Clouds
+  - Iterators
+
+~resolve(partners|kind organization|by name|flat):
+  - Enclave Games
+  - Whitestream

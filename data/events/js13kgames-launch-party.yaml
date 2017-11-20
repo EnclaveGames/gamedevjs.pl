@@ -1,0 +1,82 @@
+kind: meetup
+title: "js13kGames Launch Party"
+time: 2017-08-14T18:30:00+02:00 - 2017-08-14T21:00:00+02:00
+venue: pl/warszawa/colility
+
+description: |-
+  Postanowiliśmy przygotować coś specjalnego - w luźnej atmosferze, z piwem, zimnymi napojami i pizzą będziemy
+  świętować start konkursu js13kGames. Podczas specjalnej edycji meetupu dowiecie się jak wziąć udział w konkursie
+  i co zrobić, żeby wygrać. Poprowadzimy pierwszy w historii spotkań Gamedev.js panel dyskusyjny z uczestnikami
+  i sędziami poprzednich edycji oraz ekspertami z branży, którzy chętnie odpowiedzą na wszystkie Wasze pytania.
+  Po panelu będzie czas na małą zabawę z nagrodami.
+
+  [Js13kGames](http://js13kgames.com/) to konkurs online, który trwa miesiąc - od 13 sierpnia do 13 września. Zabawa polega na tym,
+  by w 13 kilobajtach stworzyć grę HTML5. Zadanie jest wymagające, ale każdy uczestnik co roku zgarnia darmową koszulkę
+  oraz inne gadżety, a także ma szansę wygrać nagrody o łącznej wartości dziesiątek tysięcy złotych.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: piwo, pizza, konkurs z nagrodami
+  - label: Dodatkowo
+    content: prelekcja i panel będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/162648377613673/)
+
+timeline:
+  - time: 18:00
+    content: |-
+      przywitanie
+  - time: 18:05
+    content: |-
+      prezentacja: Jak zmieścić grę HTML5 w 13 kilobajtach?
+  - time: 18:30
+    content: |-
+      panel: js13kGames 2017
+  - time: 19:30
+    content: |-
+      konkurs z nagrodami
+  - time: 20:00
+    content: |-
+      integracja przy piwie i pizzy
+
+schedule:
+
+  - kind: talk
+    title: Jak zmieścić grę HTML5 w 13 kilobajtach?
+    description: |-
+      Krótka prezentacja o historii konkursu [js13kGames](http://js13kgames.com/), oraz o tym jak się poprawnie przygotować do edycji 2017.
+    people:
+      - Andrzej Mazur
+
+  - kind: panel
+    title: Js13kGames 2017
+    description: |-
+      Panel dyskusyjny z uczestnikami oraz sędziami konkursu:
+        - Tomasz Wesołowski, sędzia edycji 2015 i 2017
+        - Adam Jakubowski, uczestnik edycji 2015
+        - Rafał Ruciński, uczestnik edycji 2015
+        - Michał Budzyński, sędzia edycji 2012
+        - Piotr Bogdan, uczestnik edycji 2016
+
+      Moderacja: Andrzej Mazur.
+    people:
+      - Andrzej Mazur
+      - Tomasz Wesołowski
+      - Adam Jakubowski
+      - Rafał Ruciński
+      - Michał Budzyński
+      - Piotr Bogdan
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Codility
+  - Mozilla
+  - BLUR
+
+~resolve(partners|kind organization|by name|flat):
+  - Enclave Games
+  - Whitestream
+
+~resolve(friends|kind organization|by name|flat):
+  - WarsawJS

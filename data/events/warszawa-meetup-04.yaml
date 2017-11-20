@@ -1,0 +1,69 @@
+kind: meetup
+title: "Warszawa #4"
+time: 2017-04-20T18:30:00+02:00 - 2017-04-20T21:00:00+02:00
+venue: pl/warszawa/crux-kawiarnia
+
+description: |-
+  Zapraszamy na czwarte spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5! Spotkanie jest w pełni darmowe,
+  przyjść może każdy, prelekcje zostaną nagrane i udostępnione a uczestnicy będą mieli okazję wykorzystać darmowe
+  kupony na piwo lub inne napoje w barze. Oprócz prelekcji będzie więc miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: kupony na piwo lub inne napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1845505932356956/)
+
+schedule:
+
+  - kind: talk
+    title: Gra w miesiąc - js13kGames 2015
+    description: |-
+      Chciałeś zawsze zrobić grę? Albo chociaż prototyp? Motywacji brak? Czasu? Dzieci wchodzą na głowę?
+      Szef dzwoni po godzinach? 2-dniowe gamejam-y nie są dla Ciebie? Przez przypadek masz na laptopie tylko
+      13312 bajtów wolnego miejsca? Na wszystkie pytania odpowiedziałeś 'nie'? Wszystko jedno, [js13kGames](http://js13kgames.com/)
+      jest dla Ciebie! Chciałem podzielić się swoimi doświadczeniami z gamejam-u sprzed dwóch lat, opowiedzieć
+      o swoich fuck-upowych decyzjach, dać parę wskazówek i powiedzieć, czemu warto w evencie uczestniczyć.
+      PS. Autopromocja: Nic tam nie wygrałem.
+      PPS. Polecam za to [moją nieintuicyjną grę](http://shapewars.thedimgames.com/)!
+    people:
+      - Adam Jakubowski
+
+  - kind: talk
+    title: Tabata dla świń i wściekłych ptaków - czyli o wyższości osiągnięć nad liczbą powtórzeń i wpływie HTML5 na zdrowie człowieka
+    description: |-
+      Dla pokaźnego grona gości siłowni ćwiczenia na rowerku, ergowiosłach czy maszynie cardio są zbyt nudne,
+      by wytrwali oni w swoich postanowieniach noworocznych dłużej niż do tłustego czwartku. Nie od dziś wiadomo,
+      że książki wygodniej czyta się w fotelu, a ulubiony serial lepiej ogląda w domowym zaciszu. Po co więc
+      psuć sobie te przyjemności byle tylko odwrócić uwagę od ćwiczeń? Na spotkaniu podliczymy, ile spotkaliśmy 
+      osób czytających książkę podczas grania w Angry Birds lub łapania kolejnego Pokémona.
+      
+      Gry to fun, więc zastanowimy się jak wykorzystać Raspberry Pi, Androida oraz platformę Ionic, by zamienić
+      nudne maszyny do ćwiczeń w wielkie pady i zanurzyć się za ich pomocą w naszych grach HTML5.
+      Siłownia nie musi być nudna, a zastrzyk endorfin każdemu się przyda.
+    people:
+      - Rafał Trzeciak
+
+  - kind: talk
+    title: Jak zrobić prototyp w 7 godzin i nie zwariować
+    description: |-
+      Hakaton może być naprawdę fajnym doświadczeniem, jeśli zadbasz o kilka ważnych czynników.
+      W tej prezentacji opowiemy o tym jak my przygotowaliśmy się do hakatonu, co wyszło, a co nie.
+    people:
+      - Kacper Pietrzak
+      - Bartek Legięć
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - KMTorso
+  - 10Clouds
+  - Codility
+  - Unamo
+
+~resolve(partners|kind organization|by name|flat):
+  - Enclave Games
+  - Whitestream

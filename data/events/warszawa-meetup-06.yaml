@@ -1,0 +1,60 @@
+kind: meetup
+title: "Warszawa #6"
+time: 2017-06-20T18:30:00+02:00 - 2017-06-20T21:00:00+02:00
+venue: pl/warszawa/crux-kawiarnia
+
+description: |-
+  Zapraszamy na szóste spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5! Spotkanie jest w pełni darmowe,
+  przyjść może każdy, prelekcje zostaną nagrane i udostępnione a uczestnicy będą mieli okazję wykorzystać darmowe
+  kupony na piwo lub inne napoje w barze. Oprócz prelekcji będzie więc miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: kupony na piwo lub inne napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1497895960281650/)
+
+schedule:
+
+  - kind: talk
+    title: Implementacja wieloosobowej gry planszowej w Phaser i Meteor
+    description: |-
+      Na spotkaniu przedstawię prezentację frameworka Meteor, który umożliwia synchronizację stanu u wszystkich
+      użytkowników w czasie rzeczywistym. Dzięki temu możemy łatwo dodać funkcje wspólnej rozgrywki wielu
+      użytkowników znane np. z Kurnika, co pokażę na przykładzie gry planszowej.
+    people:
+      - Łukasz Jagodziński
+
+  - kind: talk
+    title: Lekkie wejście w ciężkie tematy
+    description: |-
+      Na prezentacji opowiem o jednym z projektów nad którym pracuję - grą tłumaczącą skąd biorą się takie
+      kwestie jak problemy z koncentracją, czy przewlekłe zmęczenie. Czemu akurat gra, jak wyglądał proces
+      developmentu i jakie są dalsze plany z tym związane.
+    people:
+      - Tomasz Kolinko
+
+  - kind: talk
+    title: Gamedev pod presją — jak dowieźć dobry pomysł na gamejamie
+    description: |-
+      Mój tata (profesor wzornictwa na ASP) mówi, że komplikowanie mamy w genach. Jak więc upraszczać?
+      Podczas [Gamedev.js Game Jam](http://gamedevjs.com/gamejam.html) wspólnie ze znajomym stworzyłem w 8 godzin
+      prostą grę, w którą do dziś gramy z przyjaciółmi. Opowiem o procesie wymyślania mechaniki gry
+      i o prostych zabiegach brainstormingowych, które go usprawniają. O tym, jak zaplanowaliśmy pracę
+      pod presją czasu. I wreszcie o tym, jak na kwadrans przed terminem zrezygnowaliśmy z elementu rozgrywki,
+      który na początku wydawał się nam niezbędny. Spoiler: nikt nie zauważył, że go brakuje!
+    people:
+      - Staś Małolepszy
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - Codility
+  - 10Clouds
+
+~resolve(partners|kind organization|by name|flat):
+  - Enclave Games
+  - Whitestream

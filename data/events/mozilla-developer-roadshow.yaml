@@ -1,0 +1,71 @@
+kind: meetup
+title: "Mozilla Developer Roadshow with Gamedev.js"
+time: 2017-05-23T17:30:00+02:00 - 2017-04-20T19:30:00+02:00
+venue: pl/warszawa/klub-medyka
+
+description: |-
+  **Mozilla Developer Roadshow with Gamedev.js** to specjalna edycja spotkań Gamedev.js Warszawa - tym razem
+  wszystko odbędzie się po angielsku. Razem z Mozillą i konferencją Front-Trends organizujemy lokalną edycję
+  wydarzeń [Mozilla Developer Roadshow](https://hacks.mozilla.org/2017/02/devroadshow/).
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: przekąski i napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/294228384350210/)
+
+timeline:
+  - time: 17:30
+    content: |-
+      opening with Sandra Persing
+  - time: 18:00
+    content: |-
+      Lin Clark on WebAssembly
+  - time: 18:30
+    content: |-
+      Andrzej Mazur on A-Frame
+  - time: 19:00
+    content: |-
+      István Szmozsánszky on Microcontrollers
+  - time: 19:30
+    content: |-
+      Front-Trends open mixer party
+
+schedule:
+
+  - kind: talk
+    title: A cartoon intro to WebAssembly
+    description: |-
+      WebAssembly is fast. It’s being called “the future of the web”. Its speed and potential have major browser vendors
+      working together to make it a reality. And it’s on its way—the MVP hit multiple browsers in March of this year.
+      
+      But what makes it fast? Starting from the basics, this talk will walk you through what WebAssembly is, and then why it’s fast.
+    people:
+      - Lin Clark
+
+  - kind: talk
+    title: Fun and games with A-Frame - building Virtual Reality experiences for the Web
+    description: |-
+      Virtual Reality is getting its momentum with many companies releasing their hardware to the market. WebVR is already
+      part of the hype, and A-Frame brings the ease of use while following gamedev coding principles. Use simple HTML markup
+      to create VR experiences for all available platforms, and see how easy and fast it is.
+    people:
+      - Andrzej Mazur
+
+  - kind: talk
+    title: Tiny games on Microcontrollers
+    description: |-
+      Ever wanted to put some games on a microcontroller? No? Well, it's about time you unleashed your imagination!
+      And in case you would be complaining about C++ right now... hold it right there, your trusty old friend,
+      JavaScript will help you out here, too. ;)
+    people:
+      - István Szmozsánszky
+
+~resolve(partners|kind organization|by name|flat):
+  - Mozilla
+  - Front-Trends
+  - Enclave Games

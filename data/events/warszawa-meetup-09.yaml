@@ -1,0 +1,58 @@
+kind: meetup
+title: "Warszawa #9"
+time: 2017-11-28T18:30:00+02:00 - 2017-11-28T21:00:00+02:00
+venue: pl/warszawa/crux-kawiarnia
+
+description: |-
+  Zapraszamy na dziewiąte, ostatnie w tym roku spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
+  Spotkanie jest w pełni darmowe, przyjść może każdy, prelekcje zostaną nagrane i udostępnione a uczestnicy
+  będą mieli okazję wykorzystać darmowe kupony na piwo lub inne napoje w barze.
+  Oprócz prelekcji będzie więc miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: kupony na piwo lub inne napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/140105016629316/)
+
+schedule:
+
+  - kind: talk
+    title: Wstęp do WebGL
+    description: |-
+      Opowiem o podstawowych pojęciach w grafice 3D na przykładzie WebGL oraz WebGL 2. Celem jest dokładne
+      zrozumienie jak działa [nowy shader w shadertoy](http://shadertoy.com/new).
+    people:
+      - Krzysztof Kula
+
+  - kind: talk
+    title: Prosta gra w JavaScripcie jako zadanie rekrutacyjne – pros and cons
+    description: |-
+      Przez ponad rok pierwszym etapem rekrutacji w Netguru było zrobienie prostej gry w JavaScripcie
+      (w VanillaJS lub dowolnym frameworku frontendowym) według konkretnej specyfikacji. W trakcie krótkiej
+      prezentacji zdradzę co możemy sprawdzić za pomocą takiego zadania, jakie mogą być wymagania
+      co do implementacji na różnych poziomach seniority oraz jak to wpływa na motywację kandydata
+      i inne nietechniczne elementy procesu rekrutacyjnego. Opowiem też o konkretnych przykładach gier
+      opartych na JS wykorzystywanych jako element edukacji czy sprawdzenia wiedzy.
+    people:
+      - Kasia Iwańska
+
+  - kind: talk
+    title: TBD
+    description: |-
+      TBD
+    people:
+      - TBD
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - BLUR
+
+~resolve(partners|kind organization|by name|flat):
+  - Enclave Games
+  - Meet.js
+  - Whitestream

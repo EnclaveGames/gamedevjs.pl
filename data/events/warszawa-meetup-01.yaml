@@ -1,0 +1,53 @@
+kind: meetup
+title: "Warszawa #1"
+time: 2017-01-31T18:30:00+02:00 - 2017-01-31T21:00:00+02:00
+venue: pl/warszawa/panstwomiasto
+
+description: |-
+  Zapraszamy na pierwsze spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5! Spotkanie jest w pełni darmowe,
+  przyjść może każdy, prelekcje zostaną nagrane i udostępnione a uczestnicy będą mieli okazję wykorzystać darmowe
+  kupony na piwo w barze. Oprócz prelekcji będzie więc miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: kupony na piwo lub inne napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1240684212663468/)
+
+schedule:
+
+  - kind: talk
+    title: Wnioski po zrobieniu pierwszej gry z użyciem PhaserJS
+    description: |-
+      Krótko opiszę pomysł i proces realizacji prostej strzelanki izometrycznej.
+      Dlaczego wybraliśmy PhaserJS, w czym ten framework pomógł, a kiedy przeszkadzał.
+    people:
+      - Łukasz Balcerzak
+
+  - kind: talk
+    title: Game design
+    description: |-
+      Przedstawię teoretyczne i praktyczne aspekty tworzenia gier - zarówno planszowych, karcianych czy video.
+    people:
+      - Nikola Adamus
+
+  - kind: talk
+    title: Dwade, trzyde, jeden pies
+    description: |-
+      Uczestnicy Gamedev.js: "Michał, a czy nie mając żadnego doświadczenia ani umiejętności w tworzeniu
+      grafiki 3d można zrobić ładną WebGLową grę?"
+      Michał: "A czy trójnogi pies pływałby w kółko?"
+    people:
+      - Michał Budzyński
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - Iterators
+
+~resolve(partners|kind organization|by name|flat):
+  - Enclave Games
+  - Whitestream

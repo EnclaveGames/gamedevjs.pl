@@ -28,20 +28,19 @@ schedule:
       Czy drugi zwiastun "Ostatnich Jedi" podobał mi się "bardzo" czy "bardzo bardzo"? Jak żyć?
       Na które z tych pytań otrzymasz odpowiedzi?
     people:
-     - Piotr Bogdan
+      - Piotr Bogdan
 
   - kind: talk
-    title: Pisanie własnego silnika do gier to najgorszy pomysł świata.
+    title: Pisanie własnego silnika do gier to najgorszy pomysł świata
     description: |-
       Czym różni się Game Dev od Game Engine Dev? Dlaczego tylko to pierwsze ma sens? Dlaczego drugie obsysa i nigdy 
       nie powinniśmy go ruszać? Na te i inne pytania postaram się odpowiedzieć na najbliższym, 8mym już spotkaniu z serii GamedevJS.
       Zapraszam, Michał Budzyński.
     people:
-     - Michał Budzyński
+      - Michał Budzyński
 
-  - title: Showcase
+  - title: Showcase #2
     description: Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
-
 
 ~resolve(sponsors|kind organization|by name|flat):
   - Mozilla

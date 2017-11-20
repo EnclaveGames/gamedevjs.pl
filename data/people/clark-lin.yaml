@@ -1,0 +1,15 @@
+name:
+  given: Lin
+  family: Clark
+photo:
+  normal: img/people/lin-clark.png
+bio:
+  summary: |-
+    She is a code cartoonist. She takes software concepts and architectures and turns them into stick figure cartoons.
+    She also works in Mozilla's Emerging Technologies group, where she gets to tinker with new browser technologies like WebAssembly.
+  full: |-
+    She is a code cartoonist. She takes software concepts and architectures and turns them into stick figure cartoons.
+    She also works in Mozilla's Emerging Technologies group, where she gets to tinker with new browser technologies like WebAssembly.
+    
+    In previous lives, she worked at npm, was a core contributor to open source projects like Firefox's developer tools,
+    and contributed to HTML data standards. Visit her profile on [Twitter](https://twitter.com/linclark).

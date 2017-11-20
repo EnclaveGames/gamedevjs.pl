@@ -1,0 +1,17 @@
+name:
+  given: István
+  family: Szmozsánszky
+photo:
+  normal: img/people/istvan-szmozsanszky.png
+bio:
+  summary: |-
+    _Flaki_, for short. He is a JavaScript engineer and trainer from Budapest. He runs his own consulting
+    business [Skylark](http://twitter.com/skylark_ee), is a Frontend Trainer at [DPC Consulting](http://www.dpc.hu/) and a longtime Mozilla-contributor.
+  full: |-
+    _Flaki_, for short. He is a JavaScript engineer and trainer from Budapest. He runs his own consulting
+    business [Skylark](http://twitter.com/skylark_ee), is a Frontend Trainer at [DPC Consulting](http://www.dpc.hu/) and a longtime Mozilla-contributor.
+
+    He's worked on, and continues to contribute to various open source projects like Firefox, Firefox OS,
+    Rust, Servo and the Tessel Project. He's a [frequent speaker](http://slides.com/flaki/) at conferences, and an [organizer himself](http://www.rustfest.eu/about/).
+    His favorite topics include service workers, progressive webapps, JavaScript's history, internals,
+    and JS on microcontrollers — more often than not he's even caught prophesying [JavaScript's world domination](https://medium.com/@slsoftworks/javascript-world-domination-af9ca2ee5070). ;)

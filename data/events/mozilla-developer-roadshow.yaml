@@ -16,28 +16,15 @@ details:
   - label: Dodatkowo
     content: prelekcje będą nagrywane
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/294228384350210/)
-
-timeline:
-  - time: 17:30
-    content: |-
-      opening with Sandra Persing
-  - time: 18:00
-    content: |-
-      Lin Clark on WebAssembly
-  - time: 18:30
-    content: |-
-      Andrzej Mazur on A-Frame
-  - time: 19:00
-    content: |-
-      István Szmozsánszky on Microcontrollers
-  - time: 19:30
-    content: |-
-      Front-Trends open mixer party
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/294228384350210/)      
 
 schedule:
 
+  - title: opening with Sandra Persing
+    time: 2017-05-23T17:30:00+02:00
+
   - kind: talk
+    time: 2017-05-23T18:00:00+02:00
     title: A cartoon intro to WebAssembly
     description: |-
       WebAssembly is fast. It’s being called “the future of the web”. Its speed and potential have major browser vendors
@@ -48,6 +35,7 @@ schedule:
       - Lin Clark
 
   - kind: talk
+    time: 2017-05-23T18:30:00+02:00
     title: Fun and games with A-Frame - building Virtual Reality experiences for the Web
     description: |-
       Virtual Reality is getting its momentum with many companies releasing their hardware to the market. WebVR is already
@@ -57,6 +45,7 @@ schedule:
       - Andrzej Mazur
 
   - kind: talk
+    time: 2017-05-23T19:00:00+02:00
     title: Tiny games on Microcontrollers
     description: |-
       Ever wanted to put some games on a microcontroller? No? Well, it's about time you unleashed your imagination!
@@ -64,6 +53,9 @@ schedule:
       JavaScript will help you out here, too. ;)
     people:
       - István Szmozsánszky
+
+  - title: Front-Trends open mixer party
+    time: 2017-05-23T19:30:00+02:00
 
 ~resolve(partners|kind organization|by name|flat):
   - Mozilla

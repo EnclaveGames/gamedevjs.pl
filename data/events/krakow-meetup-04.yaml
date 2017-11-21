@@ -1,0 +1,40 @@
+kind: meetup
+title: "Kraków #4"
+time: 2014-02-13T16:30:00+02:00 - 2014-02-13T19:00:00+02:00
+venue: pl/krakow/schibsted
+
+description: |-
+  Czwarte spotkanie Gamedev.js w Krakowie z serii wprowadzających do tworzenia gier HTML5 i JavaScript.
+  Tym razem dowiemy się co nieco o tworzeniu gier 3D.
+
+  Pamiętajcie, by zabrać także dowód osobisty (potrzebny na recepcji). Liczba miejsc mocno ograniczona,
+  więc prosimy o zwalnianie miejsc jeśli ktoś nie będzie mógł przyjść. Schibsted mieści się na 6 piętrze,
+  więc będziemy wdzięczni za punktualność (wycieczki windą po uczestników zajmują więcej czasu niż powinny :)
+
+details:
+  - label: Wejście
+    content: za darmo
+  - label: Wymagana
+    ~markdown(content): [<i class="eventbrite icon"></i> rejestracja](https://www.eventbrite.com/e/gamedevjs-krakow-tickets-10078439885) (liczba miejsc mocno ograniczona)
+  - label: Pamiętaj
+    content: zabierz ze sobą swojego laptopa
+
+schedule:
+
+  - kind: talk
+    title: Wprowadzenie do 3D
+    description: |-
+      Podzielę się moimi doświadczeniami w budowaniu silnika do gier 3D, problemach na jakie natrafiłem i jak sobie z nimi poradziłem.
+    people:
+      - Gabriel Habryn
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Schibsted Tech Polska
+
+links:
+  - label: Strona Schibsted Tech Polska
+    href: http://www.schibsted.pl/
+  - label: Rejestracja na wydarzenie
+    href: https://www.eventbrite.com/e/gamedevjs-krakow-3d-tickets-10484353985
+  - label: Profil Gamedev.js na Facebooku
+    href: https://www.facebook.com/Gamedevjs

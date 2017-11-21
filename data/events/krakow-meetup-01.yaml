@@ -1,0 +1,36 @@
+kind: meetup
+title: "Kraków #1"
+time: 2013-10-24T16:00:00+02:00 - 2013-10-24T19:00:00+02:00
+venue: pl/krakow/schibsted
+
+description: |-
+  Pierwsze z serii kilku spotkań Gamedev.js w Krakowie wprowadzających do tworzenia gier HTML5 i JavaScript.
+  Premierowy odcinek będzie dotyczyć podstaw renderowania gier na elemencie Canvas.
+
+details:
+  - label: Wejście
+    content: za darmo
+  - label: Wymagana
+    ~markdown(content): [<i class="eventbrite icon"></i> rejestracja](https://www.eventbrite.com/event/8949124071) (liczba miejsc mocno ograniczona)
+  - label: Pamiętaj
+    content: zabierz ze sobą swojego laptopa
+
+schedule:
+
+  - kind: talk
+    title: Canvas basics
+    description: |-
+      Podstawy renderowania gier na elemencie Canvas.
+    people:
+      - Krzysztof Kula
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Schibsted Tech Polska
+
+links:
+  - label: Strona Schibsted Tech Polska
+    href: http://www.schibsted.pl/
+  - label: Rejestracja na wydarzenie
+    href: https://www.eventbrite.com/event/8949124071
+  - label: Profil Gamedev.js na Facebooku
+    href: https://www.facebook.com/Gamedevjs

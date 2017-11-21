@@ -1,0 +1,42 @@
+kind: meetup
+title: "Kraków #3"
+time: 2014-01-14T16:00:00+02:00 - 2014-01-14T19:00:00+02:00
+venue: pl/krakow/schibsted
+
+description: |-
+  Trzecie spotkanie Gamedev.js w Krakowie z serii wprowadzających do tworzenia gier HTML5 i JavaScript.
+  Tym razem dowiemy się co nieco o frameworku Phaser.
+
+  Pamiętajcie, by zabrać także dowód osobisty (potrzebny na recepcji). Liczba miejsc mocno ograniczona,
+  więc prosimy o zwalnianie miejsc jeśli ktoś nie będzie mógł przyjść. Schibsted mieści się na 6 piętrze,
+  więc będziemy wdzięczni za punktualność (wycieczki windą po uczestników zajmują więcej czasu niż powinny :)
+
+details:
+  - label: Wejście
+    content: za darmo
+  - label: Wymagana
+    ~markdown(content): [<i class="eventbrite icon"></i> rejestracja](https://www.eventbrite.com/e/gamedevjs-krakow-tickets-10078439885) (liczba miejsc mocno ograniczona)
+  - label: Pamiętaj
+    content: zabierz ze sobą swojego laptopa
+
+schedule:
+
+  - kind: talk
+    title: Pierwsze kroki w Phaser
+    description: |-
+      Opowiem o moim projekcie z firmowego HackDay: Santa. Opowiem o technologiach, przydatnych narzędziach, gdzie znalazłem dokumentację itd.
+    people:
+      - Krzysztof Kula
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Schibsted Tech Polska
+
+links:
+  - label: Strona frameworka Phaser
+    href: http://phaser.io/
+  - label: Strona Schibsted Tech Polska
+    href: http://www.schibsted.pl/
+  - label: Rejestracja na wydarzenie
+    href: https://www.eventbrite.com/e/gamedevjs-krakow-tickets-10078439885
+  - label: Profil Gamedev.js na Facebooku
+    href: https://www.facebook.com/Gamedevjs

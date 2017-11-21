@@ -1,0 +1,65 @@
+kind: conference
+title: "onGameStart 2015"
+time: 2015-10-17T12:00:00+02:00 - 2015-10-17T15:00:00+02:00
+venue: pl/poznan/mtp
+
+description: |-
+  **onGameStart 2015** to najstarsza i największa konferencja skupiona na grach HTML5. W tym roku odbywa się
+  w ramach **Game Industry Conference** (wcześniej znanej jako ZTG) podczas targów **Poznań Game Arena**.
+  Spotkamy się w sobotę 17 października na terenie Międzynarodowych Targów Poznańskich przy ulicy Głogowskiej 14.
+
+details:
+  - label: Wejście
+    ~markdown(content): [biletowane](http://gic.gd/bilety/)
+  - label: Targi
+    content: Poznań Game Arena
+  - label: Konferencja
+    content: Game Industry Conference
+  - label: onGameStart
+    content: traktowany jest jako część GIC skupiona na grach HTML5
+
+schedule:
+
+  - kind: talk
+    time: 2015-10-17T12:00:00+02:00 - 2015-10-17T12:30:00+02:00
+    place: sala 3.A
+    title: An architecture of modern slot games platform
+    people:
+      - Krzysztof Opałka
+
+  - kind: talk
+    time: 2015-10-17T12:30:00+02:00 - 2015-10-17T13:00:00+02:00
+    place: sala 3.B
+    title: How to integrate augmented reality in your HTML5 games
+    people:
+      - Jerome Etienne
+
+  - kind: talk
+    time: 2015-10-17T13:00:00+02:00 - 2015-10-17T13:30:00+02:00
+    place: sala 3.B
+    title: WebVR - virtual reality for web games
+    people:
+      - Andrzej Mazur
+
+  - kind: talk
+    time: 2015-10-17T13:30:00+02:00 - 2015-10-17T14:00:00+02:00
+    place: sala 3.B
+    title: Kopanito, czyli jak stworzyć i wypromować grę HTML5
+    people:
+      - Maciej Fedorów
+      - Anita Soczka
+
+  - kind: talk
+    time: 2015-10-17T14:00:00+02:00 - 2015-10-17T15:00:00+02:00
+    place: sala 2.2
+    title: Animation management in HTML5 game development
+    people:
+      - Łukasz Wójciak
+
+links:
+  - label: Strona główna konferencji Game Industry Conference
+    href: http://gic.gd/
+  - label: Strona główna targów Poznań Game Arena
+    href: http://www.gamearena.pl/
+  - label: Wydarzenie na Facebooku
+    href: https://www.facebook.com/events/405144943025211/

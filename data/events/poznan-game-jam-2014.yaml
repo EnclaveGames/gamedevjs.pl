@@ -1,0 +1,74 @@
+kind: hackathon
+title: "Poznań Game Jam 2014"
+time: 2014-01-24T14:00:00+02:00 - 2014-01-26T15:00:00+02:00
+venue: pl/poznan/politechnika
+
+description: |-
+  **Poznań Game Jam 2014** to dwudniowy hakaton skupiony na **tworzeniu gier** (nie tylko HTML5 i JavaScript). Spotkamy się na
+  **Politechnice Poznańskiej**, gdzie weźmiemy udział w styczniowym, corocznym hakatonie w ramach ogólnoświatowego **Global Game Jam**.
+
+details:
+  - label: Wejście
+    content: za darmo
+  - label: Oferujemy
+    content: przekąski, napoje i pizzę
+  - label: Pamiętaj
+    content: zabierz ze sobą swojego laptopa
+  - label: Wymagana
+    ~markdown(content): [rejestracja](http://globalgamejam.org/2014/jam-sites/poznan-game-jam)
+
+schedule:
+
+  - kind: talk
+    title: Co zrobić, żeby dłużej siedzieć na Fejsie? O wydajności w programowaniu
+    people:
+      - Maciej Rygielski
+
+  - kind: talk
+    title: Tworzenie gier HTML5 na Firefox OS
+    people:
+      - Andrzej Mazur
+
+  - kind: talk
+    title: Work smarter, not harder. Przecieranie szlaków za pomocą Unity
+    people:
+      - Dominik Gotojuch
+
+  - kind: talk
+    title: Jak jamować i nie zwariować - poradnik dla chętnych do zrobienia gry w 48h
+    people:
+      - Robert Podgórski
+
+prizes:
+  - description: |-
+    Nagroda główna: miejsce w Unity Busie na Nordic Game Jam w Kopenhadze.
+    Nagrody dodatkowe: maskotki, zabawki, kubki i inne atrakcje.
+    Mamy także do rozdania 30 darmowych kodów, każdy na [GitHub Micro Plan](http://github.com/plans) ważny przez trzy miesiące.
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - BlackMoon Design
+  - Politechnika Poznańska
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - Unity
+  - GitHub
+  - Cognifide
+  - Techland
+
+links:
+  - label: Wydarzenie na stronie Global Game Jam
+    href: http://globalgamejam.org/2014/jam-sites/poznan-game-jam
+  - label: Profil Poznań Game Jam na Facebooku
+    href: https://www.facebook.com/poznangamejam
+  - label: Profil Gamedev.js na Facebooku
+    href: https://www.facebook.com/Gamedevjs
+  - label: Gry stworzone podczas Poznań Game Jam
+    href: http://globalgamejam.org/2014/jam-sites/poznan-game-jam/games
+  - label: Reportaż w TVP Poznań - wywiady
+    href: http://www.youtube.com/watch?v=xnDwChRYB6Q
+  - label: Reportaż w TVP Poznań - zwycięzcy
+    href: http://www.youtube.com/watch?v=cSDNsSC_JqQ
+  - label: Galeria zdjęć z wydarzenia na Facebooku
+    href: https://www.facebook.com/media/set/?set=a.615375411864237.1073741832.427607547307692

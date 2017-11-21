@@ -1,0 +1,50 @@
+kind: hackathon
+title: "Gamedev.js Game Jam Kraków 2013"
+time: 2013-11-17T09:30:00+02:00 - 2013-11-17T19:00:00+02:00
+venue: pl/krakow/google
+
+description: |-
+  **Gamedev.js Game Jam Kraków** to całodniowy hakaton skupiony na **tworzeniu gier HTML5 i JavaScript**.
+  Spotkamy się w siedzibie **Google for Entrepreneurs**, gdzie weźmiemy udział w listopadowym konkursie
+  **GitHub Game Off** i inicjatywie **One Game A Month**. Porozmawiamy także między innymi o developmencie gier
+  na telefony z systemem **Firefox OS** autorstwa **Mozilli** czy nowym frameworku **Phaser**.
+
+details:
+  - label: Wejście
+    content: za darmo
+  - label: Oferujemy
+    content: przekąski, napoje i pizzę
+  - label: Pamiętaj
+    content: zabierz ze sobą swojego laptopa
+  - label: Wymagana
+    ~markdown(content): [<i class="eventbrite icon"></i> rejestracja](http://www.eventbrite.com/event/9064597455)
+
+schedule:
+
+  - title: rozpoczęcie
+    time: 2013-11-17T09:30:00+02:00
+
+  - title: zakończenie
+    time: 2013-11-17T19:00:00+02:00
+
+prizes:
+  - description: |-
+    Najlepsze zespoły wygrają drobne nagrody rzeczowe.
+
+~resolve(sponsors|kind organization|by name|flat):
+  - ATSI
+  - Mozilla
+
+links:
+  - label: Zapowiedź drugiej edycji GitHub Game Off
+    href: https://github.com/blog/1674-github-game-off-ii
+  - label: Inicjatywa One Game A Month
+    href: http://onegameamonth.com/
+  - label: Strona frameworka Phaser
+    href: http://phaser.io/
+  - label: Rejestracja na wydarzenie
+    href: http://www.eventbrite.com/event/9064597455
+  - label: Event na Facebooku
+    href: https://www.facebook.com/events/212186702294641/
+  - label: Profil Gamedev.js na Facebooku
+    href: https://www.facebook.com/Gamedevjs

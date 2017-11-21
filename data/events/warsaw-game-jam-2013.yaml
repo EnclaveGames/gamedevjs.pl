@@ -1,0 +1,53 @@
+kind: hackathon
+title: "Warsaw Game Jam 2013"
+time: 2013-01-25T16:00:00+02:00 - 2013-01-27T18:00:00+02:00
+venue: pl/warszawa/reaktor
+
+description: |-
+  Warszawska edycja ogólnoświatowego [Global Game Jam](http://globalgamejam.org/sites/2013/warsaw-game-jam), czyli 48h maratonu tworzenia gier w dowolnie wybranej
+  technologii na zadany temat. Podczas tego wydarzenia odbędzie się także [Mozilla Game On](http://gameon.mozilla.org/en-US/) oraz [One Game a Month](http://onegameamonth.com/).
+  Przeczytaj [wpis zapowiadający to wydarzenie](http://blog.end3r.com/231/), a następnie [dołącz do niego na Facebooku](http://www.facebook.com/events/130142490483429/)!
+
+details:
+  - label: Wejście
+    content: za darmo (liczba miejsc ograniczona)
+  - label: Zapewniamy
+    content: piwo, pizzę i dobrą zabawę
+  - label: Pamiętaj
+    content: zabierz ze sobą swojego laptopa
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](http://www.facebook.com/events/130142490483429/)
+
+schedule:
+
+  - title: rozpoczęcie
+    time: 2012-11-09T22:00:00+02:00
+
+  - title: zakończenie
+    time: 2012-11-11T23:59:00+02:00
+
+prizes:
+  - description: |-
+    Zespół z Warszawy, który stworzy najlepszą grę konkursową otrzyma od serwisu GitHub nagrodę w postaci kredytu
+    o wartości 70 dolarów do wykorzystania na dowolne ich usługi (na przykład 10 miesięcy konta Micro - sprawdź [GitHub plans and pricing](http://github.com/plans)).
+
+    Dodatkowo każdy uczestnik otrzyma darmową licencję na framework do tworzenia gier HTML5 - [Game Maker: Studio](http://www.yoyogames.com/gamemaker/studio),
+    kupon od [Joyent](https://my.joyentcloud.com/) o wartości 100 dolarów do wykorzystania na ich usługi hostingowe (równowartość serwera linux lub
+    SmartOS z 1GB pamięci działającego przez 6 tygodni) a także darmową licencję na [Corona SDK Indie](http://www.coronalabs.com/) ważną przez 3 miesiące.
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - onGameStart
+  - GitHub
+
+links:
+  - label: Wydarzenie na Facebooku
+    href: http://www.facebook.com/events/130142490483429/
+  - label: Szczegółowy wpis na blogu
+    href: http://blog.end3r.com/231/
+  - label: Strona warszawskiego wydarzenia Global Game Jam
+    href: http://globalgamejam.org/sites/2013/warsaw-game-jam
+  - label: Konkurs Mozilla Game On
+    href:  http://gameon.mozilla.org/en-US/ 
+  - label: Inicjatywa One Game a Month
+    href: http://onegameamonth.com/

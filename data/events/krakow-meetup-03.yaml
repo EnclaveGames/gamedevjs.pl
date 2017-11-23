@@ -1,6 +1,6 @@
 kind: meetup
 title: "Kraków #3"
-time: 2014-01-14T16:00:00+02:00 - 2014-01-14T19:00:00+02:00
+time: 2014-01-14T16:00:00+01:00 - 2014-01-14T19:00:00+01:00
 venue: pl/krakow/schibsted
 
 description: |-
@@ -15,7 +15,7 @@ details:
   - label: Wejście
     content: za darmo
   - label: Wymagana
-    ~markdown(content): [<i class="eventbrite icon"></i> rejestracja](https://www.eventbrite.com/e/gamedevjs-krakow-tickets-10078439885) (liczba miejsc mocno ograniczona)
+    ~markdown(content): '[rejestracja](https://eventbrite.com/e/gamedevjs-krakow-tickets-10078439885) (liczba miejsc mocno ograniczona)'
   - label: Pamiętaj
     content: zabierz ze sobą swojego laptopa
 
@@ -33,10 +33,10 @@ schedule:
 
 links:
   - label: Strona frameworka Phaser
-    href: http://phaser.io/
+    href: http://phaser.io
   - label: Strona Schibsted Tech Polska
-    href: http://www.schibsted.pl/
+    href: http://schibsted.pl
   - label: Rejestracja na wydarzenie
-    href: https://www.eventbrite.com/e/gamedevjs-krakow-tickets-10078439885
+    href: https://eventbrite.com/e/gamedevjs-krakow-tickets-10078439885
   - label: Profil Gamedev.js na Facebooku
-    href: https://www.facebook.com/Gamedevjs
+    href: https://facebook.com/Gamedevjs

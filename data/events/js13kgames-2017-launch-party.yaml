@@ -1,5 +1,5 @@
 kind: meetup
-title: "js13kGames 2017 Launch Party"
+title: js13kGames 2017 Launch Party
 time: 2017-08-14T18:00:00+02:00 - 2017-08-14T21:00:00+02:00
 venue: pl/warszawa/codility
 
@@ -10,7 +10,7 @@ description: |-
   i sędziami poprzednich edycji oraz ekspertami z branży, którzy chętnie odpowiedzą na wszystkie Wasze pytania.
   Po panelu będzie czas na małą zabawę z nagrodami.
 
-  [Js13kGames](http://js13kgames.com/) to konkurs online, który trwa miesiąc - od 13 sierpnia do 13 września. Zabawa polega na tym,
+  [Js13kGames](http://js13kgames.com) to konkurs online, który trwa miesiąc - od 13 sierpnia do 13 września. Zabawa polega na tym,
   by w 13 kilobajtach stworzyć grę HTML5. Zadanie jest wymagające, ale każdy uczestnik co roku zgarnia darmową koszulkę
   oraz inne gadżety, a także ma szansę wygrać nagrody o łącznej wartości dziesiątek tysięcy złotych.
 
@@ -22,18 +22,18 @@ details:
   - label: Dodatkowo
     content: prelekcja i panel będą nagrywane
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/162648377613673/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/162648377613673)
 
 schedule:
 
-  - title: przywitanie
+  - title: Przywitanie
     time: 2017-08-14T18:00:00+02:00
 
   - kind: talk
     time: 2017-08-14T18:05:00+02:00
     title: Jak zmieścić grę HTML5 w 13 kilobajtach?
     description: |-
-      Krótka prezentacja o historii konkursu [js13kGames](http://js13kgames.com/), oraz o tym jak się poprawnie przygotować do edycji 2017.
+      Krótka prezentacja o historii konkursu [js13kGames](http://js13kgames.com), oraz o tym jak się poprawnie przygotować do edycji 2017.
     people:
       - Andrzej Mazur
 
@@ -42,6 +42,7 @@ schedule:
     title: Js13kGames 2017
     description: |-
       Panel dyskusyjny z uczestnikami oraz sędziami konkursu:
+
         - Tomasz Wesołowski, sędzia edycji 2015 i 2017
         - Adam Jakubowski, uczestnik edycji 2015
         - Rafał Ruciński, uczestnik edycji 2015
@@ -57,10 +58,10 @@ schedule:
       - Michał Budzyński
       - Piotr Bogdan
 
-  - title: konkurs z nagrodami
+  - title: Konkurs z nagrodami
     time: 2017-08-14T19:30:00+02:00
 
-  - title: integracja przy piwie i pizzy
+  - title: Integracja przy piwie i pizzy
     time: 2017-08-14T20:00:00+02:00
 
 ~resolve(sponsors|kind organization|by name|flat):

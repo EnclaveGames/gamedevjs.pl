@@ -1,11 +1,11 @@
 kind: hackathon
-title: "Node.js Weekend"
-time: 2012-11-09T22:00:00+02:00 - 2012-11-11T23:59:00+02:00
+title: Node.js Weekend
+time: 2012-11-09T22:00:00+01:00 - 2012-11-11T23:59:00+01:00
 venue: pl/warszawa/e-spatio
 
 description: |-
-  Warszawska edycja ogólnoświatowego [Node Knockout](http://nodeknockout.com/), czyli 48h maratonu z serwerowym JavaScriptem.
-  Przeczytaj [wpis zapowiadający to wydarzenie](http://blog.end3r.com/218/) a następnie [dołącz do niego na Facebooku](https://www.facebook.com/events/355157471238881/)!
+  Warszawska edycja ogólnoświatowego [Node Knockout](http://nodeknockout.com), czyli 48h maratonu z serwerowym JavaScriptem.
+  Przeczytaj [wpis zapowiadający to wydarzenie](http://blog.end3r.com/218) a następnie [dołącz do niego na Facebooku](https://facebook.com/events/355157471238881)!
 
 details:
   - label: Wejście
@@ -15,21 +15,16 @@ details:
   - label: Pamiętaj
     content: zabierz ze sobą swojego laptopa
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/355157471238881/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/355157471238881)
 
-schedule:
+~markdown(prizes): |-
+  Zespół z Warszawy, który zbuduje najlepszą aplikację konkursową otrzyma od serwisu GitHub w nagrodę
 
-  - title: rozpoczęcie
-    time: 2012-11-09T22:00:00+02:00
+    - konto Business Bronze na rok do podziału na zespół  
+    **lub**
+    - każdy z uczestników otrzyma konto Micro na rok ([GitHub plans and pricing](http://github.com/plans)).
 
-  - title: zakończenie
-    time: 2012-11-11T23:59:00+02:00
-
-prizes:
-  - description: |-
-    Zespół z Warszawy, który zbuduje najlepszą aplikację konkursową otrzyma za darmo od serwisu GitHub w nagrodę
-    konto Business Bronze na rok do podziału na zespół LUB każdy z uczestników otrzyma konto Micro na rok ([GitHub plans and pricing](http://github.com/plans)).
-    Dodatkowo każdy uczestnik otrzyma koszulkę od zespołu CKSource.
+  Dodatkowo każdy uczestnik otrzyma koszulkę od zespołu CKSource.
 
 ~resolve(sponsors|kind organization|by name|flat):
   - MegiTeam
@@ -39,14 +34,14 @@ prizes:
 
 links:
   - label: Wydarzenie Node.js Weekend na Facebooku
-    href: https://www.facebook.com/events/355157471238881/
+    href: https://facebook.com/events/355157471238881
   - label: Strona domowa projektu Node.js
-    href: http://nodejs.org/
+    href: http://nodejs.org
   - label: Strona globalnego eventu Node Knockout
-    href: http://nodeknockout.com/
+    href: http://nodeknockout.com
   - label: Zbiór przydatnych linków o Node.js
-    href: http://blog.end3r.com/129/
+    href: http://blog.end3r.com/129
   - label: Relacja z edycji 2011 w siedzibie Gadu-Gadu
-    href: http://blog.end3r.com/148/
+    href: http://blog.end3r.com/148
   - label: Zapowiedź edycji 2012
-    href: http://blog.end3r.com/218/
+    href: http://blog.end3r.com/218

@@ -1,6 +1,6 @@
 kind: meetup
 title: "Warszawa #2"
-time: 2017-02-22T18:30:00+02:00 - 2017-02-22T21:00:00+02:00
+time: 2017-02-22T18:30:00+01:00 - 2017-02-22T21:00:00+01:00
 venue: pl/warszawa/crux-kawiarnia
 
 description: |-
@@ -16,14 +16,14 @@ details:
   - label: Dodatkowo
     content: prelekcje będą nagrywane
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1807171672869620/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/1807171672869620)
 
 schedule:
 
   - kind: talk
     title: Mechanika kwantowa w przeglądarce
     description: |-
-      [Quantum Game with Photons](http://quantumgame.io/) - z jednej strony logiczna łamigłówka, z drugiej - bazująca na prawdziwej
+      [Quantum Game with Photons](http://quantumgame.io) - z jednej strony logiczna łamigłówka, z drugiej - bazująca na prawdziwej
       symulacji stanu kwantowego fotonu. Opowiem o projekcie open source’owej gry, którą rozwijam.
       Co to są gry naukowe i dlaczego chcemy ich więcej? Dlaczego nie skorzystałem z żadnego silnika/frameworku
       do gier? Czemu SVG, a nie jak normalny człowiek - Canvas lub WebGL?

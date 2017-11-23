@@ -4,7 +4,7 @@ time: 2017-10-27T18:30:00+02:00
 venue: pl/warszawa/asp-grafika
 
 description: |-
-  Zapraszamy na pierwszy wykład piątego sezonu cyklu „[korepetycje](https://www.facebook.com/ASPkorepetycje)”. 
+  Zapraszamy na pierwszy wykład piątego sezonu cyklu „[korepetycje](https://facebook.com/ASPkorepetycje)”. 
   Tym razem Andrzej Mazur opowie o tworzeniu gier i aplikacji w wirtualnej rzeczywistości z pomocą narzędzia A-Frame. 
   Spotykamy się w sali kinowej (pierwsze drzwi od wejścia po lewej stronie) na [Wydziale Grafiki Akademii Sztuk Pięknych](https://wg.asp.waw.pl) 
   w Warszawie, ul. Krakowskie Przedmieście 5.
@@ -15,7 +15,7 @@ details:
   - label: Dodatkowo
     content: prelekcja będzie nagrywana
   - label: Dołącz
-    ~markdown(content): na [<i class="facebook icon"></i> Facebooku](https://www.facebook.com/events/494737330905965)
+    ~markdown(content): do wydarzenia na [<i class="facebook icon"></i> Facebooku](https://facebook.com/events/494737330905965)
 
 schedule:
 
@@ -28,8 +28,7 @@ schedule:
       wirtualnych światów w przeglądarce. Dowiedz się jak samemu i w krótkim czasie kreować rzeczywistość przyszłości, 
       oraz przekonaj się jak proste, łatwe i przyjemne to może być.
     people:
-     - Andrzej Mazur
-
+      - Andrzej Mazur
 
 ~resolve(organizers|kind organization|by name|flat):
   - Korepetycje - Akademia Sztuk Pięknych w Warszawie

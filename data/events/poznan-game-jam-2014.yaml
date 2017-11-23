@@ -1,6 +1,6 @@
 kind: hackathon
-title: "Poznań Game Jam 2014"
-time: 2014-01-24T14:00:00+02:00 - 2014-01-26T15:00:00+02:00
+title: Poznań Game Jam 2014
+time: 2014-01-24T14:00:00+01:00 - 2014-01-26T15:00:00+01:00
 venue: pl/poznan/politechnika
 
 description: |-
@@ -15,7 +15,7 @@ details:
   - label: Pamiętaj
     content: zabierz ze sobą swojego laptopa
   - label: Wymagana
-    ~markdown(content): [rejestracja](http://globalgamejam.org/2014/jam-sites/poznan-game-jam)
+    ~markdown(content): '[rejestracja](http://globalgamejam.org/2014/jam-sites/poznan-game-jam)'
 
 schedule:
 
@@ -39,11 +39,10 @@ schedule:
     people:
       - Robert Podgórski
 
-prizes:
-  - description: |-
-    Nagroda główna: miejsce w Unity Busie na Nordic Game Jam w Kopenhadze.
-    Nagrody dodatkowe: maskotki, zabawki, kubki i inne atrakcje.
-    Mamy także do rozdania 30 darmowych kodów, każdy na [GitHub Micro Plan](http://github.com/plans) ważny przez trzy miesiące.
+~markdown(prizes): |
+  Nagroda główna: miejsce w Unity Busie na Nordic Game Jam w Kopenhadze.  
+  Nagrody dodatkowe: maskotki, zabawki, kubki i inne atrakcje.  
+  Mamy także do rozdania 30 darmowych kodów, każdy na [GitHub Micro Plan](http://github.com/plans) ważny przez trzy miesiące.
 
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games
@@ -61,14 +60,14 @@ links:
   - label: Wydarzenie na stronie Global Game Jam
     href: http://globalgamejam.org/2014/jam-sites/poznan-game-jam
   - label: Profil Poznań Game Jam na Facebooku
-    href: https://www.facebook.com/poznangamejam
+    href: https://facebook.com/poznangamejam
   - label: Profil Gamedev.js na Facebooku
-    href: https://www.facebook.com/Gamedevjs
+    href: https://facebook.com/Gamedevjs
   - label: Gry stworzone podczas Poznań Game Jam
     href: http://globalgamejam.org/2014/jam-sites/poznan-game-jam/games
   - label: Reportaż w TVP Poznań - wywiady
-    href: http://www.youtube.com/watch?v=xnDwChRYB6Q
+    href: http://youtube.com/watch?v=xnDwChRYB6Q
   - label: Reportaż w TVP Poznań - zwycięzcy
-    href: http://www.youtube.com/watch?v=cSDNsSC_JqQ
+    href: http://youtube.com/watch?v=cSDNsSC_JqQ
   - label: Galeria zdjęć z wydarzenia na Facebooku
-    href: https://www.facebook.com/media/set/?set=a.615375411864237.1073741832.427607547307692
+    href: https://facebook.com/media/set/?set=a.615375411864237.1073741832.427607547307692

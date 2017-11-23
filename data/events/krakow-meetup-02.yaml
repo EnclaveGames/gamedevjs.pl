@@ -1,6 +1,6 @@
 kind: meetup
 title: "Kraków #2"
-time: 2013-11-07T16:00:00+02:00 - 2013-11-07T19:00:00+02:00
+time: 2013-11-07T16:00:00+01:00 - 2013-11-07T19:00:00+01:00
 venue: pl/krakow/schibsted
 
 description: |-
@@ -11,7 +11,7 @@ details:
   - label: Wejście
     content: za darmo
   - label: Wymagana
-    ~markdown(content): [<i class="eventbrite icon"></i> rejestracja](http://www.eventbrite.com/event/9065293537) (liczba miejsc mocno ograniczona)
+    ~markdown(content): '[rejestracja](http://eventbrite.com/event/9065293537) (liczba miejsc mocno ograniczona)'
   - label: Pamiętaj
     content: zabierz ze sobą swojego laptopa (i dowód osobisty)
 
@@ -29,10 +29,10 @@ schedule:
 
 links:
   - label: Strona Schibsted Tech Polska
-    href: http://www.schibsted.pl/
+    href: http://schibsted.pl
   - label: Rejestracja na wydarzenie
-    href: http://www.eventbrite.com/event/9065293537
+    href: http://eventbrite.com/event/9065293537
   - label: Biblioteka CreateJS
-    href: http://www.createjs.com/#!/CreateJS
+    href: http://createjs.com/#!/CreateJS
   - label: Profil Gamedev.js na Facebooku
-    href: https://www.facebook.com/Gamedevjs
+    href: https://facebook.com/Gamedevjs

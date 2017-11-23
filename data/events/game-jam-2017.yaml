@@ -1,5 +1,5 @@
 kind: hackathon
-title: "Gamedev.js Game Jam 2017"
+title: Gamedev.js Game Jam 2017
 time: 2017-05-07T09:00:00+02:00 - 2017-05-07T20:00:00+02:00
 venue: pl/warszawa/aviva
 
@@ -7,93 +7,102 @@ description: |-
   Zapraszamy na Gamedev.js Game Jam - największy hackaton gier HTML5 w Polsce! Jeśli chcesz poznać innych twórców i razem zrobić grę,
   porozmawiać ze specjalistami z branży i przy okazji wygrać kilka nagród dobrze się bawiąc, to ten hackaton jest dla Ciebie!
 
-  To wydarzenie jest częścią [Gamedev.js Weekend](http://gamedevjs.com/weekend.html) - zobacz także warsztat [Tworzenie gier HTML5 - od pomysłu do realizacji](http://gamedevjs.com/warsztat03.html).
+  To wydarzenie jest częścią [Gamedev.js Weekend](http://gamedevjs.com/weekend.html) - zobacz także warsztat 
+  [Tworzenie gier HTML5 - od pomysłu do realizacji](http://gamedevjs.com/warsztat03.html) .
 
   **Pamiętaj**: spędzimy cały dzień razem tworząc gry w języku JavaScript - zabierz ze sobą swojego laptopa i ładowarkę.
   Możesz przyjść z zespołem, ale będzie też możliwość dołączenia do kogoś na miejscu i stworzenia nowego zespołu. 
 
 details:
-  - label: Wstąp
-    ~markdown(content): darmowy, ale wymagana jest [rejestracja](https://gamedevjsgamejam.evenea.pl/)
+  - label: Wstęp
+    ~markdown(content): '**darmowy**, ale wymagana jest **[rejestracja](https://gamedevjsgamejam.evenea.pl)**'
   - label: Zapewniamy
     content: napoje, pizzę i dobrą zabawę
   - label: Pamiętaj
     content: zabierz ze sobą swojego laptopa
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/112802202610198/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/112802202610198)
   - label: Regulamin
     ~markdown(content): Treść regulaminu znajdziesz [tutaj](http://gamedevjs.com/gamejam-regulamin.html)
 
 schedule:
-
-  - title: (dzień wcześniej wieczorem) ogłoszenie tematu
+  - title: Ogłoszenie tematu
     time: 2017-05-06T18:00:00+02:00
+    description: Dzień przed samym hackatonem, wieczorem.
 
-  - title: rejestracja i powitanie
+  - title: Rejestracja i powitanie
     time: 2017-05-07T09:00:00+02:00
 
-  - title: prezentacje pomysłów i tworzenie zespołów
+  - title: Prezentacje pomysłów i tworzenie zespołów
     time: 2017-05-07T09:30:00+02:00
 
-  - title: start tworzenia gier
+  - title: Start tworzenia gier
     time: 2017-05-07T10:00:00+02:00
 
-  - title: przerwa na lunch
+  - title: Przerwa na lunch
     time: 2017-05-07T13:00:00+02:00
 
-  - title: koniec tworzenia gier
+  - title: Koniec tworzenia gier
     time: 2017-05-07T18:00:00+02:00
 
-  - title: prezentacje projektów
+  - title: Prezentacje projektów
     time: 2017-05-07T18:30:00+02:00
 
-  - title: ogłoszenie wyników i wręczenie nagród
+  - title: Ogłoszenie wyników i wręczenie nagród
     time: 2017-05-07T19:30:00+02:00
 
-  - title: after party
+  - title: After party
     time: 2017-05-07T20:00:00+02:00
 
-mentors:
+people:
   - Andrzej Mazur
   - Nikola Adamus
   - Rafał Trzeciak
-
-prizes:
-  - description: |-
-    Nagrody dla trzech najlepszych zespołów:
-    
-    I miejsce: **500 PLN**
-    II miejsce: **400 PLN**
-    III miejsce: **300 PLN**
-
-    **Nagrody specjalne:**
-
-    Po **200 PLN dla każdego zespołu**, który zgłosi grę (lub chociaż prototyp) możliwą do umieszczenia na maszynach ćwiczeniowych KM Torso.
-    Zobacz prezentację [Rafała Trzeciaka z Gamedev.js Warszawa #4](https://www.youtube.com/watch?v=ZmX1HQaTeBw) by dowiedzieć się o platformie.
-    Dodatkowo **50 PLN ekstra dla każdego członka zespołu** zgłaszającego taką grę, jeśli brał on udział w jednym
-    z naszych trzech warsztatów [Tworzenie gier HTML5 - od pomysłu do realizacji](http://gamedevjs.com/warsztat03.html).
-    Możliwe jest także **finansowanie dalszego rozwoju gry** na platformę jeśli obie strony będą tym zainteresowane.
-
-    * Nagrody pieniężne sponsorowane są przez KM Torso. Nagrody specjalne wiążą się z przekazaniem praw autorskich,
-    ale są całkowicie opcjonalne i dobrowolne.
-
-    Dodatkowo będziemy mieli **nagrody rzeczowe** dla najlepszych zespołów.
 
 ~resolve(partners|kind organization|by name|flat):
   - Enclave Games
   - Mozilla
   - KM Torso
 
-winners:
-  - description: |-
-    Poniżej prezentujemy wyniki hackatonu według zespołów, gier i składu osobowego:
+~markdown(prizes): |-
+  Nagrody dla trzech najlepszych zespołów:
 
-    1. JeloCartel - [Prze Szkody](https://www.youtube.com/watch?v=zt8R23KYCFk) (Kuba Wasiak, Wojciech Woźniak, Michal Budzynski)
-    2. Piesku - [Shape Ronin](https://www.youtube.com/watch?v=wvcflajHXF8) (Staś Małolepszy, Antoni Korzeniowski)
-    3. Popcorn Monsters - [Popcorn Monsters](https://www.youtube.com/watch?v=wnLu28d76k8) (Katarzyna Mitrus, Adam Golan)
-    4. Dos - [Hurdlinator](https://www.youtube.com/watch?v=kZS_BwH9Ouk) (Sebastian Krzyszkowiak)
-    5. Zbrodnia Ikara Team - [Zbrodnia Ikara](https://www.youtube.com/watch?v=IOYQHujDO2Y) (Szymon Filipowicz, Stanislav Mishchenko, Klaudia Wiśniewska, Melchior Moroz, Jerzy Woźniak)
-    6. PiGames - [Ninja vs Skateboard: Revenge](https://www.youtube.com/watch?v=mnhQv8jRVEM) (Kacper Pietrzak, Bartosz Legięć)
-    7. No Name - [Water Run](https://www.youtube.com/watch?v=J2SS9iPcD8w) (Maciej Dąbek, Urszula Machowska, Krzysztof Kielak, Paweł Marczewski)
-    8. Minimal - [Minimal](https://www.youtube.com/watch?v=Z0_4jJt-56Y) (Agata Nawrot)
-    9. Betonowy Balon - [Czerwona Kropka](https://www.youtube.com/watch?v=shSeImwr4HE) (Katarzyna Gawronska, Wojciech Naumiuk, Piotr Mroczek)
+    - I miejsce: **500 PLN**
+    - II miejsce: **400 PLN**
+    - III miejsce: **300 PLN**
+
+  **Nagrody specjalne:**
+
+    - Po **200 PLN dla każdego zespołu**, który zgłosi grę (lub chociaż prototyp) możliwą do umieszczenia na 
+      maszynach ćwiczeniowych KM Torso. Zobacz prezentację [Rafała Trzeciaka z Gamedev.js Warszawa #4](https://youtube.com/watch?v=ZmX1HQaTeBw) 
+      by dowiedzieć się o platformie.
+    - Dodatkowo **50 PLN ekstra dla każdego członka zespołu** zgłaszającego taką grę, jeśli brał on udział 
+      w jednym z naszych trzech warsztatów [Tworzenie gier HTML5 - od pomysłu do realizacji](http://gamedevjs.com/warsztat03.html).
+    - Możliwe jest także **finansowanie dalszego rozwoju gry** na platformę jeśli obie strony będą tym zainteresowane.
+
+  \* Nagrody pieniężne sponsorowane są przez KM Torso. Nagrody specjalne wiążą się z przekazaniem praw autorskich,
+  ale są całkowicie opcjonalne i dobrowolne.
+
+  Dodatkowo będziemy mieli **nagrody rzeczowe** dla najlepszych zespołów.
+
+~markdown(results): |-
+  Poniżej prezentujemy wyniki hackatonu według gier, zespołów i składu osobowego:
+
+    1. JeloCartel - [Prze Szkody](https://youtube.com/watch?v=zt8R23KYCFk)
+       *Kuba Wasiak, Wojciech Woźniak, Michal Budzynski*
+    2. Piesku - [Shape Ronin](https://youtube.com/watch?v=wvcflajHXF8)
+       *Staś Małolepszy, Antoni Korzeniowski*
+    3. Popcorn Monsters - [Popcorn Monsters](https://youtube.com/watch?v=wnLu28d76k8)
+       *Katarzyna Mitrus, Adam Golan*
+    4. Dos - [Hurdlinator](https://youtube.com/watch?v=kZS_BwH9Ouk)
+       *Sebastian Krzyszkowiak*
+    5. Zbrodnia Ikara Team - [Zbrodnia Ikara](https://youtube.com/watch?v=IOYQHujDO2Y)
+       *Szymon Filipowicz, Stanislav Mishchenko, Klaudia Wiśniewska, Melchior Moroz, Jerzy Woźniak*
+    6. PiGames - [Ninja vs Skateboard: Revenge](https://youtube.com/watch?v=mnhQv8jRVEM)
+       *Kacper Pietrzak, Bartosz Legięć*
+    7. No Name - [Water Run](https://youtube.com/watch?v=J2SS9iPcD8w)
+       *Maciej Dąbek, Urszula Machowska, Krzysztof Kielak, Paweł Marczewski*
+    8. Minimal - [Minimal](https://youtube.com/watch?v=Z0_4jJt-56Y)
+       *Agata Nawrot*
+    9. Betonowy Balon - [Czerwona Kropka](https://youtube.com/watch?v=shSeImwr4HE)
+       *Katarzyna Gawronska, Wojciech Naumiuk, Piotr Mroczek*

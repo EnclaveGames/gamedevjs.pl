@@ -1,12 +1,12 @@
 kind: meetup
-title: "Mozilla Developer Roadshow with Gamedev.js"
-time: 2017-05-23T17:30:00+02:00 - 2017-04-20T19:30:00+02:00
+title: Mozilla Developer Roadshow with Gamedev.js
+time: 2017-05-23T17:30:00+02:00 - 2017-05-23T19:30:00+02:00
 venue: pl/warszawa/klub-medyka
 
 description: |-
   **Mozilla Developer Roadshow with Gamedev.js** to specjalna edycja spotkań Gamedev.js Warszawa - tym razem
   wszystko odbędzie się po angielsku. Razem z Mozillą i konferencją Front-Trends organizujemy lokalną edycję
-  wydarzeń [Mozilla Developer Roadshow](https://hacks.mozilla.org/2017/02/devroadshow/).
+  wydarzeń [Mozilla Developer Roadshow](https://hacks.mozilla.org/2017/02/devroadshow).
 
 details:
   - label: Wejście
@@ -16,11 +16,11 @@ details:
   - label: Dodatkowo
     content: prelekcje będą nagrywane
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/294228384350210/)      
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/294228384350210)      
 
 schedule:
 
-  - title: opening with Sandra Persing
+  - title: Opening with Sandra Persing
     time: 2017-05-23T17:30:00+02:00
 
   - kind: talk

@@ -16,7 +16,7 @@ details:
   - label: Dodatkowo
     content: prelekcje będą nagrywane
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1497895960281650/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/1497895960281650)
 
 schedule:
 

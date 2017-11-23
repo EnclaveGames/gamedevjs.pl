@@ -1,6 +1,6 @@
 kind: meetup
 title: "Warszawa #3"
-time: 2017-03-22T18:30:00+02:00 - 2017-03-22T21:00:00+02:00
+time: 2017-03-22T18:30:00+01:00 - 2017-03-22T21:00:00+01:00
 venue: pl/warszawa/crux-kawiarnia
 
 description: |-
@@ -16,7 +16,7 @@ details:
   - label: Dodatkowo
     content: prelekcje będą nagrywane
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/386213398422191/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/386213398422191)
 
 schedule:
 

@@ -1,6 +1,6 @@
 kind: meetup
 title: "Warszawa #9"
-time: 2017-11-28T18:30:00+02:00 - 2017-11-28T21:00:00+02:00
+time: 2017-11-28T18:30:00+01:00 - 2017-11-28T21:00:00+01:00
 venue: pl/warszawa/crux-kawiarnia
 
 description: |-
@@ -17,7 +17,7 @@ details:
   - label: Dodatkowo
     content: prelekcje będą nagrywane
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/140105016629316/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/140105016629316)
 
 schedule:
 

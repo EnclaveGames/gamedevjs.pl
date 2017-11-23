@@ -16,7 +16,7 @@ details:
   - label: Dodatkowo
     content: prelekcje będą nagrywane
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1845505932356956/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/1845505932356956)
 
 schedule:
 
@@ -25,11 +25,11 @@ schedule:
     description: |-
       Chciałeś zawsze zrobić grę? Albo chociaż prototyp? Motywacji brak? Czasu? Dzieci wchodzą na głowę?
       Szef dzwoni po godzinach? 2-dniowe gamejam-y nie są dla Ciebie? Przez przypadek masz na laptopie tylko
-      13312 bajtów wolnego miejsca? Na wszystkie pytania odpowiedziałeś 'nie'? Wszystko jedno, [js13kGames](http://js13kgames.com/)
+      13312 bajtów wolnego miejsca? Na wszystkie pytania odpowiedziałeś 'nie'? Wszystko jedno, [js13kGames](http://js13kgames.com)
       jest dla Ciebie! Chciałem podzielić się swoimi doświadczeniami z gamejam-u sprzed dwóch lat, opowiedzieć
-      o swoich fuck-upowych decyzjach, dać parę wskazówek i powiedzieć, czemu warto w evencie uczestniczyć.
-      PS. Autopromocja: Nic tam nie wygrałem.
-      PPS. Polecam za to [moją nieintuicyjną grę](http://shapewars.thedimgames.com/)!
+      o swoich fuck-upowych decyzjach, dać parę wskazówek i powiedzieć, czemu warto w evencie uczestniczyć.  
+      PS. Autopromocja: Nic tam nie wygrałem.  
+      PPS. Polecam za to [moją nieintuicyjną grę](http://shapewars.thedimgames.com)!
     people:
       - Adam Jakubowski
 

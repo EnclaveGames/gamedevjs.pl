@@ -1,6 +1,6 @@
 kind: hackathon
-title: "Poznań Game Jam 2015"
-time: 2015-01-23T14:00:00+02:00 - 2015-01-25T15:00:00+02:00
+title: Poznań Game Jam 2015
+time: 2015-01-23T14:00:00+01:00 - 2015-01-25T15:00:00+01:00
 venue: pl/poznan/politechnika
 
 description: |-
@@ -15,9 +15,9 @@ details:
   - label: Pamiętaj
     content: zabierz ze sobą swojego laptopa
   - label: Wymagana
-    ~markdown(content): [rejestracja](http://globalgamejam.org/2015/jam-sites/poznan-game-jam)
+    ~markdown(content): '[rejestracja](http://globalgamejam.org/2015/jam-sites/poznan-game-jam)'
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/392102624273300/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/392102624273300)
 
 schedule:
 
@@ -48,12 +48,11 @@ schedule:
       - Robert Podgórski
       - Jakub Marszałkowski
 
-prizes:
-  - description: |-
-    Klocki Lego Star Wars, zabawki Nerf Gun, samochodziki Hot Wheels dla najlepszych zespołów.
-    Smartfon Firefox OS Keon dla zespołu z najlepszą grą HTML5.
-    Kody GitHub dla trzech najlepszych gier HTML5.
-    Koszulki [js13kGames](http://js13kgames.com/) dla najlepszych zespołów.
+~markdown(prizes): |-
+  - Klocki Lego Star Wars, zabawki Nerf Gun, samochodziki Hot Wheels dla najlepszych zespołów.
+  - Smartfon Firefox OS Keon dla zespołu z najlepszą grą HTML5.
+  - Kody GitHub dla trzech najlepszych gier HTML5.
+  - Koszulki [js13kGames](http://js13kgames.com) dla najlepszych zespołów.
 
 ~resolve(organizers|kind organization|by name|flat):
   - BlackMoon Design
@@ -69,14 +68,14 @@ links:
   - label: Wydarzenie na stronie Global Game Jam
     href: http://globalgamejam.org/2015/jam-sites/poznan-game-jam
   - label: Wydarzenie na Facebooku
-    href: https://www.facebook.com/events/392102624273300/
+    href: https://facebook.com/events/392102624273300
   - label: Profil Poznań Game Jam na Facebooku
-    href: https://www.facebook.com/poznangamejam
+    href: https://facebook.com/poznangamejam
   - label: Profil Gamedev.js na Facebooku
-    href: https://www.facebook.com/Gamedevjs
+    href: https://facebook.com/Gamedevjs
   - label: Reportaż WTK Puls Dnia
-    href: https://www.youtube.com/watch?v=IlQWVcCI2GY
+    href: https://youtube.com/watch?v=IlQWVcCI2GY
   - label: Wideopodsumowanie Poznańskiej Gildii Graczy
-    href: https://www.youtube.com/watch?v=yvz0svhmtM4
+    href: https://youtube.com/watch?v=yvz0svhmtM4
   - label: Relacja ze zdjęciami
-    href: http://dev.end3r.com/2015/01/gamedev-hackathon-at-the-poznan-game-jam/
+    href: http://dev.end3r.com/2015/01/gamedev-hackathon-at-the-poznan-game-jam

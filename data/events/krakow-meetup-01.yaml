@@ -11,7 +11,7 @@ details:
   - label: Wejście
     content: za darmo
   - label: Wymagana
-    ~markdown(content): [<i class="eventbrite icon"></i> rejestracja](https://www.eventbrite.com/event/8949124071) (liczba miejsc mocno ograniczona)
+    ~markdown(content): '[rejestracja](https://eventbrite.com/event/8949124071) (liczba miejsc mocno ograniczona)'
   - label: Pamiętaj
     content: zabierz ze sobą swojego laptopa
 
@@ -29,8 +29,8 @@ schedule:
 
 links:
   - label: Strona Schibsted Tech Polska
-    href: http://www.schibsted.pl/
+    href: http://schibsted.pl
   - label: Rejestracja na wydarzenie
-    href: https://www.eventbrite.com/event/8949124071
+    href: https://eventbrite.com/event/8949124071
   - label: Profil Gamedev.js na Facebooku
-    href: https://www.facebook.com/Gamedevjs
+    href: https://facebook.com/Gamedevjs

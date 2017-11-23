@@ -1,5 +1,5 @@
 kind: conference
-title: "onGameStart 2015"
+title: onGameStart 2015
 time: 2015-10-17T12:00:00+02:00 - 2015-10-17T15:00:00+02:00
 venue: pl/poznan/mtp
 
@@ -10,7 +10,7 @@ description: |-
 
 details:
   - label: Wejście
-    ~markdown(content): [biletowane](http://gic.gd/bilety/)
+    ~markdown(content): '[biletowane](http://gic.gd/bilety)'
   - label: Targi
     content: Poznań Game Arena
   - label: Konferencja
@@ -58,8 +58,8 @@ schedule:
 
 links:
   - label: Strona główna konferencji Game Industry Conference
-    href: http://gic.gd/
+    href: http://gic.gd
   - label: Strona główna targów Poznań Game Arena
-    href: http://www.gamearena.pl/
+    href: http://gamearena.pl
   - label: Wydarzenie na Facebooku
-    href: https://www.facebook.com/events/405144943025211/
+    href: https://facebook.com/events/405144943025211

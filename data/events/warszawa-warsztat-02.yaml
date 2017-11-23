@@ -1,0 +1,68 @@
+kind: workshop
+title: "Tworzenie gier HTML5 - od pomysłu do realizacji #2"
+time: 2016-12-11T11:00:00+02:00 - 2016-12-11T18:00:00+02:00
+venue: pl/warszawa/aviva
+
+description: |-
+  Zapraszamy na warsztaty w ramach spotkań Gamedev.js, podczas których będzie można nauczyć się projektowania gier,
+  a także poznać framework Phaser i stworzyć grę HTML5 z jego pomocą. Poznasz podstawowe zagadnienia,
+  które pozwolą Ci budowwać własne gry od pomysłu, przez prototyp, po implementację.
+
+  **Kto może wziąć udział**: wszyscy chętni znający podstawy JavaScript, którzy chcieliby nauczyć się jak stworzyć swoją pierwszą grę w HTML5.
+  W tej edycji połowa miejsc zarezerwowana została dla uczestniczek dzięki współpracy z fundacją **Girls Code Fun**.
+
+  **Pamiętaj**: zabierz ze sobą swojego laptopa. Do aktywnego udziału w warsztacie wystarczą darmowe narzędzia - zainstalowana
+  dowolna przeglądarka (wskazany [Firefox](https://www.mozilla.org/pl/firefox/new/) lub [Chrome](https://www.google.pl/chrome/browser/desktop/)) oraz edytor tekstu (na przykład [Sublime Text](https://www.sublimetext.com/3)).
+
+details:
+  - label: Bilety
+    content: 129 PLN (early bird), 149 PLN (normalny)
+  - label: Wymagana
+    ~markdown(content): "[rejestracja](https://gamedevjs2.evenea.pl/) - liczba miejsc ograniczona!"
+
+schedule:
+
+  - title: Przywitanie
+    time: 2016-12-11T11:00:00+02:00
+
+  - kind: workshop
+    time: 2016-12-11T11:15:00+02:00
+    title: Game design
+    description: |-
+      Warsztaty game designu mają na celu przedstawienie teoretycznych i praktycznych aspektów tworzenia gier - zarówno planszowych,
+      karcianych czy video. Celem warsztatów jest stworzenie papierowego prototypu gier według pomysłu uczestników - może być to
+      zarówna gra mobilna, jak i karciana, nie ma ograniczeń.
+    people:
+      - Nikola Adamus
+
+  - title: Przerwa na lunch
+    time: 2016-12-11T14:15:00+02:00
+
+  - kind: workshop
+    time: 2016-12-11T14:45:00+02:00
+    title: Framework Phaser
+    description: |-
+       Phaser jest w tym momencie najpopularniejszym frameworkiem do tworzenia prostych gier 2D w HTML5,
+       nastawiony jest na gry mobilne - to rynek, który cały czas się rozwija. Naucz się jak łatwo jest
+       tworzyć gry w języku JavaScript i przekonaj się, czy to jest właśnie to, co chcesz w życiu robić.
+    people:
+      - Andrzej Mazur
+
+  - title: Podsumowanie
+    time: 2016-12-11T17:45:00+02:00
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - Girls Code Fun
+
+~resolve(partners|kind organization|by name|flat):
+  - Mozilla
+  - Aviva
+
+links:
+  - label: Rejestracja na Evenea
+    href: https://gamedevjs2.evenea.pl/
+  - label: Wydarzenie na Facebooku
+    href: https://www.facebook.com/events/460245594145626/
+  - label: Strona frameworka Phaser
+    href: http://phaser.io/

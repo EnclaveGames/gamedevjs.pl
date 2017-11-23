@@ -1,0 +1,49 @@
+kind: workshop
+title: "Tworzenie gier HTML5 z frameworkiem Phaser #1"
+time: 2017-03-30T16:00:00+02:00 - 2017-03-30T19:00:00+02:00
+venue: pl/wroclaw/uwr
+
+description: |-
+  Zapraszamy na spotkanie Gamedev.js na **Wydziale Fizyki i Astronomii Uniwersytetu Wrocławskiego**,
+  podczas którego będzie można poznać framework Phaser i dowiedzieć się jak stworzyć prostą grę HTML5 z jego pomocą.
+
+  **Kto może wziąć udział**: wszyscy chętni znający podstawy JavaScript, którzy chcieliby nauczyć się jak stworzyć swoją pierwszą grę w HTML5.
+
+  **Pamiętaj**: zabierz ze sobą swojego laptopa. Do aktywnego udziału w warsztacie wystarczą darmowe narzędzia - zainstalowana
+  dowolna przeglądarka (wskazany [Firefox](https://www.mozilla.org/pl/firefox/new/) lub [Chrome](https://www.google.pl/chrome/browser/desktop/)) oraz edytor tekstu (na przykład [Sublime Text](https://www.sublimetext.com/3)).
+
+details:
+  - label: Wejście
+    content: wstęp wolny, priorytet mają studenci UWr
+  - label: Rejestracja
+    ~markdown(content): "[zapisz się](https://docs.google.com/forms/d/e/1FAIpQLSeg0wRerZ6o_qvdT2i5rGVe6J-g8yB9Rs5LOU2vdpZ-Qg6OcQ/viewform) przez formularz"
+
+schedule:
+
+  - title: Przywitanie
+    time: 2017-03-30T16:00:00+02:00
+
+  - kind: workshop
+    time: 2017-03-30T16:15:00+02:00
+    title: Framework Phaser
+    description: |-
+       Phaser jest w tym momencie najpopularniejszym frameworkiem do tworzenia prostych gier 2D w HTML5,
+       nastawiony jest na gry mobilne - to rynek, który cały czas się rozwija. Naucz się jak łatwo jest
+       tworzyć gry w języku JavaScript i przekonaj się, czy to jest właśnie to, co chcesz w życiu robić.
+    people:
+      - Andrzej Mazur
+
+  - title: Podsumowanie
+    time: 2017-03-30T18:45:00+02:00
+
+~resolve(organizers|kind organization|by name|flat):
+  - Uniwersytet Wrocławski
+  - Enclave Games
+
+links:
+  - label: Strona frameworka Phaser
+    href: http://phaser.io/
+  - label: Strona Wydziału Fizyki i Astronomii Uniwersytetu Wrocławskiego
+    href: http://wfa.uni.wroc.pl/
+  - label: Strona Enclave Games
+    href: http://enclavegames.com/

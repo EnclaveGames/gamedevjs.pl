@@ -42,11 +42,20 @@ schedule:
       - Kasia Iwańska
 
   - kind: talk
-    title: TBD
+    title: Game development w służbie edukacji - czyli o tym jak uczyć się tworząc gry edukacyjne
     description: |-
-      TBD
+      Z jakimi problemami styka się na co dzień dział Software Developmentu największego polskiego wydawnicta edukacyjnego?
+      Jak tworzyć platformy internetowe, które są zarówno rozbudowanym narzędziem dydaktycznym jak i produktem atrakcyjnym
+      dla najmłodszych użytkowników internetu? W jaki sposób pogodzić szybkie prototypowanie używając nowych technologii
+      z dostarczaniem stabilnego, przetestowanego kodu wysokiej jakości?​
+
+      Jeżeli jesteś ciekaw odpowiedzi na powyższe pytania, poznaj BalonBluma - platformę edukacyjną kierowaną dla dzieci
+      w wieku 3 - 6 lat. Nasze case-study przedstawia transformację prostej aplikacji internetowej w złożony ekosystem dydaktyczny,
+      obsługujący pełen proces powstawania ćwiczeń - gier edukacyjnych. Opowiemy Wam o tym jakie wyzwania architektoniczne
+      niesie ze sobą ciągły wzrost ruchu mobilnego, jaka jest specyfika testowania oprogramowania kierowanego dla najmłodszej
+      grupy wiekowej oraz jak wyglądało skalowanie z perspektywy lidera rynku oprogramowania edukacyjnego.
     people:
-      - TBD
+      - Adrian Zniszczyński
 
 ~resolve(sponsors|kind organization|by name|flat):
   - Mozilla

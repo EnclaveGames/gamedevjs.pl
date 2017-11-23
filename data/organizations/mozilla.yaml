@@ -1,4 +1,18 @@
 name: Mozilla
-homepage: https://www.mozilla.org
+slug: mozilla
+homepage: https://games.mozilla.org/
 logo:
   normal: img/organizations/mozilla.png
+description: |-
+  Organizacja non-profit powołana 15 lipca 2003, której celem jest zapewnienie organizacyjnego, prawnego i finansowego
+  wsparcia dla projektu Mozilla i jego pochodnych. Powstanie fundacji było konieczne dla dalszego istnienia projektu po tym,
+  jak AOL zwolniła wszystkich programistów Netscape Communications Corporation nad nim pracujących. Do fundacji Mozilla
+  należy Mozilla Corporation – ta powstała 3 sierpnia 2005 firma przejęła obowiązki rozwijania i wydawania produktów:
+  Mozilla Firefox oraz Mozilla Thunderbird. 19 lutego 2008 za dalszy rozwój Thunderbirda odpowiedzialność przejęła
+  nowo utworzona spółka zależna fundacji, Mozilla Messaging.
+
+  Pieniądze na prowadzenie swojej działalności fundacja Mozilla jako organizacja non-profit czerpie głównie z funkcji wyszukiwania
+  w przeglądarce Mozilla Firefox - właściciele wyszukiwarek internetowych płacą za ustawienie swoich wyszukiwarek jako domyślnych.
+  Inne źródła dochodów to m.in. sklep z ubraniami i maskotkami z logo swoich produktów oraz dotacje od osób prywatnych i firm.
+  Na początku działalności fundacja otrzymała także dwa miliony dolarów od AOL. Aktualnym przewodniczącym fundacji Mozilla jest
+  Mark Surman. W radzie dyrektorów znajduje się także m.in. Mitchell Baker, która pełni funkcję prezesa wykonawczego.

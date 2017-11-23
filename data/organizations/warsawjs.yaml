@@ -1,4 +1,7 @@
 name: WarsawJS
+slug: warsawjs
 homepage: http://warsawjs.com
 logo:
   normal: img/organizations/warsawjs.png
+description: |-
+  Spotkania z JavaScriptem, co miesiąc w Warszawie.

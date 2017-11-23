@@ -1,4 +1,7 @@
 name: BLUR
+slug: blur
 homepage: http://theblurapp.com
 logo:
   normal: img/organizations/blur.png
+description: |-
+  Komunikator internetowy wspierający niezależnych twórców gier HTML5.

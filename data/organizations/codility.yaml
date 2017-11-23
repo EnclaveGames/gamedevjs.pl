@@ -1,4 +1,7 @@
 name: Codility
+name: codility
 homepage: https://codility.com
 logo:
   normal: img/organizations/codility.png
+description: |-
+  Firma stworzyła narzędzie usprawniające przetestowanie wiedzy kandydata na stanowisko progrmaistyczne.

@@ -57,6 +57,8 @@ schedule:
     people:
       - Adrian Zniszczyński
 
+  - title: Konkurs z nagrodami
+
 ~resolve(sponsors|kind organization|by name|flat):
   - Mozilla
   - BLUR

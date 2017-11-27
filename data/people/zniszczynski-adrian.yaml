@@ -1,6 +1,8 @@
 name:
   given: Adrian
   family: Zniszczyński
+photo:
+  normal: img/people/adrian-zniszczynski.png
 bio:
   full: |-
     Wielki fan JavaScriptu, propagator dobrych praktyk. Organizator warszawskich spotkań Meet.js

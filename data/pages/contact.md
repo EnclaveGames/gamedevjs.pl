@@ -17,7 +17,7 @@ faq:
         po akceptacji PR strona aktualizuje się sama.
 
         Więcej informacji oraz przykładowy Pull Request znajdziesz w samym 
-        [<i class="github icon"></i> repozytorium](https://github.com/EnclaveGames/gamedevjs).
+        [<i class="github icon"></i> repozytorium](https://github.com/EnclaveGames/gamedevjs.pl).
 
         ------
 
@@ -30,31 +30,21 @@ faq:
 
   - question: Chcę zostać sponsorem
     ~markdown(answer): |-
-        TODO(end3r)
+        
+        **Napisz do nas**
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis ex justo, eget auctor neque consectetur a. 
-        Cras sapien ante, sollicitudin consectetur egestas non, dignissim eget libero. Pellentesque sodales orci 
-        eleifend quam facilisis, ut hendrerit odio efficitur. Sed non finibus ante. Nulla imperdiet commodo dignissim.
+        Skorzystaj z formularza po prawej, lub napisz do nas na adres _kontakt@gamedevjs.pl_. Opowiemy o szczegółach sponsoringu, wystawiamy faktury VAT.
 
-        Curabitur quis tellus sit amet ex pellentesque ultricies nec eu nisl. Maecenas feugiat, nisi vel mattis lobortis, 
-        orci lacus tincidunt tortor, a condimentum orci turpis ac turpis. Nulla non sapien ac felis fringilla accumsan. 
-        Pellentesque nunc augue, ornare blandit sapien nec, aliquam venenatis lacus. Donec mollis vel lorem eu porta. 
-        Vestibulum in leo tristique, molestie metus sit amet, sagittis dui. Fusce placerat velit ut pulvinar vehicula.
-        Nulla facilisi. Morbi mollis turpis a ante rutrum posuere.
+        Chętnie przyjmiemy każde wsparcie, by pokryć koszty spotkań - w szczególności nagrywania prelekcji i oferowania darmowych kuponów na napoje podczas wydarzeń.
 
 
   - question: Chcę zorganizować event 
     ~markdown(answer): |-
-        TODO(end3r)
 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis ex justo, eget auctor neque consectetur a. 
-        Cras sapien ante, sollicitudin consectetur egestas non, dignissim eget libero. Pellentesque sodales orci 
-        eleifend quam facilisis, ut hendrerit odio efficitur. Sed non finibus ante. Nulla imperdiet commodo dignissim.
+        **Napisz do nas**
 
-        Curabitur quis tellus sit amet ex pellentesque ultricies nec eu nisl. Maecenas feugiat, nisi vel mattis lobortis, 
-        orci lacus tincidunt tortor, a condimentum orci turpis ac turpis. Nulla non sapien ac felis fringilla accumsan. 
-        Pellentesque nunc augue, ornare blandit sapien nec, aliquam venenatis lacus. Donec mollis vel lorem eu porta. 
-        Vestibulum in leo tristique, molestie metus sit amet, sagittis dui. Fusce placerat velit ut pulvinar vehicula.
-        Nulla facilisi. Morbi mollis turpis a ante rutrum posuere.
+        Skorzystaj z formularza po prawej, lub napisz do nas na adres _kontakt@gamedevjs.pl_. Chętnie nawiążemy współpracę z innymi miastami, jeśli tylko pomożesz nam zorganizować wszystko na miejscu.
+
+        Dołącz do ogólnopolskiej społeczności organizatorów spotkań Gamedev.js.
 
 ---

@@ -1,6 +1,6 @@
 kind: workshop
 title: "Tworzenie gier HTML5 z frameworkiem Phaser #1"
-time: 2017-03-30T16:00:00+02:00 - 2017-03-30T19:00:00+02:00
+time: 2017-03-30 16:00 - 19:00
 venue: pl/wroclaw/uwr
 
 description: |-
@@ -10,7 +10,7 @@ description: |-
   **Kto może wziąć udział**: wszyscy chętni znający podstawy JavaScript, którzy chcieliby nauczyć się jak stworzyć swoją pierwszą grę w HTML5.
 
   **Pamiętaj**: zabierz ze sobą swojego laptopa. Do aktywnego udziału w warsztacie wystarczą darmowe narzędzia - zainstalowana
-  dowolna przeglądarka (wskazany [Firefox](https://www.mozilla.org/pl/firefox/new/) lub [Chrome](https://www.google.pl/chrome/browser/desktop/)) oraz edytor tekstu (na przykład [Sublime Text](https://www.sublimetext.com/3)).
+  dowolna przeglądarka (wskazany [Firefox](https://www.mozilla.org/pl/firefox/new) lub [Chrome](https://www.google.pl/chrome/browser/desktop)) oraz edytor tekstu (na przykład [Sublime Text](https://www.sublimetext.com/3)).
 
 details:
   - label: Wejście
@@ -21,10 +21,10 @@ details:
 schedule:
 
   - title: Przywitanie
-    time: 2017-03-30T16:00:00+02:00
+    time: 16:00
 
   - kind: workshop
-    time: 2017-03-30T16:15:00+02:00
+    time: 16:15
     title: Framework Phaser
     description: |-
        Phaser jest w tym momencie najpopularniejszym frameworkiem do tworzenia prostych gier 2D w HTML5,
@@ -34,7 +34,7 @@ schedule:
       - Andrzej Mazur
 
   - title: Podsumowanie
-    time: 2017-03-30T18:45:00+02:00
+    time: 18:45
 
 ~resolve(organizers|kind organization|by name|flat):
   - Uniwersytet Wrocławski
@@ -42,8 +42,8 @@ schedule:
 
 links:
   - label: Strona frameworka Phaser
-    href: http://phaser.io/
+    href: http://phaser.io
   - label: Strona Wydziału Fizyki i Astronomii Uniwersytetu Wrocławskiego
-    href: http://wfa.uni.wroc.pl/
+    href: http://wfa.uni.wroc.pl
   - label: Strona Enclave Games
-    href: http://enclavegames.com/
+    href: http://enclavegames.com

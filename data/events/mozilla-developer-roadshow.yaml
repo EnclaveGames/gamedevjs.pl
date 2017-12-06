@@ -1,6 +1,6 @@
 kind: meetup
 title: Mozilla Developer Roadshow with Gamedev.js
-time: 2017-05-23T17:30:00+02:00 - 2017-05-23T19:30:00+02:00
+time: 2017-05-23 17:30 - 19:30
 venue: pl/warszawa/klub-medyka
 
 description: |-
@@ -21,10 +21,10 @@ details:
 schedule:
 
   - title: Opening with Sandra Persing
-    time: 2017-05-23T17:30:00+02:00
+    time: 17:30
 
   - kind: talk
-    time: 2017-05-23T18:00:00+02:00
+    time: 18:00
     title: A cartoon intro to WebAssembly
     description: |-
       WebAssembly is fast. It’s being called “the future of the web”. Its speed and potential have major browser vendors
@@ -35,7 +35,7 @@ schedule:
       - Lin Clark
 
   - kind: talk
-    time: 2017-05-23T18:30:00+02:00
+    time: 18:30
     title: Fun and games with A-Frame - building Virtual Reality experiences for the Web
     description: |-
       Virtual Reality is getting its momentum with many companies releasing their hardware to the market. WebVR is already
@@ -45,7 +45,7 @@ schedule:
       - Andrzej Mazur
 
   - kind: talk
-    time: 2017-05-23T19:00:00+02:00
+    time: 19:00
     title: Tiny games on Microcontrollers
     description: |-
       Ever wanted to put some games on a microcontroller? No? Well, it's about time you unleashed your imagination!
@@ -55,7 +55,7 @@ schedule:
       - István Szmozsánszky
 
   - title: Front-Trends open mixer party
-    time: 2017-05-23T19:30:00+02:00
+    time: 19:30
 
 ~resolve(partners|kind organization|by name|flat):
   - Mozilla

@@ -1,6 +1,6 @@
 kind: hackathon
 title: Gamedev.js Game Jam 2017
-time: 2017-05-07T09:00:00+02:00 - 2017-05-07T20:00:00+02:00
+time: 2017-05-07 09:00 - 20:00
 venue: pl/warszawa/aviva
 
 description: |-
@@ -27,32 +27,32 @@ details:
 
 schedule:
   - title: Ogłoszenie tematu
-    time: 2017-05-06T18:00:00+02:00
+    time: 2017-05-06 18:00
     description: Dzień przed samym hackatonem, wieczorem.
 
   - title: Rejestracja i powitanie
-    time: 2017-05-07T09:00:00+02:00
+    time: 09:00
 
   - title: Prezentacje pomysłów i tworzenie zespołów
-    time: 2017-05-07T09:30:00+02:00
+    time: 09:30
 
   - title: Start tworzenia gier
-    time: 2017-05-07T10:00:00+02:00
+    time: 10:00
 
   - title: Przerwa na lunch
-    time: 2017-05-07T13:00:00+02:00
+    time: 13:00
 
   - title: Koniec tworzenia gier
-    time: 2017-05-07T18:00:00+02:00
+    time: 18:00
 
   - title: Prezentacje projektów
-    time: 2017-05-07T18:30:00+02:00
+    time: 18:30
 
   - title: Ogłoszenie wyników i wręczenie nagród
-    time: 2017-05-07T19:30:00+02:00
+    time: 19:30
 
   - title: After party
-    time: 2017-05-07T20:00:00+02:00
+    time: 20:00
 
 people:
   - Andrzej Mazur

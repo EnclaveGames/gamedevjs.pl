@@ -1,6 +1,6 @@
 kind: workshop
 title: "Tworzenie gier HTML5 - od pomysłu do realizacji #1"
-time: 2016-11-20T11:00:00+02:00 - 2016-11-20T17:00:00+02:00
+time: 2016-11-20 11:00 - 17:00
 venue: pl/warszawa/aviva
 
 description: |-
@@ -22,10 +22,10 @@ details:
 schedule:
 
   - title: Przywitanie
-    time: 2016-11-20T11:00:00+02:00
+    time: 11:00
 
   - kind: workshop
-    time: 2016-11-20T11:15:00+02:00
+    time: 11:15
     title: Game design
     description: |-
       Warsztaty game designu mają na celu przedstawienie teoretycznych i praktycznych aspektów tworzenia gier - zarówno planszowych,
@@ -35,10 +35,10 @@ schedule:
       - Nikola Adamus
 
   - title: Przerwa na lunch
-    time: 2016-11-20T13:15:00+02:00
+    time: 13:15
 
   - kind: workshop
-    time: 2016-11-20T13:45:00+02:00
+    time: 13:45
     title: Framework Phaser
     description: |-
        Phaser jest w tym momencie najpopularniejszym frameworkiem do tworzenia prostych gier 2D w HTML5,
@@ -48,7 +48,7 @@ schedule:
       - Andrzej Mazur
 
   - title: Podsumowanie
-    time: 2016-11-20T16:45:00+02:00
+    time: 16:45
 
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games

@@ -1,6 +1,6 @@
 kind: conference
 title: onGameStart 2015
-time: 2015-10-17T12:00:00+02:00 - 2015-10-17T15:00:00+02:00
+time: 2015-10-17 12:00 - 15:00
 venue: pl/poznan/mtp
 
 description: |-
@@ -21,28 +21,28 @@ details:
 schedule:
 
   - kind: talk
-    time: 2015-10-17T12:00:00+02:00 - 2015-10-17T12:30:00+02:00
+    time: 12:00 - 12:30
     place: sala 3.A
     title: An architecture of modern slot games platform
     people:
       - Krzysztof Opałka
 
   - kind: talk
-    time: 2015-10-17T12:30:00+02:00 - 2015-10-17T13:00:00+02:00
+    time: 12:30 - 13:00
     place: sala 3.B
     title: How to integrate augmented reality in your HTML5 games
     people:
       - Jerome Etienne
 
   - kind: talk
-    time: 2015-10-17T13:00:00+02:00 - 2015-10-17T13:30:00+02:00
+    time: 13:00 - 13:30
     place: sala 3.B
     title: WebVR - virtual reality for web games
     people:
       - Andrzej Mazur
 
   - kind: talk
-    time: 2015-10-17T13:30:00+02:00 - 2015-10-17T14:00:00+02:00
+    time: 13:30 - 14:00
     place: sala 3.B
     title: Kopanito, czyli jak stworzyć i wypromować grę HTML5
     people:
@@ -50,7 +50,7 @@ schedule:
       - Anita Soczka
 
   - kind: talk
-    time: 2015-10-17T14:00:00+02:00 - 2015-10-17T15:00:00+02:00
+    time: 14:00 - 15:00
     place: sala 2.2
     title: Animation management in HTML5 game development
     people:

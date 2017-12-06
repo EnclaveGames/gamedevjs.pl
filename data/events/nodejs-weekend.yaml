@@ -1,7 +1,7 @@
 kind: hackathon
 title: Node.js Weekend
-time: 2012-11-09T22:00:00+01:00 - 2012-11-11T23:59:00+01:00
-venue: pl/warszawa/e-spatio
+time: 2012-11-09 22:00 - 2012-11-11 23:59
+venue: pl/warszawa/espatio
 
 description: |-
   Warszawska edycja ogólnoświatowego [Node Knockout](http://nodeknockout.com), czyli 48h maratonu z serwerowym JavaScriptem.

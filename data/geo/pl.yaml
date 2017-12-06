@@ -1,1 +1,5 @@
 name: Polska
+
+location:
+  timezone:
+    name: Europe/Warsaw

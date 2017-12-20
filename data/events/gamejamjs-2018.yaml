@@ -10,7 +10,7 @@ description: |-
   Weź udział w **GameJam.js** jeśli planujesz stworzyć grę HTML5 w języku JavaScript - dla najlepszych zespołów przewidujemy drobne nagrody!
 
   Wydarzenie odbędzie się w **Audytorium Centralnym (AC) na Wydziale Elektroniki i Technik Informacyjnych Politechniki Warszawskiej**
-  przy ulicy **Nowowiejskiej 15/19 w Warszawie**. Wstęp jest bezpłatny, ale należy zarejestrować się na stronie.
+  przy ulicy **Nowowiejskiej 15&frasl;19 w Warszawie**. Wstęp jest bezpłatny, ale należy zarejestrować się na stronie.
 
   **Pamiętaj**: spędzimy cały dzień razem tworząc gry w języku JavaScript - zabierz ze sobą swojego laptopa i ładowarkę.
   Możesz przyjść z zespołem, ale będzie też możliwość dołączenia do kogoś na miejscu i stworzenia nowego zespołu. 
@@ -23,7 +23,7 @@ details:
   - label: Pamiętaj
     content: zabierz ze sobą swojego laptopa
   - label: Dołącz
-    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/)
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/864168480422836/)
 
 schedule:
   - title: Rozpoczęcie

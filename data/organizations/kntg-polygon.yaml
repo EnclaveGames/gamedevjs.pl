@@ -1,7 +1,5 @@
-name:
-  full: Koło Naukowe Twórców Gier Polygon
-  short: Polygon
-slug: polygon
+name: KNTG Polygon
+slug: kntg-polygon
 homepage: http://polygon.pw.edu.pl/
 logo:
   normal: img/organizations/kntg-polygon.png

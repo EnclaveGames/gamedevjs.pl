@@ -33,7 +33,7 @@ schedule:
     time: 2018-01-28 21:00
 
 ~resolve(organizers|kind organization|by name|flat):
-  - Polygon
+  - KNTG Polygon
   - Enclave Games
 
 ~resolve(partners|kind organization|by name|flat):

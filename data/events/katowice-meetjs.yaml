@@ -1,6 +1,6 @@
 kind: meetup
 title: "Meet.js Katowice #30 z Gamedev.js"
-time: 2017-03-14 18:00 - 21:00
+time: 2018-03-14 18:00 - 21:00
 venue: pl/katowice/strefa-centralna
 
 description: |-
@@ -48,7 +48,7 @@ schedule:
 ~resolve(sponsors|kind organization|by name|flat):
   - Skygate
   - NBC
-  - 314
+  - "314"
   - Helion
   - JetBrains
   - Sketch

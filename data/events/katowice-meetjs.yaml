@@ -1,0 +1,57 @@
+kind: meetup
+title: "Meet.js Katowice #30 z Gamedev.js"
+time: 2017-03-14 18:00 - 21:00
+venue: pl/katowice/strefa-centralna
+
+description: |-
+  Razem z ekipą Meet.js mamy przyjemność zaprosić Was na spotkanie specjalne - drugie spotkanie [Meet.js Katowice](https://katowice.meetjs.pl/2018/02/13/meetjs-katowice-30/) w tym roku, podczas którego możecie spodziewać się ciekawych prelekcji związanych z szeroko pojętym tworzeniem gier HTML5.
+
+  Spotkanie odbędzie się 14 marca (środa) o godzinie 18:00 w Strefie Centralej. Jest w pełni darmowe, przyjść może każdy, ale ze względu na ograniczoną ilość miejsc obowiązuje [rejestracja](https://www.eventbrite.com/e/meetjs-katowice-1e-gamedevjs-edition-tickets-43132331966).
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/255043178368705/)
+
+schedule:
+
+  - kind: talk
+    title: Czego można się nauczyć na podstawie 800 gier stworzonych na konkurs
+    description: |-
+      Czy brałeś kiedyś udział w game jamie? Próbowałeś konkursów tworzenia gier? Czy miało to sens?
+      Czego się nauczyłeś? Jak to wspominasz?
+
+      Przeprowadzę Cię przez najciekawsze z 800 gier zgłoszonych do tej pory na konkurs [js13kGames](http://js13kgames.com/),
+      który ogranicza pojedynczy projekt do 13 kilobajtów. Czy można na ich podstawie wyciągnąć ogólne
+      wnioski na temat tego jak tworzyć gry, lub czego unikać? Przyjdźcie, a sami się o tym przekonacie.
+    people:
+      - Andrzej Mazur
+
+  - title: Lightning talki
+
+  - kind: talk
+    title: Texture-less graphics
+    description: |-
+      Proceduralne malowanie grafiki bez tekstur, przy użyciu shaderów GLSL.
+      W jaki sposób przekuć proste operacje matematyczne w obrazy.
+    people:
+      - Patryk Budzyński
+
+  - title: Networking
+
+~resolve(partners|kind organization|by name|flat):
+  - Meet.js
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Skygate
+  - NBC
+  - 314
+  - Helion
+  - JetBrains
+  - Sketch
+  - Frontend Masters
+  - Sli.do
+  - Mozilla

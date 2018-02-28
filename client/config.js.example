@@ -1,0 +1,19 @@
+const isDebug = process.env.NODE_ENV !== 'production';
+
+const dev = {
+    bootstrap: {
+        config: {
+            apiBaseUrl: 'https://a.test.bi/'
+        }
+    }
+};
+
+const production = {
+    bootstrap: {
+        config: {
+            apiBaseUrl: 'https://api.gamedevjs.pl/'
+        }
+    }
+};
+
+module.exports = isDebug ? dev : production;

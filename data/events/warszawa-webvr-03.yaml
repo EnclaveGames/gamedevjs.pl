@@ -1,0 +1,37 @@
+kind: meetup
+title: "WebVR Warszawa #3"
+time: 2018-04-05 18:00 - 21:00
+venue: pl/warszawa/swingdev
+
+description: |-
+  Zapraszamy na trzecie spotkanie WebVR Meetup w Warszawie - inicjatywy zorganizowanej wspólnie przez [Meet.js](http://meetjs.pl/), [Gamedev.js](https://gamedevjs.pl/) oraz [SwingDev](http://swingdev.io/).
+
+  Spotkania są darmowe, ale należy się wcześniej [zarejestrować](https://www.swing3d.io/events.html#register). Przyjść może każdy, kogo zainteresuje temat wirtualnej rzeczywistości w przeglądarce. Prezentacje zostaną przeprowadzone po angielsku, a nagrania udostepnione po spotkaniu.
+
+details:
+  - label: Wstęp
+    ~markdown(content): '**darmowy**, ale wymagana [rejestracja](https://www.swing3d.io/events.html#register)'
+  - label: Atrakcje
+    content: piwo i inne napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/146070266060490/?event_time_id=146070286060488) lub [Meetup.com](https://www.meetup.com/webvr-meetup/events/247768918/)
+
+schedule:
+
+  - kind: talk
+    title: Ups and downs of building a WebVR experience with A-Frame and React
+    description: |-
+      Krzysztof and Katarzyna will share their lessons learned building virtual reality experiences for the web.
+    people:
+      - Krzysztof Wróbel
+      - Katarzyna Kucharczyk
+
+  - title: Lightning talki
+
+  - title: Konkurs z nagrodami
+
+~resolve(organizers|kind organization|by name|flat):
+  - SwingDev
+  - Meet.js

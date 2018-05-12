@@ -1,0 +1,44 @@
+kind: workshop
+title: "WebVR z A-Frame"
+time: 2018-04-14 10:00 - 16:00
+venue: pl/warszawa/swingdev
+
+description: |-
+  Podczas warsztatów dowiesz się jak zbudować prostą grę 3D korzystającą z wirtualnej rzeczywistości w przeglądarce, z pomocą frameworka A-Frame.
+   Zobaczysz jak przygotować podstawową scenę i obiekty, zaimplementować fizykę i kolizje między nimi, użyć tekstur i modeli, jak zmodyfikować kamerę
+   i światła, dopracować rozgrywkę, dodać czcionki, dźwięk i inne szczegóły, aby pod koniec dnia uczynić ją maksymalnie dopracowaną.
+
+details:
+  - label: Wymagana
+    ~markdown(content): "[rejestracja](https://www.meetup.com/webvr-meetup/events/248766556/)"
+
+schedule:
+
+  - kind: workshop
+    time: 10:00
+    title: Powitanie, rejestracja
+    people:
+      - Andrzej Mazur
+
+  - title: Wprowadzenie, fizyka i kolizje
+    time: 10:30
+
+  - title: Tekstury i modele, kamera i światło
+    time: 12:00
+
+  - title: Obiad
+    time: 13:30
+
+  - title: Gameplay i fonty, audio i detale
+    time: 14:00
+
+  - title: Zakończenie, pytania
+    time: 15:30
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - SwingDev
+
+~resolve(partners|kind organization|by name|flat):
+  - Meet.js
+  - Mozilla

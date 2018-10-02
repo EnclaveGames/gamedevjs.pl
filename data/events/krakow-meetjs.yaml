@@ -58,6 +58,6 @@ schedule:
 
   - title: Networking
 
-~resolve(partners|kind organization|by name|flat):
+~resolve(organizers|kind organization|by name|flat):
   - Meet.js
-  - Yggdrasil
+  - Yggdrasil Gaming

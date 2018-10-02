@@ -1,0 +1,17 @@
+name:
+  given: Mat
+  family: Groves
+twitter: doormat23
+photo:
+  normal: img/people/mat-groves.png
+bio:
+  summary: |-
+    Uwielbiam tworzyć treści za pomocą kodu i uwielbiam uczyć ludzi, jak tworzyć rzeczy za pomocą kodu.
+    Zrobię też małą prezentację na konferencję, kiedy dostanę szansę.
+
+  full: |-
+    Uwielbiam tworzyć treści za pomocą kodu i uwielbiam uczyć ludzi, jak tworzyć rzeczy za pomocą kodu.
+    Zrobię też małą prezentację na konferencję, kiedy dostanę szansę.
+
+    Dumny z tego, że jest współzałożycielem [Goodboy Digital](https://www.goodboydigital.com/) i twórcą [Pixi.js](http://www.pixijs.com/) - najszybszego
+    silnika renderowania HTML5 o otwartym kodzie źródłowym w mieście (obecnie używanego przez jednych z największych graczy).

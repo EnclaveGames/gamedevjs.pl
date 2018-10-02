@@ -15,7 +15,7 @@ details:
   - label: Wejście
     ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
   - label: Wymagana
-    ~markdown(content): "[rejestracja](https://www.meetup.com/KrakowJS/events/255191061/)"
+    ~markdown(content): '[rejestracja](https://www.meetup.com/KrakowJS/events/255191061/)'
   - label: Dołącz
     ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1199089123565889/)
 

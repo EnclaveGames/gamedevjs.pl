@@ -9,20 +9,22 @@ description: |-
   Mat Groves opowie o swoim silniku Pixi.js. Pozostałe prelekcje tego wieczoru także zapowiadają się bardzo ciekawie.
 
   Spotkanie odbędzie się 26 października (piątek) o godzinie 18:00 w siedzibie Yggdrasil Gaming w Krakowie przy ulicy Lublicz 17i.
-  Jest w pełni darmowe, przyjść może każdy, ale ze względu na ograniczoną ilość miejsc obowiązuje rejestracja.
+  Jest w pełni darmowe, przyjść może każdy, ale ze względu na ograniczoną ilość miejsc obowiązuje [rejestracja](https://www.meetup.com/KrakowJS/events/255191061/).
 
 details:
   - label: Wejście
     ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Wymagana
+    ~markdown(content): "[rejestracja](https://www.meetup.com/KrakowJS/events/255191061/)"
   - label: Dołącz
     ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1199089123565889/)
 
 schedule:
 
   - kind: talk
-    title: An introduction to Pixi
+    title: An introduction to Pixi.JS
     description: |-
-      An introduction to PixiJS: the open source HTML5 rendering engine with an overview of what PixiJS is and how
+      An introduction to Pixi.JS: the open source HTML5 rendering engine with an overview of what Pixi.JS is and how
       it can help you with making HTML5 2D content. I will go through its features using examples and also popping
       the hood to explain how it works and the techniques we use at GoodBoy Digital to get the engine running as fast as possible.
     people:
@@ -56,6 +58,6 @@ schedule:
 
   - title: Networking
 
-~resolve(organizers|kind organization|by name|flat):
+~resolve(partners|kind organization|by name|flat):
   - Meet.js
   - Yggdrasil

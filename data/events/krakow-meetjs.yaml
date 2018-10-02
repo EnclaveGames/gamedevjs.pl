@@ -1,7 +1,7 @@
 kind: meetup
 title: "Meet.js Kraków z Gamedev.js"
 time: 2018-10-26 18:00 - 22:00
-venue: pl/krakow/yg
+venue: pl/krakow/lubicz
 
 description: |-
   Razem z ekipami Meet.js oraz Yggdrasil Gaming mamy przyjemność zaprosić Was na spotkanie specjalne związane
@@ -60,4 +60,4 @@ schedule:
 
 ~resolve(organizers|kind organization|by name|flat):
   - Meet.js
-  - Yggdrasil
+  - Yggdrasil Gaming

@@ -1,0 +1,21 @@
+kind: meetup
+title: "Meet.js Kraków z Gamedev.js"
+time: 2018-10-26 18:00 - 22:00
+venue: pl/krakow/yggdrasil
+
+description: |-
+  OPIS.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1199089123565889/)
+
+schedule:
+
+  - title: Networking
+
+~resolve(organizers|kind organization|by name|flat):
+  - Meet.js
+  - Yggdrasil Gaming

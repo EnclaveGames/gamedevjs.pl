@@ -38,6 +38,8 @@ schedule:
 
 ~resolve(partners|kind organization|by name|flat):
   - Mozilla
+  - Horizon Games
+  - BLUR
 
 ~markdown(prizes): |-
   Nagrody ogłosimy wkrótce.

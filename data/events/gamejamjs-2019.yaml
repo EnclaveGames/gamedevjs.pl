@@ -50,7 +50,10 @@ schedule:
 ~resolve(partners|kind organization|by name|flat):
   - Mozilla
   - Horizon Games
+  - Battlestash
   - BLUR
 
 ~markdown(prizes): |-
-  Puchar dla najlepszego zespołu, planszówki, gadżety.
+  - puchar dla najlepszego zespołu
+  - planszówki od Battlestash
+  - gadżety Gamedev.js i js13kGames

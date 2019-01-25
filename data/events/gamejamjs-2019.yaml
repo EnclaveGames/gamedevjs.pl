@@ -28,9 +28,20 @@ details:
 schedule:
   - title: Rozpoczęcie
     time: 2019-01-25 14:00
-
-  - title: Zakończenie
-    time: 2019-01-27 21:00
+  - title: Ogłoszenie tematu
+    time: 2019-01-25 17:00
+  - title: Panel informacyjny
+    time: 2019-01-25 18:00
+  - title: Start robienia gier
+    time: 2019-01-25 18:30
+  - title: Pizza
+    time: 2019-01-26 12:00
+  - title: Pizza
+    time: 2019-01-27 12:00
+  - title: Prezentacje gier
+    time: 2019-01-27 17:30
+  - title: Ogłoszenie wyników i wręczenie nagród
+    time: 2019-01-27 20:00
 
 ~resolve(organizers|kind organization|by name|flat):
   - KNTG Polygon
@@ -42,4 +53,4 @@ schedule:
   - BLUR
 
 ~markdown(prizes): |-
-  Nagrody ogłosimy wkrótce.
+  Puchar dla najlepszego zespołu, planszówki, gadżety.

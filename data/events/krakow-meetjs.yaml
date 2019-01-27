@@ -61,3 +61,6 @@ schedule:
 ~resolve(organizers|kind organization|by name|flat):
   - Meet.js
   - Yggdrasil Gaming
+
+~resolve(partners|kind organization|by name|flat):
+  - Mozilla

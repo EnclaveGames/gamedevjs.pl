@@ -35,3 +35,6 @@ schedule:
 ~resolve(organizers|kind organization|by name|flat):
   - SwingDev
   - Meet.js
+
+~resolve(partners|kind organization|by name|flat):
+  - Mozilla

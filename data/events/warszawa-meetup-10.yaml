@@ -1,0 +1,27 @@
+kind: meetup
+title: "Gamedev.js Warszawa #10 z Meet.js podczas WDI 2019"
+time: 2019-03-26 12:00 - 12:01
+venue: pl/warszawa/mini-pw
+
+description: |-
+  Zapraszamy na dziesiąte spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
+  Tym razem spotykamy się w Gmachu Wydziału MiNI PW, ul. Koszykowa 75 podczas Warszawskich Dni Informatyki 2019.
+  Meetup odbędzie się 26 marca podczas całodniowej ścieżki Meet.js - dokładne godziny prelekcji zostaną podane wkrótce.
+  Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: pizza, konkurs z nagrodami
+
+schedule:
+
+  - title: Dokładne godziny i tematy prelekcji ogłosimy wkrótce
+
+  - title: Konkurs z nagrodami
+
+~resolve(organizers|kind organization|by name|flat):
+  - Academic Partners
+  - Meet.js
+  - Enclave Games

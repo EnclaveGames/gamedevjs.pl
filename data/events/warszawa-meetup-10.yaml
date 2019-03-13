@@ -19,6 +19,7 @@ schedule:
 
   - kind: talk
     title: Progresywne Aplikacje Webowe i gry planszowe
+    time: 10:25
     description: |-
       Progressive Web Apps, czyli Progresywne Aplikacje Webowe, to następny etap ewolucji stron internetowych.
       W najbliższych latach stanie się to standardem tak samo, jak teraz Responsive Web Design.
@@ -32,6 +33,7 @@ schedule:
 
   - kind: talk
     title: Tworzenie gier zaangażowanych i wyzwania z tym związane
+    time: 11:20
     description: |-
       Tworzenie gier jest trudne... Tworzenie gier poważnych jest jeszcze trudniejsze. Podczas pracy nad grą Indygo
       (narracyjna gra przygodowa dotycząca tematu depresji) zebrałam doświadczenie, którym chciałabym się podzielić
@@ -43,6 +45,7 @@ schedule:
 
   - kind: talk
     title: Tworzenie natywnych aplikacji iOS i Android dla programistów JavaScript
+    time: 12:15
     description: |-
       W czasach gdy urządzeń mobilnych jest więcej niż użytkowników, umiejętność tworzenia aplikacji mobilnych jest bardzo
       pożądana. Celem tej prelekcji jest pokazanie możliwości jakie mają programiści JavaScript w przenoszeniu swoich

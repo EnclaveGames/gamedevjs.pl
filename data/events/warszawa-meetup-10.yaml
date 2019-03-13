@@ -1,12 +1,12 @@
 kind: meetup
-title: "Gamedev.js Warszawa #10 z Meet.js podczas WDI 2019"
-time: 2019-03-26 12:00 - 12:01
+title: "Gamedev.js Warszawa #10 podczas WDI 2019"
+time: 2019-03-26 10:25 - 12:55
 venue: pl/warszawa/mini-pw
 
 description: |-
   Zapraszamy na dziesiąte spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
-  Tym razem spotykamy się w Gmachu Wydziału MiNI PW, ul. Koszykowa 75 podczas Warszawskich Dni Informatyki 2019.
-  Meetup odbędzie się 26 marca podczas całodniowej ścieżki Meet.js - dokładne godziny prelekcji zostaną podane wkrótce.
+  Tym razem edycja specjalna odbędzie się w **Gmachu Wydziału MiNI PW, ul. Koszykowa 75** podczas [Warszawskich Dni Informatyki 2019](https://warszawskiedniinformatyki.pl/).
+  Meetup odbędzie się **26 marca** podczas całodniowej ścieżki *Gamedev* w **Auli 101**, a trzy prezentacje odbędą się między **10:25** a **12:55**.
   Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
 
 details:
@@ -17,11 +17,50 @@ details:
 
 schedule:
 
-  - title: Dokładne godziny i tematy prelekcji ogłosimy wkrótce
+  - kind: talk
+    title: Progresywne Aplikacje Webowe i gry planszowe
+    time: 10:25
+    description: |-
+      Progressive Web Apps, czyli Progresywne Aplikacje Webowe, to następny etap ewolucji stron internetowych.
+      W najbliższych latach stanie się to standardem tak samo, jak teraz Responsive Web Design.
+      Już teraz można korzystać z rozwiązań PWA, które usprawniają korzystanie ze stron i gier, przyspieszają je,
+      oraz sprawiają, że użytkownicy chętniej ponownie je odwiedzają. Dzięki tej technologii możesz budować gry i aplikacje
+      posiadające wszystkie korzyści obu światów - uniwersalność sieci oraz funkcjonalność natywnych aplikacji.
+      Podczas prezentacji pokażę Ci jak bycie programistą JavaScript i fanem planszówek jednocześnie może zaowocować
+      powstaniem projektu łączącego te dwa zupełnie różne światy.
+    people:
+      - Andrzej Mazur
 
-  - title: Konkurs z nagrodami
+  - title: Konkurs z nagrodami: w quizie do wygrania planszówki
+    time: 11:05
+
+  - kind: talk
+    title: Tworzenie gier zaangażowanych i wyzwania z tym związane
+    time: 11:20
+    description: |-
+      Tworzenie gier jest trudne... Tworzenie gier poważnych jest jeszcze trudniejsze. Podczas pracy nad grą Indygo
+      (narracyjna gra przygodowa dotycząca tematu depresji) zebrałam doświadczenie, którym chciałabym się podzielić
+      ze wszystkimi, którzy przymierzają się do stworzenia gry poważnej lub zaangażowanej. Przybliżę czym różni się
+      produkcja gier rozrywkowych i zaangażowanych, na jakie wyzwania należy się przygotować oraz problemy mogą się
+      pojawić w trakcie procesu.
+    people:
+      - Aleksandra Jarosz
+
+  - kind: talk
+    title: Tworzenie natywnych aplikacji iOS i Android dla programistów JavaScript
+    time: 12:15
+    description: |-
+      W czasach gdy urządzeń mobilnych jest więcej niż użytkowników, umiejętność tworzenia aplikacji mobilnych jest bardzo
+      pożądana. Celem tej prelekcji jest pokazanie możliwości jakie mają programiści JavaScript w przenoszeniu swoich
+      gier / aplikacji na platformy mobilne. Od czego zacząć? Jakie środowisko wybrać? Czy będziemy musieli nauczyć się
+      nowego języka, a może wystarczą nam umiejętności jakie już posiadamy?
+    people:
+      - Dariusz Kalbarczyk
 
 ~resolve(organizers|kind organization|by name|flat):
   - Academic Partners
-  - Meet.js
   - Enclave Games
+
+~resolve(partners|kind organization|by name|flat):
+  - Mozilla
+  - Battlestash

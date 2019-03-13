@@ -31,6 +31,11 @@ schedule:
     people:
       - Andrzej Mazur
 
+  - title: Konkurs z nagrodami
+    time: 11:05
+    description: |-
+      W quizie do wygrania planszówki.
+
   - kind: talk
     title: Tworzenie gier zaangażowanych i wyzwania z tym związane
     time: 11:20

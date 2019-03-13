@@ -33,3 +33,7 @@ schedule:
 ~resolve(organizers|kind organization|by name|flat):
   - Academic Partners
   - Enclave Games
+
+~resolve(partners|kind organization|by name|flat):
+  - Mozilla
+  - Battlestash

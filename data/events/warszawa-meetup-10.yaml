@@ -30,6 +30,27 @@ schedule:
     people:
       - Andrzej Mazur
 
+  - kind: talk
+    title: Tworzenie gier zaangażowanych i wyzwania z tym związane
+    description: |-
+      Tworzenie gier jest trudne... Tworzenie gier poważnych jest jeszcze trudniejsze. Podczas pracy nad grą Indygo
+      (narracyjna gra przygodowa dotycząca tematu depresji) zebrałam doświadczenie, którym chciałabym się podzielić
+      ze wszystkimi, którzy przymierzają się do stworzenia gry poważnej lub zaangażowanej. Przybliżę czym różni się
+      produkcja gier rozrywkowych i zaangażowanych, na jakie wyzwania należy się przygotować oraz problemy mogą się
+      pojawić w trakcie procesu.
+    people:
+      - Aleksandra Jarosz
+
+  - kind: talk
+    title: Tworzenie natywnych aplikacji iOS i Android dla programistów JavaScript
+    description: |-
+      W czasach gdy urządzeń mobilnych jest więcej niż użytkowników, umiejętność tworzenia aplikacji mobilnych jest bardzo
+      pożądana. Celem tej prelekcji jest pokazanie możliwości jakie mają programiści JavaScript w przenoszeniu swoich
+      gier / aplikacji na platformy mobilne. Od czego zacząć? Jakie środowisko wybrać? Czy będziemy musieli nauczyć się
+      nowego języka, a może wystarczą nam umiejętności jakie już posiadamy?
+    people:
+      - Dariusz Kalbarczyk
+
 ~resolve(organizers|kind organization|by name|flat):
   - Academic Partners
   - Enclave Games

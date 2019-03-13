@@ -11,7 +11,7 @@ description: |-
 
 details:
   - label: Wejście
-    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**, ale wymagana jest [rejestracja](https://warszawskiedniinformatyki.pl/registration.html#/register-package/WDI2019)
   - label: Atrakcje
     content: pizza, konkurs z nagrodami
 

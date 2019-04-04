@@ -1,6 +1,6 @@
 kind: meetup
 title: "Gamedev.js Warszawa #11 z Meet.js"
-time: 2019-04-25 18:30 - 20:30
+time: 2019-04-25 18:30 - 21:00
 venue: pl/warszawa/codility
 
 description: |-
@@ -26,13 +26,19 @@ schedule:
   - kind: talk
     title: TBD
 
-  - title: Konkurs z nagrodami
+  - title: Showcase
+    description: |-
+      Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+  - title: Konkurs
+    description: |-
+      Quiz z nagrodami dla najlepszych.
 
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games
   - Meet.js
 
 ~resolve(partners|kind organization|by name|flat):
+  - Codility
   - Mozilla
   - Battlestash
-  - Codility

@@ -4,8 +4,8 @@ time: 2019-04-25 18:30 - 20:30
 venue: pl/warszawa/codility
 
 description: |-
-  Zapraszamy na jedenaste spotkanie Gamedev.js Warszawa - meetupu zrzeszającego twórców gier HTML5 w stolicy!
-  Tym razem połączyliśmy siły z ekipą Meet.js Warszawa, którzy wesprą nasze działania.
+  Zapraszamy na jedenaste spotkanie **Gamedev.js Warszawa** - meetupu zrzeszającego twórców gier HTML5 w stolicy!
+  Tym razem połączyliśmy siły z ekipą **Meet.js** Warszawa, którzy wesprą nasze działania.
   Meetup odbędzie się **25 kwietnia**, start o godzinie **18:30** w siedzibie **Codility** przy ulicy **Dobrej 56/66**.
   Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
 
@@ -26,11 +26,13 @@ schedule:
   - kind: talk
     title: TBD
 
+  - title: Konkurs z nagrodami
+
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games
   - Meet.js
 
 ~resolve(partners|kind organization|by name|flat):
-  - Codility
   - Mozilla
   - Battlestash
+  - Codility

@@ -11,7 +11,7 @@ description: |-
 
 details:
   - label: Wejście
-    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - oznacz się [na Facebooku](https://www.facebook.com/events/563862214108246/)
   - label: Atrakcje
     content: pizza, napoje i przekąski, konkurs z nagrodami
 

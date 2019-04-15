@@ -18,7 +18,13 @@ details:
 schedule:
 
   - kind: talk
-    title: "Prezentacja: TBD"
+    title: Dostępność w grach
+    description: |-
+      Gry to angażujące medium które dostarcza ogromną ilość wrażeń - co jednak w sytuacji, gdy nie możemy doświadczyć
+      wszystkich bodźców które dany tytuł oferuje? Jak tworzyć gry dostępne dla jak najszerszego grona odbiorców?
+      Odpowiedź na te i inne pytania znajdziesz w prezentacji „Dostępność w grach”.
+    people:
+      - Wojtek Połowniak
 
   - kind: talk
     title: "Prezentacja: TBD"

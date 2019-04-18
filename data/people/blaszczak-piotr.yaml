@@ -5,6 +5,10 @@ facebook: piotr.blaszczak
 photo:
   normal: img/people/piotr-blaszczak.png
 bio:
+  summary: |-
+    Full Stack Web Developer od 2007, konsultant i szkoleniowiec. Zaczynał od PHP i MySQL, lecz szybko dostrzegł potęgę
+    JavaScript i NoSQL. Obecnie pisze backend w Node.js, a front w Angular. Miłośnik RxJS oraz grafowej bazy danych OrientDB.
+    Ortodoksyjny ewangelista TypeScript ;)
   full: |-
     Full Stack Web Developer od 2007, konsultant i szkoleniowiec. Zaczynał od PHP i MySQL, lecz szybko dostrzegł potęgę
     JavaScript i NoSQL. Obecnie pisze backend w Node.js, a front w Angular. Miłośnik RxJS oraz grafowej bazy danych OrientDB.

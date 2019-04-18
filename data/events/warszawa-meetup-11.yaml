@@ -27,7 +27,15 @@ schedule:
       - Wojtek Połowniak
 
   - kind: talk
-    title: "Prezentacja: TBD"
+    title: Nie myśl tyle, tylko koduj!
+    description: |-
+      Czyli jak nie przeintelektualizować swojego pomysłu i po prostu zacząć pisać kod. Spróbujemy w krótkim czasie
+      zaimplementować prostą grę nie używając przeznaczonych do tego frameworków. Dziś żyjemy w złotych czasach jeśli
+      chodzi o narzędzia pozwalające wydajnie pisać gry, ale czasami wysiłek wymagany do ich nauki może nas zniechęcić
+      do rozpoczęcia naszego pierwszego projektu. Podczas prezentacji postaram się pokazać, że czasami jedyną przeszkodą
+      na drodze są nasze własne przekonania.
+    people:
+      - Piotr Błaszczak
 
   - kind: talk
     title: "Prezentacja: TBD"

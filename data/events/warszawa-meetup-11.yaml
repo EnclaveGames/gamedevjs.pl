@@ -38,7 +38,27 @@ schedule:
       - Piotr Błaszczak
 
   - kind: talk
-    title: "Prezentacja: TBD"
+    title: Heroes of Might and Magic 3 w 1 KB JavaScriptu (prawie!)
+    description: |-
+      Pamiętacie Heroes of Might and Magic 3? W tym roku hirosy obchodzą 20. urodziny.
+      Z tej okazji zrobiłem minigrę na konkurs, w którym zgłoszenia muszą mieć poniżej 1 KB kodu. 
+
+      Zagrajcie online: [js1k.com/4210](https://js1k.com/4210).
+
+      Celem gry jest złapanie smoka, który grasuje po królestwie. Na białym koniu wasz wierny bohater — czyli "ludek",
+      bo tak go zawsze nazywam w myślach.
+
+      Na spotkaniu opowiem o wyzwaniach, z którymi zmierzyłem się podczas tworzenia tej miniatury.
+      W 1017 bajtach zmięściły się: grafika, losowe generowanie terenu, przewijanie głównego widoku gry minimapą,
+      path-finding, sztuczna inteligencja smoka i ekran zwycięstwa. Wymagało to kompromisów, nietypowych trików
+      i wielu prób i błędów.
+
+      Na zachętę zdradzę, że każdy obrazek zapisany jest jedną liczbą, której kolejne cyfry odpowiadają kolorom 16 pikseli.
+      Na przykład: 1111111002102211 to smok a 0707016107307762 to ludek.
+
+      I jeszcze dla porównania: opis, który teraz czytacie, zajmuje 1041 bajtów – czyli więcej, niż cała gra :)
+    people:
+      - Staś Małolepszy
 
   - title: Showcase
     description: |-

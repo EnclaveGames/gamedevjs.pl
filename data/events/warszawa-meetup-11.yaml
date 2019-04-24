@@ -66,7 +66,7 @@ schedule:
 
   - title: Konkurs
     description: |-
-      Quiz z nagrodami dla najlepszych.
+      Quiz, do wygrania karcianki od Battlestash dla najlepszych.
 
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games
@@ -76,3 +76,6 @@ schedule:
   - Codility
   - Mozilla
   - Battlestash
+
+~resolve(friends|kind organization|by name|flat):
+  - WarsawJS

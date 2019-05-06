@@ -1,0 +1,47 @@
+kind: meetup
+title: "Gamedev.js Warszawa #12 z meet.js"
+time: 2019-05-23 18:00 - 21:00
+venue: pl/warszawa/codility
+
+description: |-
+  Zapraszamy na dwunaste spotkanie **Gamedev.js Warszawa** - meetupu zrzeszającego twórców gier HTML5 w stolicy!
+  Znowu połączyliśmy siły z ekipą **meet.js** Warszawa, którzy wesprą nasze działania.
+  Meetup odbędzie się **23 maja**, start o godzinie **18:00** w siedzibie **Codility** przy ulicy **Dobrej 56/66**.
+  Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - oznacz się [na Facebooku](https://www.facebook.com/events/2375891666069236/)
+  - label: Atrakcje
+    content: pizza, napoje i przekąski, konkurs z nagrodami
+
+schedule:
+
+  - kind: talk
+    title: TBD
+
+  - kind: talk
+    title: TBD
+
+  - kind: talk
+    title: TBD
+
+  - title: Showcase
+    description: |-
+      Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+  - title: Konkurs
+    description: |-
+      Quiz, do wygrania karcianki od Battlestash dla najlepszych.
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - Meet.js
+
+~resolve(partners|kind organization|by name|flat):
+  - Codility
+  - Mozilla
+  - Battlestash
+
+~resolve(friends|kind organization|by name|flat):
+  - WarsawJS

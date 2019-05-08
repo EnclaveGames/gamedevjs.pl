@@ -18,7 +18,13 @@ details:
 schedule:
 
   - kind: talk
-    title: TBD
+    title: Entity-component-system, czyli gry z klocków
+    description: |-
+      Miałeś kiedyś okazję napisać grę? Dla mnie największą bolączką było to, że kod lądował gdzie popadnie, bez ładu i składu.
+      Ani to potem zdebugować, ani przetestować, ani rozwijać. Klasa Player - 2000 linii kodu. Powiedz NIE.
+      Przyjdź i zobacz jak ECS zmieni twój sposób patrzenia na tworzenie gier.
+    people:
+      - Piotr Szlachciak
 
   - kind: talk
     title: TBD

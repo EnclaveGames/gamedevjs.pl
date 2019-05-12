@@ -27,7 +27,13 @@ schedule:
       - Piotr Szlachciak
 
   - kind: talk
-    title: TBD
+    title: Mój pierwszy serwer w JavaScript - retrospekcja po trzech latach
+    description: |-
+      Jednym z bardziej wymagających zadań w mojej karierze było samodzielne napisanie, przetestowanie i zdeployowanie serwera
+      obsługującego asynchroniczną rozgrywkę wieloosobową w grze Kickerinho World. Podczas prezentacji opowiem co według mnie
+      zrobiłam dobrze, co źle, oraz o tym, jakie wyciągnęłam z tego wnioski.
+    people:
+      - Emilia Tyl
 
   - kind: talk
     title: TBD

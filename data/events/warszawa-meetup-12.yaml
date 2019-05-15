@@ -36,7 +36,13 @@ schedule:
       - Emilia Tyl
 
   - kind: talk
-    title: TBD
+    title: Budowanie gry roguelike w HTML5
+    description: |-
+      Po wielu nieudanych podejściach do stworzenia gry, postanowiłem zacząć od jej narysowania. Wtedy rzeczy nagle ruszyły
+      z miejsca. Opowiem o technologiach, które wykorzystuję (TypeScript, PixiJS, SVG), algorytmach, które musiałem
+      zaimplementować (jak obliczanie pola widzenia czy wyszukiwanie ścieżek), a także o różnych próbach zorganizowania kodu.
+    people:
+      - Paweł Marczewski
 
   - title: Showcase
     description: |-

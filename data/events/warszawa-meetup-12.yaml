@@ -59,8 +59,6 @@ schedule:
 ~resolve(partners|kind organization|by name|flat):
   - Codility
   - Iterators
+  
   - Mozilla
   - Battlestash
-
-~resolve(friends|kind organization|by name|flat):
-  - WarsawJS

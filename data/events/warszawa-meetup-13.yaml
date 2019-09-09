@@ -12,7 +12,7 @@ description: |-
 
 details:
   - label: Wejście
-    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - dołącz do wydarzenia [na Meetup.com](LINK)
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - dołącz do wydarzenia [na Meetup.com](https://www.meetup.com/GamedevJS-Warsaw/events/264686323/)
   - label: Atrakcje
     content: pizza, napoje i przekąski, konkurs z nagrodami
 
@@ -49,8 +49,8 @@ schedule:
 
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games
-  - Meet.js
   - Codility
+  - Meet.js
 
 ~resolve(partners|kind organization|by name|flat):
   - Iterators

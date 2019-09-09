@@ -1,0 +1,58 @@
+kind: meetup
+title: "Gamedev.js Warszawa #13 z js13kGames"
+time: 2019-09-23 18:00 - 21:00
+venue: pl/warszawa/wework-grzybowska62
+
+description: |-
+  Zapraszamy na trzynaste spotkanie **Gamedev.js Warszawa** - meetupu zrzeszającego twórców gier HTML5 w stolicy!
+  Z okazji okrągłej, trzynastej edycji, posłuchamy o tym jak tworzyć gry mieszczące się w 13 kilobajtach.
+  Ekipy **meet.js** Warszawa i **Codility** nadal wspierają nasze działania.
+  Meetup odbędzie się w poniedziałek, **23 września**, start o godzinie **18:00** w siedzibie **WeWork** przy ulicy **Grzybowskiej 62**.
+  Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - dołącz do wydarzenia [na Meetup.com](LINK)
+  - label: Atrakcje
+    content: pizza, napoje i przekąski, konkurs z nagrodami
+
+schedule:
+
+  - kind: talk
+    title: TBD
+    description: |-
+      TBD
+    people:
+      - TBD
+
+  - kind: talk
+    title: TBD
+    description: |-
+      TBD
+    people:
+      - TBD
+
+  - kind: talk
+    title: TBD
+    description: |-
+      TBD
+    people:
+      - TBD
+
+  - title: Showcase
+    description: |-
+      Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+  - title: Konkurs
+    description: |-
+      Quiz, do wygrania nagrody dla najlepszych.
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - Meet.js
+  - Codility
+
+~resolve(partners|kind organization|by name|flat):
+  - Iterators
+  - Mozilla
+  - Battlestash

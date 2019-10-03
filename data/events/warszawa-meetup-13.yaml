@@ -19,9 +19,9 @@ details:
 schedule:
 
   - kind: talk
-    title: TBD
+    title: Space Wizard Toast Spinning, czyli sens życia
     description: |-
-      TBD
+      Opowiem trochę o tym jak pisałem grę i o różnych przemyśleniach z tym związanych.
     people:
       - Rafał Ruciński
 
@@ -40,6 +40,10 @@ schedule:
   - title: Konkurs
     description: |-
       Quiz, do wygrania nagrody dla najlepszych.
+
+  - title: Pokaz gier WebXR
+    description: |-
+      Zagraj w gry WebXR na urządzeniu Oculus Quest zgłoszone do konkursu js13kGames.
 
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games

@@ -19,6 +19,13 @@ details:
 schedule:
 
   - kind: talk
+    title: Podsumowanie js13kGames 2019
+    description: |-
+      Krótkie podsumowanie i garść ciekawostek o konkursie js13kGames w tym roku.
+    people:
+      - Andrzej Mazur
+
+  - kind: talk
     title: Space Wizard Toast Spinning, czyli sens życia
     description: |-
       Opowiem trochę o tym jak pisałem grę i o różnych przemyśleniach z tym związanych.
@@ -26,9 +33,11 @@ schedule:
       - Rafał Ruciński
 
   - kind: talk
-    title: TBD
+    title: Good Luck — Dziki Zachód gamedevu
     description: |-
-      TBD
+      Jak pisać kod, który jest szybki, dobrze się kompresuje, jest łatwy w utrzymaniu i nie robi się po kilku dniach bałaganem? Jak szybko prototypować nowe funkcje i jak wykorzystywać istniejące komponenty do tworzenia nowych zachowań?
+
+      Napisanie gry, która mieści się w 13 kilobajtach, wymaga niekonwencjonalnych rozwiązań. Good Luck to nie-do-końca-silnik do robienia małych gier i prototypów, który stworzyliśmy specjalnie z myślą o konkursie js13kGames. We wtorek opowiemy o naszych doświadczeniach i wnioskach. Tymczasem zagrajcie w [Backcountry](https://js13kgames.com/entries/backcountry), czyli Diablo na Dzikim Zachodzie!
     people:
       - Michał Budzyński
       - Staś Małolepszy
@@ -43,7 +52,7 @@ schedule:
 
   - title: Pokaz gier WebXR
     description: |-
-      Zagraj w gry WebXR na urządzeniu Oculus Quest zgłoszone do konkursu js13kGames.
+      Zagraj w gry WebXR (na urządzeniu Oculus Quest) zgłoszone do konkursu js13kGames.
 
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games

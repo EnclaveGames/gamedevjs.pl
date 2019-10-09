@@ -46,13 +46,13 @@ schedule:
     description: |-
       Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
 
-  - title: Konkurs
+  - title: Konkurs wiedzy o js13k
     description: |-
-      Quiz, do wygrania nagrody dla najlepszych.
+      Quiz, do wygrania tematyczne nagrody dla najlepszych.
 
   - title: Pokaz gier WebXR
     description: |-
-      Zagraj w gry WebXR (na urządzeniu Oculus Quest) zgłoszone do konkursu js13kGames.
+      Zagraj w gry WebXR (na urządzeniu Oculus Quest) zgłoszone do konkursu js13kGames w tym roku.
 
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games

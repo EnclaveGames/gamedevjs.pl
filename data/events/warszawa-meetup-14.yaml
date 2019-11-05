@@ -17,7 +17,12 @@ details:
 schedule:
 
   - kind: talk
-    title: TBD
+    title: Good luck with learning 3D graphics programming in one week
+    description: |-
+      Chciałbym zaprosić was na tydzień wspólnej nauki niskopoziomowych aspektów programowania grafiki 3D.
+      Celem jest napisanie prostej gry w WebGL z oświetleniem i teksturami.
+    people:
+      - Kacper Pietrzak
 
   - kind: talk
     title: TBD

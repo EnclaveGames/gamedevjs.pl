@@ -25,7 +25,14 @@ schedule:
       - Kacper Pietrzak
 
   - kind: talk
-    title: TBD
+    title: Fundamenty Game Designu - kreacja przez destrukcję
+    description: |-
+      Podczas tego wykładu dowiemy się jakie istnieją podstawowe zasady designu gier komputerowych, poszukamy wykorzystania
+      tych zasad w istniejących tytułach oraz zbadamy ich wpływ na rozgrywkę przez ich dekonstrukcję. Poznamy sposoby na
+      minimalizację ryzyka podczas podejmowania kreatywnych decyzji których dokonamy w roli game designera oraz metody na
+      szybką ewaluację nowych elementów rozgrywki które zamierzamy dodać.
+    people:
+      - Mateusz Kietliński
 
   - kind: talk
     title: TBD

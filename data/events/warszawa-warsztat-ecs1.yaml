@@ -1,0 +1,69 @@
+kind: workshop
+title: "Pierwsza gra w ECS"
+time: 2019-12-14 10:00 - 18:00
+venue: pl/warszawa/aviva
+
+description: |-
+  Architektura **Entity Component System** (ECS), ukochana przez największych graczy na rynku (jak **Unity**, **Epic** czy
+  **Crytek**), zrewolucjonizowała tworzenie gier raz na zawsze odstawiając programowanie obiektowe do lamusa. Poprzez
+  budowanie złożonych funkcjonalności z małych, atomicznych komponentów oraz rygorystyczne rozdzielenie danych od logiki
+  pozwala utrzymać porządek w kodzie nawet po wielu tygodniach intensywnej pracy. Dzięki temu, programowanie znów staje się
+  przyjemne i satysfakcjonujące.
+
+  Zapraszamy na szkolenie z pisania gier przeglądarkowych w architekturze ECS, w trakcie którego:
+  - Napiszecie kompletną grę (2D), która działa w każdej współczesnej przeglądarce, nie wymaga żadnych dodatkowych bibliotek
+    i zajmuje tylko kilka kilobajtów.
+  - Poznacie *Good Lucka*, template do tworzenia gier przeglądarkowych.
+  - Nauczycie się szybko prototypować pomysły na mechaniki gier.
+  - Poznacie zalety podejścia *composition over inheritance.*
+
+  Szkolenie poprowadzą Michał Budzyński i Staś Małolepszy, autorzy takich gier jak:
+  - Backcountry (18. miejsce na js13k 2019)
+  - HOMM1K (13. miejsce na js1k 2019)
+  - Spooky Arena (zwycięzca NodeKnockout 2018)
+  - LOGOUT (13. miejsce na js13k 2018)
+  - Starsky & Bluff (nagroda Top Kek, Slavic Game Jam 2017)
+  - Code Explorer (wyróżnienie Github Game Off 2017)
+  - Shape Ronin (2. miejsce GamedevJS Jam 2017)
+  - Prze-szkody (zwycięzca GamedevJS Jam 2017)
+  - A moment lost in time (6. miejsce js13k 2017)
+
+  ## Skrót programu
+  - Wprowadzenie do ECS
+    - Struktury danych
+    - Rozdzielenie danych od logiki
+    - *Composition over inheritance*
+  - Rysowanie i sterowanie
+    - Rysowanie statycznych kształtów używając `Canvas2D` API
+    - Reagowanie na input użytkownika
+    - Dodawanie zachowań poprzez
+  - Dodawanie nowych komponentów i systemów
+    - Poruszanie encji, którymi nie steruje gracz
+    - Kolizje z brzegami okna
+    - Kolizje między encjami
+  - Kompletna gra
+    - Budowanie prostej planszy
+    - Dodawanie własnych pomysłów
+
+  ## Ważne informacje
+  Warsztat odbędzie się w Warszawie w sobotę 14 grudnia 2019 od 10.00 do 18.00. Liczba miejsc jest ograniczona.
+  Zapisy ruszą po 18 listopada. Wtedy też podamy informację o miejscu, w którym odbędzie się warsztat.
+
+  ## Wymagania
+  - JavaScript na poziomie podstawowym (min. 1 rok nauki lub pracy).
+  - TypeScript na poziomie początkującym (wystarczy [wprowadzenie](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html) z oficjalnej dokumentacji).
+  - Konto na GitHubie.
+  - Własny komputer.
+  - Zainstalowane `node` i `npm`, VS Code i przeglądarka.
+
+  Zdajemy sobie sprawę, że trudno jest jednoznacznie ocenić poziom znajomości języka programowania używając prostych haseł:
+  *początkujący*, *podstawowy*, *średniozaawansowany* itd. Polecamy zapoznać się z
+  [sylabusem](https://www.notion.so/piesku/Sylabus-876b7a607e6644ba9f294f75311e93eb), w którym zawarliśmy listę zagadnień
+  z JavaScriptu i TypeScriptu, których znajomość pozwoli wam w największym stopniu skorzystać z warsztatu.
+
+details:
+  - label: Bilety
+    content: wkrótce
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games

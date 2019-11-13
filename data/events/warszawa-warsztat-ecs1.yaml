@@ -12,7 +12,9 @@ description: |-
 
 details:
   - label: Bilety
-    content: wkrótce
+    content: 49 PLN
+  - label: Wymagana
+    ~markdown(content): "[rejestracja](https://evenea.pl/event/gamedevjs-ecs1/) - liczba miejsc ograniczona!"
 
 schedule:
 

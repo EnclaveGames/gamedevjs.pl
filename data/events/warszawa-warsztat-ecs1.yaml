@@ -12,7 +12,7 @@ description: |-
 
 details:
   - label: Bilety
-    content: [49 PLN](https://evenea.pl/event/gamedevjs-ecs1/)
+    ~markdown(content): "[49 PLN](https://evenea.pl/event/gamedevjs-ecs1/)"
 
 schedule:
 

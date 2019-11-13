@@ -12,10 +12,11 @@ description: |-
 
 details:
   - label: Bilety
-    ~markdown(content): "[49 PLN](https://evenea.pl/event/gamedevjs-ecs1/)"
+    content: 49 PLN
+  - label: Wymagana
+    ~markdown(content): "[rejestracja](https://evenea.pl/event/gamedevjs-ecs1/) - liczba miejsc ograniczona!"    
 
 schedule:
-
   - kind: workshop
     time: 10:00
     title: Pierwsza gra w ECS

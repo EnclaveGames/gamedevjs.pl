@@ -11,11 +11,10 @@ description: |-
   przyjemne i satysfakcjonujące.
 
   Zapraszamy na szkolenie z pisania gier przeglądarkowych w architekturze ECS, w trakcie którego:
-    - Napiszecie kompletną grę (2D), która działa w każdej współczesnej przeglądarce, nie wymaga żadnych dodatkowych bibliotek
-    i zajmuje tylko kilka kilobajtów.
-    - Poznacie *Good Lucka*, template do tworzenia gier przeglądarkowych.
-    - Nauczycie się szybko prototypować pomysły na mechaniki gier.
-    - Poznacie zalety podejścia *composition over inheritance.*
+    * Napiszecie kompletną grę (2D), która działa w każdej współczesnej przeglądarce, nie wymaga żadnych dodatkowych bibliotek i zajmuje tylko kilka kilobajtów.
+    * Poznacie *Good Lucka*, template do tworzenia gier przeglądarkowych.
+    * Nauczycie się szybko prototypować pomysły na mechaniki gier.
+    * Poznacie zalety podejścia *composition over inheritance.*
 
   Szkolenie poprowadzą Michał Budzyński i Staś Małolepszy, autorzy takich gier jak:
     - Backcountry (18. miejsce na js13k 2019)
@@ -29,19 +28,19 @@ description: |-
     - A moment lost in time (6. miejsce js13k 2017)
 
   ## Skrót programu
-    - Wprowadzenie do ECS
+    * Wprowadzenie do ECS
       - Struktury danych
       - Rozdzielenie danych od logiki
       - *Composition over inheritance*
-    - Rysowanie i sterowanie
+    * Rysowanie i sterowanie
       - Rysowanie statycznych kształtów używając `Canvas2D` API
       - Reagowanie na input użytkownika
       - Dodawanie zachowań poprzez
-    - Dodawanie nowych komponentów i systemów
+    * Dodawanie nowych komponentów i systemów
       - Poruszanie encji, którymi nie steruje gracz
       - Kolizje z brzegami okna
       - Kolizje między encjami
-    - Kompletna gra
+    * Kompletna gra
       - Budowanie prostej planszy
       - Dodawanie własnych pomysłów
 

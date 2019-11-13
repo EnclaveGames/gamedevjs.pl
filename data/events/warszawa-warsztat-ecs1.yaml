@@ -21,21 +21,23 @@ schedule:
     title: Pierwsza gra w ECS
     description: |-
       Zapraszamy na szkolenie z pisania gier przeglądarkowych w architekturze ECS, w trakcie którego:
-        * Napiszecie kompletną grę (2D), która działa w każdej współczesnej przeglądarce, nie wymaga żadnych dodatkowych bibliotek i zajmuje tylko kilka kilobajtów.
-        * Poznacie *Good Lucka*, template do tworzenia gier przeglądarkowych.
-        * Nauczycie się szybko prototypować pomysły na mechaniki gier.
-        * Poznacie zalety podejścia *composition over inheritance.*
+
+        - Napiszecie kompletną grę (2D), która działa w każdej współczesnej przeglądarce, nie wymaga żadnych dodatkowych bibliotek i zajmuje tylko kilka kilobajtów.
+        - Poznacie *Good Lucka*, template do tworzenia gier przeglądarkowych.
+        - Nauczycie się szybko prototypować pomysły na mechaniki gier.
+        - Poznacie zalety podejścia *composition over inheritance.*
 
       Szkolenie poprowadzą Michał Budzyński i Staś Małolepszy, autorzy takich gier jak:
-        - Backcountry (18. miejsce na js13k 2019)
-        - HOMM1K (13. miejsce na js1k 2019)
-        - Spooky Arena (zwycięzca NodeKnockout 2018)
-        - LOGOUT (13. miejsce na js13k 2018)
-        - Starsky & Bluff (nagroda Top Kek, Slavic Game Jam 2017)
-        - Code Explorer (wyróżnienie Github Game Off 2017)
-        - Shape Ronin (2. miejsce GamedevJS Jam 2017)
-        - Prze-szkody (zwycięzca GamedevJS Jam 2017)
-        - A moment lost in time (6. miejsce js13k 2017)
+
+      - Backcountry (18. miejsce na js13k 2019)
+      - HOMM1K (13. miejsce na js1k 2019)
+      - Spooky Arena (zwycięzca NodeKnockout 2018)
+      - LOGOUT (13. miejsce na js13k 2018)
+      - Starsky & Bluff (nagroda Top Kek, Slavic Game Jam 2017)
+      - Code Explorer (wyróżnienie Github Game Off 2017)
+      - Shape Ronin (2. miejsce GamedevJS Jam 2017)
+      - Prze-szkody (zwycięzca GamedevJS Jam 2017)
+      - A moment lost in time (6. miejsce js13k 2017)
 
       ## Skrót programu
         * Wprowadzenie do ECS

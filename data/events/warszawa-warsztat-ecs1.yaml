@@ -12,7 +12,7 @@ description: |-
 
 details:
   - label: Bilety
-    content: wkrótce
+    content: [49 PLN](https://evenea.pl/event/gamedevjs-ecs1/)
 
 schedule:
 
@@ -22,10 +22,10 @@ schedule:
     description: |-
       Zapraszamy na szkolenie z pisania gier przeglądarkowych w architekturze ECS, w trakcie którego:
 
-        - Napiszecie kompletną grę (2D), która działa w każdej współczesnej przeglądarce, nie wymaga żadnych dodatkowych bibliotek i zajmuje tylko kilka kilobajtów.
-        - Poznacie *Good Lucka*, template do tworzenia gier przeglądarkowych.
-        - Nauczycie się szybko prototypować pomysły na mechaniki gier.
-        - Poznacie zalety podejścia *composition over inheritance.*
+      - Napiszecie kompletną grę (2D), która działa w każdej współczesnej przeglądarce, nie wymaga żadnych dodatkowych bibliotek i zajmuje tylko kilka kilobajtów.
+      - Poznacie *Good Lucka*, template do tworzenia gier przeglądarkowych.
+      - Nauczycie się szybko prototypować pomysły na mechaniki gier.
+      - Poznacie zalety podejścia *composition over inheritance.*
 
       Szkolenie poprowadzą Michał Budzyński i Staś Małolepszy, autorzy takich gier jak:
 

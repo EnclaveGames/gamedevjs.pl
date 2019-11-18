@@ -1,0 +1,7 @@
+name: Postmark
+slug: postmark
+homepage: https://postmarkapp.com/
+logo:
+  normal: img/organizations/postmark.png
+description: |-
+  Lightning fast delivery for your application emails. Postmark delivers your transactional email to customers on time, every time.

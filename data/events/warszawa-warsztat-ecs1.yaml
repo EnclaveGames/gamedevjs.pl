@@ -1,7 +1,7 @@
 kind: workshop
 title: "Pierwsza gra w ECS"
 time: 2019-12-21 10:00 - 18:00
-venue: pl/warszawa/stacja-wiedzy
+venue: pl/warszawa/stacjawiedzy
 
 description: |-
   Architektura **Entity Component System** (ECS), ukochana przez największych graczy na rynku (jak **Unity**, **Epic** czy
@@ -59,8 +59,8 @@ schedule:
           - Dodawanie własnych pomysłów
 
       ## Ważne informacje
-      Warsztat odbędzie się w Warszawie w sobotę 21 grudnia 2019 od 10.00 do 18.00. Liczba miejsc jest ograniczona.
-      Zapisy ruszą 19 listopada o 21:00. Miejsce odbywania się warsztatu to Stacja Wiedzy, ul. Kolejowa 47/U-23 w Warszawie.
+        Warsztat odbędzie się w Warszawie w sobotę 21 grudnia 2019 od 10.00 do 18.00. Liczba miejsc jest ograniczona.
+        Zapisy ruszą 19 listopada o 21:00. Miejsce odbywania się warsztatu to Stacja Wiedzy, ul. Kolejowa 47, lokal U-23 w Warszawie.
 
       ## Wymagania
         - JavaScript na poziomie podstawowym (min. 1 rok nauki lub pracy).

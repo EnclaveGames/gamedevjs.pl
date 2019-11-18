@@ -52,5 +52,6 @@ schedule:
 
 ~resolve(partners|kind organization|by name|flat):
   - Iterators
+  - Postmark
   - Mozilla
   - Battlestash

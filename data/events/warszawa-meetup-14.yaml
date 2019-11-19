@@ -35,7 +35,13 @@ schedule:
       - Mateusz Kietliński
 
   - kind: talk
-    title: TBD
+    title: Ludzie kontra roboty
+    description: |-
+      Czy dzisiejsza technologia jest w stanie sprostać wyzwaniom rzuconym prawie 40 lat temu przez wybitnych naukowców
+      Związku Radzieckiego? Czy może tego dokonać, używając JavaScriptu? O czym Ty bredzisz Michał? 
+      Na te i inne pytania postaram się odpowiedzieć już dziś wieczorem, na kolejnym spotkaniu z serii GamedevJS.
+    people:
+      - Michał Budzyński
 
   - title: Showcase
     description: |-
@@ -48,10 +54,8 @@ schedule:
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games
   - Codility
-  - Meet.js
 
 ~resolve(partners|kind organization|by name|flat):
   - Iterators
   - Postmark
   - Mozilla
-  - Battlestash

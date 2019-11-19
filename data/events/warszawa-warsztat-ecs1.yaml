@@ -49,7 +49,7 @@ schedule:
         * Rysowanie i sterowanie
           - Rysowanie statycznych kształtów używając `Canvas2D` API
           - Reagowanie na input użytkownika
-          - Dodawanie zachowań poprzez
+          - Dodawanie zachowań do istniejących encji
         * Dodawanie nowych komponentów i systemów
           - Poruszanie encji, którymi nie steruje gracz
           - Kolizje z brzegami okna

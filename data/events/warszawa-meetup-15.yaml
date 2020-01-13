@@ -1,0 +1,43 @@
+kind: meetup
+title: "Gamedev.js Warszawa #15"
+time: 2020-01-11 18:00 - 21:00
+venue: pl/warszawa/wework-grzybowska62
+
+description: |-
+  Zapraszamy na piętnaste spotkanie **Gamedev.js Warszawa** - meetupu zrzeszającego twórców gier HTML5 w stolicy!
+  Meetup odbędzie się we wtorek, **11 lutego**, start o godzinie **18:00** w siedzibie **WeWork** przy ulicy **Grzybowskiej 62** (drugie piętro).
+  Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - dołącz do wydarzenia [na Meetup.com](https://www.meetup.com/GamedevJS-Warsaw/)
+  - label: Atrakcje
+    content: pizza, napoje i przekąski, konkurs z nagrodami
+
+schedule:
+
+  - kind: talk
+    title: TBD
+
+  - kind: talk
+    title: TBD
+
+  - kind: talk
+    title: TBD
+
+  - title: Showcase
+    description: |-
+      Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+  - title: Konkurs
+    description: |-
+      Quiz, do wygrania nagrody dla najlepszych.
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - Codility
+
+~resolve(partners|kind organization|by name|flat):
+  - Iterators
+  - Postmark
+  - Mozilla

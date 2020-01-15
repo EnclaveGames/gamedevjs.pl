@@ -36,6 +36,7 @@ schedule:
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games
   - Codility
+  - Meet.js
 
 ~resolve(partners|kind organization|by name|flat):
   - Iterators

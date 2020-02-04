@@ -17,7 +17,13 @@ details:
 schedule:
 
   - kind: talk
-    title: TBD
+    title: Gra AAA w przeglądarce w 30 minut! WebGL w Unity
+    description: |-
+      Baitowy tytuł już jest, więc tak naprawdę to nie zrobimy w 30 minut “tripyleja”, ale Unity warto się zainteresować.
+      Web jest silną i ważną platformą, a dzięki WASM i WebGL wsparcie dla niej w wiodących engine’ach gier nie jest już
+      ubogim krewnym innych. Postaram się Was zachęcić do zgłębienia tajników Jedynego (sic!) silnika.
+    people:
+      - Piotr Bogdan
 
   - kind: talk
     title: TBD
@@ -35,10 +41,9 @@ schedule:
 
 ~resolve(organizers|kind organization|by name|flat):
   - Enclave Games
-  - Codility
   - Meet.js
 
 ~resolve(partners|kind organization|by name|flat):
+  - Codility
   - Iterators
   - Postmark
-  - Mozilla

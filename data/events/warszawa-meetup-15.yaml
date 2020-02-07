@@ -26,7 +26,13 @@ schedule:
       - Piotr Bogdan
 
   - kind: talk
-    title: TBD
+    title: "Kaboom: bezlitosna gra w sapera"
+    description: |-
+      Znany Windowsowy saper jest grą logiczną, ale zachęca do zgadywania, a czasem wręcz do niego zmusza. Moja wersja
+      jest inna! Każdy niepewny ruch jest karany natychmiast i bezlitośnie. Opowiem o tym, gdzie zaprowadziła mnie
+      implementacja - pomysł na grę wydawał się prosty, ale wymagał zastosowania różnych ciekawych metod i narzędzi.
+    people:
+      - Paweł Marczewski
 
   - kind: talk
     title: TBD

@@ -34,9 +34,14 @@ schedule:
     people:
       - Paweł Marczewski
 
-
   - kind: talk
-    title: TBD
+    title: Ewolucja gier HTML5
+    description: |-
+      Dziesięć lat temu tylko nieliczni zastanawiali się czy tworzenie gier HTML5 jest w ogóle możliwe, dziś natomiast
+      ciężko wyobrazić sobie elektroniczną rozrywkę bez JavaScriptu. Podczas prezentacji zobaczymy jak zmieniła się branża
+      w ciągu dekady, i czego możemy spodziewać się w przyszłości.
+    people:
+      - Andrzej Mazur
 
   - title: Showcase
     description: |-

@@ -1,0 +1,37 @@
+kind: meetup
+title: "Gamedev.js Warszawa #16 podczas WDI 2020"
+time: 2020-03-27 10:00 - 13:00
+venue: pl/warszawa/mini-pw
+
+description: |-
+  Zapraszamy na piętnaste spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
+  Tym razem edycja specjalna odbędzie się w **Gmachu Wydziału MiNI PW, ul. Koszykowa 75** podczas [Warszawskich Dni Informatyki 2020](https://warszawskiedniinformatyki.pl/).
+  Meetup odbędzie się w piątek **27 marca** podczas całodniowej ścieżki **Gamedev** w **Auli 101**, a cztery prezentacje odbędą się między **10:00** a **13:00**.
+  Spotkanie jest w pełni darmowe, przyjść może każdy, ale trzeba się najpierw zarejestrować.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**, ale wymagana jest [rejestracja](https://warszawskiedniinformatyki.pl/registration.html#/register-package/WDI2020)
+  - label: Atrakcje
+    content: pizza, konkurs z nagrodami
+
+schedule:
+
+  - kind: talk
+    title: TBD
+
+  - kind: talk
+    title: TBD
+
+  - kind: talk
+    title: TBD
+
+  - kind: talk
+    title: TBD
+
+~resolve(organizers|kind organization|by name|flat):
+  - Academic Partners
+  - Enclave Games
+
+~resolve(partners|kind organization|by name|flat):
+  - Postmark

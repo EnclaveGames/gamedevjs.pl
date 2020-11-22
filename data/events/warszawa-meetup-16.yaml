@@ -1,7 +1,7 @@
 kind: meetup
 title: "Gamedev.js Warszawa #16 podczas WDI 2020"
-time: 2020-12-11 09:30 - 12:55
-venue: pl/online/online
+time: 2020-12-11 9:30 - 12:55
+venue: pl/warszawa/wework-grzybowska62
 
 description: |-
   Zapraszamy na szesnaste spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
@@ -17,7 +17,7 @@ schedule:
 
   - kind: talk
     title: Zarabianie na grach HTML5 z pomocą Web Monetization API
-    time: 09:30 - 10:10
+    time: 9:30 - 10:10
     description: |-
       Monetyzacja gier tworzonych w języku JavaScript jest coraz trudniejsza. Dostępne opcje ograniczają się głównie do
       licencjonowania gier portalom, publikacja w natywnych sklepach, lub implementacja reklam i handlowanie prywatnością

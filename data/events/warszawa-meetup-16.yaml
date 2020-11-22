@@ -1,37 +1,58 @@
 kind: meetup
 title: "Gamedev.js Warszawa #16 podczas WDI 2020"
-time: 2020-03-27 10:00 - 13:00
-venue: pl/warszawa/mini-pw
+time: 2020-12-11 09:30 - 12:55
+venue: pl/online/online
 
 description: |-
-  Zapraszamy na piętnaste spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
-  Tym razem edycja specjalna odbędzie się w **Gmachu Wydziału MiNI PW, ul. Koszykowa 75** podczas [Warszawskich Dni Informatyki 2020](https://warszawskiedniinformatyki.pl/).
-  Meetup odbędzie się w piątek **27 marca** podczas całodniowej ścieżki **Gamedev** w **Auli 101**, a cztery prezentacje odbędą się między **10:00** a **13:00**.
-  Spotkanie jest w pełni darmowe, przyjść może każdy, ale trzeba się najpierw zarejestrować.
+  Zapraszamy na szesnaste spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
+  Tym razem, z racji panującej pandemii, edycja specjalna odbędzie się **online** podczas [Warszawskich Dni Informatyki 2020](https://warszawskiedniinformatyki.pl/).
+  Meetup odbędzie się w piątek **11 grudnia** podczas dedykowanej nam ścieżce **Gamedev.js**, a cztery prezentacje odbędą się między **09:30** a **12:55**.
+  Spotkanie jest w pełni darmowe, obejrzeć może każdy.
 
 details:
   - label: Wejście
-    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**, ale wymagana jest [rejestracja](https://warszawskiedniinformatyki.pl/registration.html#/register-package/WDI2020)
-  - label: Atrakcje
-    content: pizza, konkurs z nagrodami
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
 
 schedule:
 
   - kind: talk
-    title: TBD
+    title: Zarabianie na grach HTML5 z pomocą Web Monetization API
+    time: 09:30 - 10:10
+    description: |-
+      Monetyzacja gier tworzonych w języku JavaScript jest coraz trudniejsza. Dostępne opcje ograniczają się głównie do
+      licencjonowania gier portalom, publikacja w natywnych sklepach, lub implementacja reklam i handlowanie prywatnością
+      użytkowników w zamian za zysk. Z pomocą nowego Web Monetization API będziemy w stanie zarabiać pieniądze bezpośrednio
+      i natychmiastowo - bez poświęcania wrażliwych danych użytkowników, i na dobre pozbyć się reklam. Najlepsze jest to,
+      że nowe API już teraz działa w przeglądarce!
+    people:
+      - Andrzej Mazur
 
   - kind: talk
-    title: TBD
+    title: Artystyczne gry mobilne
+    time: 10:25 - 11:05
+    description: |-
+      TBD
+    people:
+      - Sylwia Żółkiewska
 
   - kind: talk
-    title: TBD
+    title: Emergent Storytelling - przyszłość branży?
+    time: 11:20 - 12:00
+    description: |-
+      O tym jak proceduralne systemy w grach zaczynają nam opowiadać całkiem nieproceduralne opowieści,
+      oraz o tym jak zmusić graczy do RPGowania.
+    people:
+      - Tadeusz Zieliński
 
   - kind: talk
-    title: TBD
+    title: Programista kontra reszta świata
+    time: 12:15 - 12:55
+    description: |-
+      Dlaczego warto pisać gry? Gdzie zmierzamy jako programiści? Jak planować swoją karierę? Gdzie znaleźć czas na własne
+      projekty? Jeśli zadajesz sobie czasem takie pytania, nie może cię zabraknąć!
+    people:
+      - Dariusz Kalbarczyk
 
 ~resolve(organizers|kind organization|by name|flat):
   - Academic Partners
   - Enclave Games
-
-~resolve(partners|kind organization|by name|flat):
-  - Postmark

@@ -26,14 +26,6 @@ schedule:
     people:
       - Andrzej Mazur
 
-  - kind: talk
-    title: Emergent Storytelling - przyszłość branży?
-    description: |-
-      O tym jak proceduralne systemy w grach zaczynają nam opowiadać całkiem nieproceduralne opowieści,
-      oraz o tym jak zmusić graczy do RPGowania.
-    people:
-      - Tadeusz Zieliński
-
   - title: Prelekcje z odtworzenia
     description: |-
       Dla uczestników Warszawskich Dni Informatyki 2020 udostępnione zostaną poniższe nagrania z dwóch poprzednich naszych spotkań w Warszawie (#14 i #15):

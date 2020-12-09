@@ -6,7 +6,7 @@ venue: pl/online/online
 description: |-
   Zapraszamy na szesnaste spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
   Tym razem, z racji panującej pandemii, edycja specjalna odbędzie się **online** podczas [Warszawskich Dni Informatyki 2020](https://warszawskiedniinformatyki.pl/).
-  Meetup odbędzie się w piątek **11 grudnia** podczas dedykowanej nam ścieżce **Gamedev.js**, a cztery prezentacje odbędą się między **09:30** a **12:55**.
+  Meetup odbędzie się w piątek **11 grudnia** podczas dedykowanej nam ścieżce **Gamedev.js**, a wszystkie prezentacje będzie można obejrzeć w systemie VOD.
   Spotkanie jest w pełni darmowe, obejrzeć może każdy.
 
 details:
@@ -17,7 +17,6 @@ schedule:
 
   - kind: talk
     title: Zarabianie na grach HTML5 z pomocą Web Monetization API
-    time: 9:30 - 10:10
     description: |-
       Monetyzacja gier tworzonych w języku JavaScript jest coraz trudniejsza. Dostępne opcje ograniczają się głównie do
       licencjonowania gier portalom, publikacja w natywnych sklepach, lub implementacja reklam i handlowanie prywatnością
@@ -28,30 +27,22 @@ schedule:
       - Andrzej Mazur
 
   - kind: talk
-    title: Artystyczne gry mobilne
-    time: 10:25 - 11:05
-    description: |-
-      TBD
-    people:
-      - Sylwia Żółkiewska
-
-  - kind: talk
     title: Emergent Storytelling - przyszłość branży?
-    time: 11:20 - 12:00
     description: |-
       O tym jak proceduralne systemy w grach zaczynają nam opowiadać całkiem nieproceduralne opowieści,
       oraz o tym jak zmusić graczy do RPGowania.
     people:
       - Tadeusz Zieliński
 
-  - kind: talk
-    title: Programista kontra reszta świata
-    time: 12:15 - 12:55
+  - title: Prelekcje z odtworzenia
     description: |-
-      Dlaczego warto pisać gry? Gdzie zmierzamy jako programiści? Jak planować swoją karierę? Gdzie znaleźć czas na własne
-      projekty? Jeśli zadajesz sobie czasem takie pytania, nie może cię zabraknąć!
-    people:
-      - Dariusz Kalbarczyk
+      Dla uczestników Warszawskich Dni Informatyki 2020 udostępnione zostaną poniższe nagrania z dwóch poprzednich naszych spotkań w Warszawie (#14 i #15):
+
+      - Mateusz Kietliński: Fundamenty Game Designu - kreacja przez destrukcję
+      - Piotr Bogdan: Gra AAA w przeglądarce w 30 minut! WebGL w Unity
+      - Kacper Pietrzak: Good luck with learning 3D graphics programming in one week
+      - Michał Budzyński: Ludzie kontra roboty
+      - Paweł Marczewski: Kaboom - bezlitosna gra w sapera
 
 ~resolve(organizers|kind organization|by name|flat):
   - Academic Partners

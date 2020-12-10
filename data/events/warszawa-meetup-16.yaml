@@ -12,6 +12,8 @@ description: |-
 details:
   - label: Wejście
     ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Bilety
+    ~markdown(content): darmowa [rejestracja](https://warszawskiedniinformatyki.pl/registration.html#!/register-package/WDI2020)
 
 schedule:
 

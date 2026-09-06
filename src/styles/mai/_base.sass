@@ -1,0 +1,85 @@
+@use "sass:list"
+@use "config" as *
+// Consolidated Mai/Base: normalization + helper classes.
+$m-using-module-grid: true !default
+// Grid defaults to get images and embeds to work properly
+img, object, embed, canvas
+  max-width: 100%
+  height: auto
+object, embed
+  height: 100%
+*, *:before, *:after
+  box-sizing: border-box
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, form, p
+  margin: 0
+  padding: 0
+body
+  margin: 0
+  background: $m-body-background
+  color: $m-body-font-color
+  font: list.slash($m-body-font-size, $m-body-line-height) $m-body-font-family
+li
+  display: block
+p
+  margin-bottom: $m-type-p-margin-bottom
+  line-height: $m-type-p-line-height
+  &:last-child
+    margin-bottom: 0
+small
+  font-size: $m-type-small-font-size
+  color: $m-type-small-font-color
+pre, code, kbd, samp
+  font-family: Monaco, Consolas, "Lucida Console", monospace
+  font-size: .9em
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+sup
+  top: -.5em
+sub
+  bottom: -.25em
+hr
+  border: $m-type-hr-border
+  margin: $m-type-hr-margin
+  height: 0
+h1, h2, h3, h4
+  margin: $m-type-h-margin
+  line-height: $m-type-h-line-height
+  font-size: inherit
+  small
+    color: $m-type-h-small-font-color
+a
+  text-decoration: $m-type-a-text-decoration
+  color: $m-type-a-color-base
+  &:hover, &:focus
+    outline-width: 0
+    color: $m-type-a-color-hover
+ul, ol, dl
+  margin-bottom: $m-type-list-margin-bottom
+  line-height: $m-type-list-line-height
+ul, ol
+  margin-left: $m-type-list-margin-side
+  li
+    ul, ol
+      margin-bottom: 0
+dl
+  dt
+    margin-bottom: .3em
+    font-weight: bold
+  dd
+    margin-bottom: em(12px)
+button, input, textarea
+  font: inherit
+button
+  cursor: pointer
+button[disabled], input[disabled]
+  cursor: default
+textarea
+  height: auto
+  min-height: 6em
+  overflow: auto
+  vertical-align: top
+  line-height: 1.4em
+  resize: vertical

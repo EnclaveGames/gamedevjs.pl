@@ -1,0 +1,16 @@
+---
+import type { Event } from '../lib/types';
+
+interface Props {
+  event: Pick<Event, 'slug' | 'parent'>;
+  /** Optional parent event to link to instead of the event itself. */
+  parent?: { slug: string };
+  class?: string;
+}
+
+const { event, parent, class: className = '' } = Astro.props;
+const target = parent?.slug ?? event.parent?.slug ?? event.slug;
+const href = target ? '/wydarzenia/' + target : '#';
+---
+
+<a href={href} class={className || undefined}><slot /></a>

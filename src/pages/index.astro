@@ -1,0 +1,117 @@
+---
+import { getEvents } from '../lib/data';
+import Layout from '../layouts/Layout.astro';
+import Logo from '../components/Logo.astro';
+import EventJumbo from '../components/EventJumbo.astro';
+import EventList from '../components/EventList.astro';
+import OrganizationsLogoList from '../components/OrganizationsLogoList.astro';
+import projectsSvg from '../assets/projects.svg?raw';
+import aboutPhoto from '../assets/about-photo.png';
+
+const events = getEvents();
+const EVENTS_LIST_LIMIT = 5;
+const featured = events[0];
+const listed = events.slice(1, EVENTS_LIST_LIMIT + 1);
+
+const partners = [
+  { logo: { normal: '/img/organizations/mozilla.png' }, homepage: 'https://www.mozilla.org' },
+  { logo: { normal: '/img/organizations/github.png' }, homepage: 'https://github.com' },
+  { logo: { normal: '/img/organizations/itmagination.png' }, homepage: 'https://itmagination.com' },
+];
+
+const projects = [
+  { name: 'Enclave Games', href: 'http://enclavegames.com', description: 'Indie Game Development Studio focused on mobile HTML5 games', svg: '#shape-enclave' },
+  { name: 'Gamedev.js Weekly', href: 'http://gamedevjsweekly.com', description: 'Weekly newsletter about HTML5 Game Development', svg: '#shape-gdjs-weekly' },
+  { name: 'js13kGames', href: 'http://js13kgames.com', description: 'HTML5 and JavaScript Game Development Competition in just 13 kB', svg: '#shape-js13k' },
+  { name: 'HTML5 Gamedev Starter', href: 'http://html5devstarter.enclavegames.com', description: 'Starter for the new HTML5 game developers', svg: '#shape-starter' },
+  { name: 'Open HTML5 Games', href: 'http://openhtml5games.com', description: 'Free mobile HTML5 games with open source code', svg: '#shape-open' },
+  { name: 'Build HTML5 Games for Firefox OS', href: 'http://firefoxos.enclavegames.com', description: 'Free ebook about HTML5 Game Development for the Firefox OS', svg: '#shape-ebook' },
+  { name: 'GameDev T-shirts!', description: 'Coming soon!', svg: '#shape-shirts' },
+  { name: 'NeuroshimaHex.pl', href: 'http://neuroshimahex.pl', description: 'Polish website about the Neuroshima Hex board game', svg: '#shape-neuroshima' },
+];
+---
+
+<Layout title="Gamedev.js - Spotkania z tworzeniem gier w HTML5 i JavaScript" invertedTop={250}>
+  <main>
+    <EventJumbo summary event={featured} class="skewed" />
+
+    <section class:list={['home-events', 'skewed grid exposed-soft border-bottom border-simpler']}>
+      <h3 class="g-type-title-section g-type-title-left">
+        <a href="/wydarzenia">Wydarzenia</a>
+        <a href="/events.rss" aria-label="Subskrybuj RSS"><svg class="rss icon"><use href="/icons.svg#i-rss"></use></svg></a>
+      </h3>
+      <p>
+        <b>Spotkania z tworzeniem gier w HTML5 i JavaScript</b><br />
+        Zasubskrybuj nasze wydarzenia i bądź na bieżąco!
+      </p>
+      <EventList events={listed} />
+      <a class="primary button" href="/wydarzenia">Więcej wydarzeń...</a>
+    </section>
+
+    <section class:list={['home-pitch', 'grid']}>
+      <h3 class="g-type-title-section line-flat">
+        <a href="/kontakt">Chcesz się pokazać?</a>
+      </h3>
+      <p>
+        Chcesz <strong>opowiedzieć</strong> o praktycznych zastosowaniach mechaniki kwantowej w tworzeniu gier?
+        A może chcesz <strong>zorganizować</strong> jakiś event całkowicie po swojemu?
+        Reprezentujesz firmę i chcesz <strong>dotrzeć do doświadczonych developerów</strong>?
+      </p>
+      <p>
+        Jesteśmy otwarci na wszystko i mamy proste, równie <a href="/kontakt">otwarte procedury</a>.<br />
+        Przy organizacji naszych wydarzeń współpracowaliśmy już z takimi organizacjami, jak:
+      </p>
+
+      <OrganizationsLogoList organizations={partners} />
+
+      <p>
+        Będziesz więc w doborowym towarzystwie. Nie zwlekaj, po prostu <a href="/kontakt">skontaktuj się z nami</a>.
+      </p>
+    </section>
+
+    <div class:list={['home-about', 'skewed']}>
+      <section class="grid">
+        <article class="g-type-major markdown exposed-soft border-top border-simpler">
+          <h3 class="g-type-title-section g-type-title-left">
+            <a href="/o-nas">O nas</a>
+          </h3>
+          <img src={aboutPhoto.src} alt="A photo from one of our meetups" loading="lazy" />
+          <p>
+            Gamedev.js to <strong>społeczność</strong> organizująca <strong>spotkania</strong> związane
+            z <strong>tworzeniem gier w technologii HTML5 i języku JavaScript</strong>,
+            także na urządzenia mobilne.
+            Darmowy wstęp, piwo, pizza i dobra zabawa to nasze minimum. Poznaj technologię przyszłości
+            i twórz gry, które podbiją rynek, a Ciebie zrobią milionerem.
+          </p>
+          <p>
+            Inicjatywa Gamedev.js to nie tylko spotkania czy hakatony, ale także <strong>profesjonalne szkolenia</strong> z szeroko
+            pojętego tworzenia gier HTML5 i JavaScript. Skorzystaj z naszej wiedzy i wieloletniego doświadczenia w branży,
+            by rozwijać własne umiejętności i podnosić kwalifikacje swoich pracowników.
+          </p>
+          <Logo href="/o-nas" className="home-more-link">
+            <div slot="before">Więcej o inicjatywie</div>
+          </Logo>
+        </article>
+      </section>
+    </div>
+
+    <section class="projects">
+      <div set:html={projectsSvg} />
+      <h3 class="g-type-title-section line-flat">Nasze pozostałe projekty</h3>
+      <div>
+        {
+          projects.map((project) => (
+            <a href={project.href}>
+              <svg viewBox="0 0 100 100">
+                <use href={project.svg} />
+                <use href={project.svg} />
+              </svg>
+              <h4 class="g-type-title-section">{project.name}</h4>
+              <p>{project.description}</p>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</Layout>

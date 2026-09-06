@@ -1,0 +1,40 @@
+@use "config" as *;
+
+form
+  .field
+    margin: 0 0 $m-grid-gutter-single
+
+textarea, select, input
+  padding: 0 1.25em
+  outline: none
+  border: $m-ui-border
+  background: $m-color-white
+  color: $m-color-blur
+  transition: border-color $g-transition-default-settings
+  -webkit-tap-highlight-color: transparent
+  &:focus
+    color: $m-color-foreground
+    border-color: $m-color-blur-more
+
+input, select
+  line-height: 3em
+
+textarea
+  padding: .75em 1.25em
+
+input, textarea
+  &::-webkit-input-placeholder
+    color: $m-color-blur-more
+  &::-moz-placeholder
+    color: $m-color-blur-more
+  &:focus
+    &::-webkit-input-placeholder
+      color: $m-color-blur
+    &::-moz-placeholder
+      color: $m-color-blur
+  &:invalid
+    box-shadow: none
+
+.input
+  input, textarea, select
+    width: 100%

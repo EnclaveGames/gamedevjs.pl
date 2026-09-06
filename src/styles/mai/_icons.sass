@@ -1,0 +1,18 @@
+// Consolidated Mai/UI/Icons: base sizing/color plumbing for SVG sprite glyphs.
+@use "config" as *;
+
+svg.icon
+  display: inline-block
+  width: 1em
+  height: 1em
+  vertical-align: middle
+  fill: currentColor
+
+// Legacy tweaks carried over from ui/icons.sass.
+// Icons are glyph symbols from the external SVG sprite served at /icons.svg,
+// referenced via `<svg class="icon"><use href="/icons.svg#i-..."></use></svg>`.
+i.icon
+  font-style: normal
+
+.icon.heart
+  color: $m-color-red

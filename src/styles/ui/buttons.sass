@@ -1,0 +1,69 @@
+@use "sass:color";
+
+@use "config" as *;
+
+.button
+  position: relative
+  margin: 0 30px
+  padding: .5 * $m-grid-gutter-single $m-grid-gutter
+  background: $m-color-foreground
+  color: $m-color-white
+  font-size: .75em
+  font-weight: bold
+  text-transform: uppercase
+  letter-spacing: 2px
+  line-height: 2
+  border: 0 !important
+  transition: $g-transition-default-settings
+
+  &:hover
+    background: color.adjust($m-color-foreground, $lightness: -10%, $space: hsl)
+    color: $m-color-white
+    &:before, &:after
+      background: color.adjust($m-color-foreground, $lightness: -10%, $space: hsl)
+
+  &:active, &:focus
+    outline: none
+
+  &:before, &:after
+    content: ""
+    position: absolute
+    top: 0
+    height: 100%
+    width: 40px
+    background: $m-color-foreground
+    border-radius: 7.5px
+    transition: $g-transition-default-settings
+  &:before
+    left: -20px
+    transform: skewX($g-skew)
+  &:after
+    right: -20px
+    transform: skewX(-1 * $g-skew)
+
+
+  &.primary
+    color: $m-color-white
+    background: $m-color-highlight
+    &:before, &:after
+      background: $m-color-highlight
+    &:hover
+      background: $m-color-highlight-more
+      &:before, &:after
+        background: $m-color-highlight-more
+
+  &.alt
+    color: $m-color-white
+    background: color.adjust($m-color-foreground, $lightness: -15%, $space: hsl)
+    &:before, &:after
+      background: color.adjust($m-color-foreground, $lightness: -15%, $space: hsl)
+    &:hover
+      background: $m-color-highlight-alt
+      &:before, &:after
+        background: $m-color-highlight-alt
+
+  &.exposed
+    filter: drop-shadow($g-element-expose-box-shadow)
+    &:hover
+      transform: translate(-5px, 5px)
+      filter: drop-shadow($g-element-expose-box-shadow-closer)

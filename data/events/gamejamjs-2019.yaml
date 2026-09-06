@@ -1,0 +1,59 @@
+kind: hackathon
+title: GameJam.js 2019
+time: 2019-01-25 14:00 - 2019-01-27 21:00
+venue: pl/warszawa/kntg-polygon
+
+description: |-
+  Dzięki gościnności [Koła Naukowego Twórców Gier "Polygon"](http://polygon.pw.edu.pl/) dołączamy do [PolyJam 2019](https://globalgamejam.org/2019/jam-sites/polyjam-2019)!
+  Wszyscy razem, w tym samym miejscu, będziemy brać udział w [Global Game Jam 2019](http://globalgamejam.org/) - ogólnoświatowym, 48-godzinnym maratonie tworzenia gier.
+
+  Weź udział w **GameJam.js** jeśli planujesz stworzyć grę HTML5 w języku JavaScript - dla najlepszych zespołów przewidujemy drobne nagrody!
+
+  Wydarzenie odbędzie się w **Audytorium Centralnym (AC) na Wydziale Elektroniki i Technik Informacyjnych Politechniki Warszawskiej**
+  przy ulicy **Nowowiejskiej 15/19 w Warszawie**. Wstęp jest bezpłatny, ale należy zarejestrować się na stronie.
+
+  **Pamiętaj**: spędzimy cały dzień razem tworząc gry w języku JavaScript - zabierz ze sobą swojego laptopa i ładowarkę.
+  Możesz przyjść z zespołem, ale będzie też możliwość dołączenia do kogoś na miejscu i stworzenia nowego zespołu. 
+
+details:
+  - label: Wstęp
+    ~markdown(content): '**darmowy**, ale wymagana jest **[rejestracja](https://goo.gl/forms/SE3d99YcwKTpZsOH2)**'
+  - label: Zapewniamy
+    content: napoje, pizzę i dobrą zabawę
+  - label: Pamiętaj
+    content: zabierz ze sobą swojego laptopa
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/1236559686503307/)
+
+schedule:
+  - title: Rozpoczęcie
+    time: 2019-01-25 14:00
+  - title: Ogłoszenie tematu
+    time: 2019-01-25 17:00
+  - title: Panel informacyjny
+    time: 2019-01-25 18:00
+  - title: Start robienia gier
+    time: 2019-01-25 18:30
+  - title: Pizza
+    time: 2019-01-26 12:00
+  - title: Pizza
+    time: 2019-01-27 12:00
+  - title: Prezentacje gier
+    time: 2019-01-27 17:30
+  - title: Ogłoszenie wyników i wręczenie nagród
+    time: 2019-01-27 20:00
+
+~resolve(organizers|kind organization|by name|flat):
+  - KNTG Polygon
+  - Enclave Games
+
+~resolve(partners|kind organization|by name|flat):
+  - Mozilla
+  - Horizon Games
+  - Battlestash
+  - BLUR
+
+~markdown(prizes): |-
+  - puchar dla najlepszego zespołu
+  - planszówki od Battlestash
+  - gadżety Gamedev.js i js13kGames

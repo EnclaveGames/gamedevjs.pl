@@ -1,0 +1,28 @@
+name:
+  given: Michał
+  family: Budzyński
+github: michalbe
+photo:
+  normal: img/people/michal-budzynski.png
+bio:
+  summary: |-
+    Gamedevem zajmuje się hobbystycznie od końca lat 90tych, a swoją pierwszą grę w JavaScripcie opublikował w
+    2006 roku. Prowadził szkolenia i kursy z Webowego game developmentu na całym świecie, a także 
+    [internetowy kurs dla W3C](https://openmediaweb.eu/2011/10/06/html5-games-course).
+    W latach 2011 - 2013 organizował pierwszą i największą na świecie konferencję o tworzeniu gier w HTML5 - onGameStart,
+    w Warszawie oraz Nowym Jorku.
+  full: |-
+    Gamedevem zajmuje się hobbystycznie od końca lat 90tych, a swoją pierwszą grę w JavaScripcie opublikował w
+    2006 roku. Przy użyciu technologii tej zdobywał później wyróżnienia w wielu konkursach, takich jak:
+
+      - Nokia Ovi Challenge (2009),
+      - Node Knockout (2010),
+      - Samsung bada Developer Challenge (2010),
+      - Konkurs Gadu Gadu (2011),
+      - Mozilla GameON (2011),
+      - Flame Party Compo (2012).
+
+    Prowadził szkolenia i kursy z Webowego game developmentu na całym świecie (m.in. Singapur, Brazylia, Kanada, Bułgaria)
+    a także internetowy kurs dla W3C. W latach 2011 - 2013 organizował pierwszą i największą na świecie konferencję o
+    tworzeniu gier w HTML5 - onGameStart, z edycjami w Warszawie oraz Nowym Jorku. Ponad 50 godzinny [materiał filmowy](https://vimeo.com/ongamestart/videos) z
+    tego wydarzenia do dziś jest jedną z największych skarbnic wiedzy o webowym gamedevie.

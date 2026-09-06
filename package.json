@@ -1,0 +1,28 @@
+{
+  "name": "gamedevjs-pl",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro build && wrangler dev",
+    "preview:static": "astro preview",
+    "deploy": "astro build && wrangler deploy",
+    "check": "astro check"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^26.5.0",
+    "astro": "^5.0.0",
+    "js-yaml": "^4.1.0",
+    "lightningcss": "^1.33.0",
+    "marked": "^14.0.0",
+    "sass": "^1.80.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.0.0"
+  }
+}

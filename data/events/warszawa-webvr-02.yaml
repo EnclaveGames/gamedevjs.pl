@@ -1,0 +1,47 @@
+kind: meetup
+title: "WebVR Warszawa #2"
+time: 2018-03-15 18:00 - 21:00
+venue: pl/warszawa/swingdev
+
+description: |-
+  Zapraszamy na drugie spotkanie WebVR Meetup w Warszawie - inicjatywy zorganizowanej wspólnie przez [Meet.js](http://meetjs.pl/), [Gamedev.js](https://gamedevjs.pl/) oraz [SwingDev](http://swingdev.io/).
+
+  Spotkania są darmowe, ale należy się wcześniej [zarejestrować](https://www.swing3d.io/events.html#register). Przyjść może każdy, kogo zainteresuje temat wirtualnej rzeczywistości w przeglądarce. Prezentacje zostaną przeprowadzone po angielsku, a nagrania udostepnione po spotkaniu.
+
+details:
+  - label: Wstęp
+    ~markdown(content): '**darmowy**, ale wymagana [rejestracja](https://www.swing3d.io/events.html#register)'
+  - label: Atrakcje
+    content: piwo i pizza
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://www.facebook.com/events/146070266060490/?event_time_id=146070276060489) lub [Meetup.com](https://www.meetup.com/webvr-meetup/events/247768918/)
+
+schedule:
+
+  - kind: talk
+    title: Introducing A-Frame - a game changer for the Virtual Reality Web experiences
+    description: |-
+      With WebVR we are finally ready to create first-class Virtual Reality experiences using Open Web technologies.
+      WebGL being able to render 3D graphics gives us infinite possibilities when building for the browser.
+      These APIs allows VR content to be published and consumed on the Web almost instantaneously from any capable device.
+
+      A-Frame brings the ease of use while following game development coding principles.
+      Use simple HTML markup to create Virtual Reality experiences for all available platforms, and see how easy, fun, and fast it is.
+    people:
+      - Andrzej Mazur
+
+  - kind: talk
+    title: ReactVR
+    description: |-
+      Learn how to use ReactVR.
+    people:
+      - Mirosław Ciastek
+
+~resolve(organizers|kind organization|by name|flat):
+  - SwingDev
+  - Meet.js
+
+~resolve(partners|kind organization|by name|flat):
+  - Mozilla

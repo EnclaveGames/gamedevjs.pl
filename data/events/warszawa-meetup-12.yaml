@@ -1,0 +1,63 @@
+kind: meetup
+title: "Gamedev.js Warszawa #12 z meet.js"
+time: 2019-05-23 18:00 - 21:00
+venue: pl/warszawa/codility
+
+description: |-
+  Zapraszamy na dwunaste spotkanie **Gamedev.js Warszawa** - meetupu zrzeszającego twórców gier HTML5 w stolicy!
+  Znowu połączyliśmy siły z ekipą **meet.js** Warszawa, którzy wesprą nasze działania.
+  Meetup odbędzie się **23 maja**, start o godzinie **18:00** w siedzibie **Codility** przy ulicy **Dobrej 56/66**.
+  Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - oznacz się [na Facebooku](https://www.facebook.com/events/2375891666069236/)
+  - label: Atrakcje
+    content: pizza, napoje i przekąski, konkurs z nagrodami
+
+schedule:
+
+  - kind: talk
+    title: Entity-component-system, czyli gry z klocków
+    description: |-
+      Miałeś kiedyś okazję napisać grę? Dla mnie największą bolączką było to, że kod lądował gdzie popadnie, bez ładu i składu.
+      Ani to potem zdebugować, ani przetestować, ani rozwijać. Klasa Player - 2000 linii kodu. Powiedz NIE.
+      Przyjdź i zobacz jak ECS zmieni twój sposób patrzenia na tworzenie gier.
+    people:
+      - Piotr Szlachciak
+
+  - kind: talk
+    title: Mój pierwszy serwer w JavaScript - retrospekcja po trzech latach
+    description: |-
+      Jednym z bardziej wymagających zadań w mojej karierze było samodzielne napisanie, przetestowanie i zdeployowanie serwera
+      obsługującego asynchroniczną rozgrywkę wieloosobową w grze Kickerinho World. Podczas prezentacji opowiem co według mnie
+      zrobiłam dobrze, co źle, oraz o tym, jakie wyciągnęłam z tego wnioski.
+    people:
+      - Emilia Tyl
+
+  - kind: talk
+    title: Budowanie gry roguelike w HTML5
+    description: |-
+      Po wielu nieudanych podejściach do stworzenia gry, postanowiłem zacząć od jej narysowania. Wtedy rzeczy nagle ruszyły
+      z miejsca. Opowiem o technologiach, które wykorzystuję (TypeScript, PixiJS, SVG), algorytmach, które musiałem
+      zaimplementować (jak obliczanie pola widzenia czy wyszukiwanie ścieżek), a także o różnych próbach zorganizowania kodu.
+    people:
+      - Paweł Marczewski
+
+  - title: Showcase
+    description: |-
+      Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+  - title: Konkurs
+    description: |-
+      Quiz, do wygrania karcianki od Battlestash dla najlepszych.
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - Meet.js
+
+~resolve(partners|kind organization|by name|flat):
+  - Codility
+  - Iterators
+  - Mozilla
+  - Battlestash

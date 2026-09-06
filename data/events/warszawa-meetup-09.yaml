@@ -1,0 +1,73 @@
+kind: meetup
+title: "Gamedev.js Warszawa #9"
+time: 2017-11-28 18:30 - 21:00
+venue: pl/warszawa/crux
+
+description: |-
+  Zapraszamy na dziewiąte, ostatnie w tym roku spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
+  Spotkanie jest w pełni darmowe, przyjść może każdy, prelekcje zostaną nagrane i udostępnione a uczestnicy
+  będą mieli okazję wykorzystać darmowe kupony na piwo lub inne napoje w barze.
+  Oprócz prelekcji będzie więc miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Atrakcje
+    content: kupony na piwo lub inne napoje
+  - label: Dodatkowo
+    content: prelekcje będą nagrywane
+  - label: Dołącz
+    ~markdown(content): do wydarzenia [<i class="facebook icon"></i> na Facebooku](https://facebook.com/events/140105016629316)
+
+schedule:
+
+  - kind: talk
+    title: Wstęp do WebGL
+    description: |-
+      Opowiem o podstawowych pojęciach w grafice 3D na przykładzie WebGL oraz WebGL 2. Celem jest dokładne
+      zrozumienie jak działa [nowy shader w shadertoy](http://shadertoy.com/new).
+    people:
+      - Krzysztof Kula
+
+  - kind: talk
+    title: Prosta gra w JavaScripcie jako zadanie rekrutacyjne – pros and cons
+    description: |-
+      Przez ponad rok pierwszym etapem rekrutacji w Netguru było zrobienie prostej gry w JavaScripcie
+      (w VanillaJS lub dowolnym frameworku frontendowym) według konkretnej specyfikacji. W trakcie krótkiej
+      prezentacji zdradzę co możemy sprawdzić za pomocą takiego zadania, jakie mogą być wymagania
+      co do implementacji na różnych poziomach seniority oraz jak to wpływa na motywację kandydata
+      i inne nietechniczne elementy procesu rekrutacyjnego. Opowiem też o konkretnych przykładach gier
+      opartych na JS wykorzystywanych jako element edukacji czy sprawdzenia wiedzy.
+    people:
+      - Kasia Iwańska
+
+  - kind: talk
+    title: Game development w służbie edukacji - czyli o tym jak uczyć się tworząc gry edukacyjne
+    description: |-
+      Z jakimi problemami styka się na co dzień dział Software Developmentu największego polskiego wydawnicta edukacyjnego?
+      Jak tworzyć platformy internetowe, które są zarówno rozbudowanym narzędziem dydaktycznym jak i produktem atrakcyjnym
+      dla najmłodszych użytkowników internetu? W jaki sposób pogodzić szybkie prototypowanie używając nowych technologii
+      z dostarczaniem stabilnego, przetestowanego kodu wysokiej jakości?​
+
+      Jeżeli jesteś ciekaw odpowiedzi na powyższe pytania, poznaj BalonBluma - platformę edukacyjną kierowaną dla dzieci
+      w wieku 3 - 6 lat. Nasze case-study przedstawia transformację prostej aplikacji internetowej w złożony ekosystem dydaktyczny,
+      obsługujący pełen proces powstawania ćwiczeń - gier edukacyjnych. Opowiemy Wam o tym jakie wyzwania architektoniczne
+      niesie ze sobą ciągły wzrost ruchu mobilnego, jaka jest specyfika testowania oprogramowania kierowanego dla najmłodszej
+      grupy wiekowej oraz jak wyglądało skalowanie z perspektywy lidera rynku oprogramowania edukacyjnego.
+    people:
+      - Adrian Zniszczyński
+
+  - title: Lightning talki
+
+  - title: Konkurs z nagrodami
+
+~resolve(sponsors|kind organization|by name|flat):
+  - Mozilla
+  - BLUR
+  - Nowa Era
+  - Trivial
+
+~resolve(partners|kind organization|by name|flat):
+  - Enclave Games
+  - Meet.js
+  - Whitestream

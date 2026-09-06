@@ -1,0 +1,90 @@
+// Shared layout / spacing helpers hoisted from components.
+// Imported by global.sass so every component can @extend or use them
+// directly in markup. Keeps flex/container/margin patterns in one place
+// instead of redeclaring them per component.
+
+@use "config" as *;
+
+// ---- Icon resources (moved from _resources.sass) ----
+
+// Inline icons that must be drawn from pseudoelements (:before/:after), where
+// an SVG <use> element can't be placed. They are mask: layers (the FA4.7 glyph
+// outlines, SIL OFL) so the glyph inherits currentColor via background-color.
+$g-icon-circle-o: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%3E%3Ccircle%20cx%3D'12'%20cy%3D'12'%20r%3D'10'%20fill%3D'none'%20stroke%3D'currentColor'%20stroke-width%3D'2'%2F%3E%3C%2Fsvg%3E")
+
+=g-icon($uri, $size: 1em)
+  content: ""
+  display: inline-block
+  width: $size
+  height: $size
+  background-color: currentColor
+  -webkit-mask: #{$uri} no-repeat center / contain
+  mask: #{$uri} no-repeat center / contain
+
+// Flex helpers (was repeated ~26x as `display: flex` + row-wrap/center combos)
+.u-flex
+  display: flex
+
+.u-row-wrap
+  display: flex
+  flex-flow: row wrap
+
+.u-row-wrap-center
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+
+.u-column
+  display: flex
+  flex-flow: column wrap
+
+// Centered page container (was `margin: 0 auto` + `max-width: $m-grid-width`
+// repeated in About/EventsIndex/EventsShow/Home/Live/PeopleShow/Projects)
+.u-container
+  margin: 0 auto
+  max-width: $m-grid-width
+
+// Round avatar image, shared by the PeopleIndex/PeopleShow/PersonStripView
+// portraits (sizes stay per-component).
+.u-avatar
+  border-radius: 100%
+  border: 5px solid $m-color-white
+  box-shadow: 0 0 5px $m-color-blur-more
+
+// Divided list rows shared by EventList/TalkList (and PeopleShow lists):
+// negative-gutter rows separated by a top border.
+%list-dividers
+  li
+    margin: 0 -1 * $m-grid-gutter-single
+    padding: 0 1 * $m-grid-gutter-single
+    &:not(:first-child)
+      border-top: 1px solid $m-ui-border-color
+
+%list-heading
+  margin: 0
+  font-weight: bold
+  font-style: italic
+  font-size: 1em
+
+// Counter-skew for direct children of skewed sections (Schedule/Home/
+// PeopleIndex/PeopleShow/PersonStripView): keeps content upright while the
+// section itself stays slanted.
+%unskew-kids
+  > *
+    transform: skewY(-$g-container-skew-y)
+
+// Given-name line in person headings (PeopleIndex/PeopleShow/PersonStripView):
+// stacked above the family name in a lighter weight.
+%given-name
+  display: block
+  font-weight: lighter
+
+// Brand hover colors shared by Identities (solid + bare variants).
+// Replaces 12 near-identical `[href*=x]:hover` branches.
+$m-brand-colors: (github: $m-color-brand-github, twitter: $m-color-brand-twitter, facebook: $m-color-brand-facebook, youtube: $m-color-brand-youtube, slack: $m-color-brand-slack, linkedin: $m-color-brand-linkedin)
+
+=brand-hover($property: background)
+  @each $name, $color in $m-brand-colors
+    &[href*=#{$name}]
+      &:hover
+        #{$property}: $color

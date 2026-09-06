@@ -1,0 +1,20 @@
+name:
+  given: Łukasz
+  family: Balcerzak
+twitter: lbalcerzak
+photo:
+  normal: img/people/lukasz-balcerzak.png
+bio:
+  summary: |-
+    Pracował jako pentester (Avet) oraz programista (Etelko, Setjam, obecnie Applause). Cały czas próbuje
+    nowych technologii, przez ostatnią dekadę kodował głównie w Python'ie, choć w ciągu ostatnich kilku lat
+    zdecydowanie częściej pisał również w JavaScript'cie.
+  full: |-
+    Pracował jako pentester (Avet) oraz programista (Etelko, Setjam, obecnie Applause). Cały czas próbuje
+    nowych technologii, przez ostatnią dekadę kodował głównie w Python'ie, choć w ciągu ostatnich kilku lat
+    zdecydowanie częściej pisał również w JavaScript'cie.
+
+    Dużo uwagi przykłada do jakości kodu, testowania i upraszczania procesu wytwarzania oprogramowania.
+    Jako miłośnik wolnego oprogramowania pomaga w wielu projektach, m.in. Django, tox, dulwich.
+    Stworzył też kilka własnych: django-guardian, porunga, vcs, cq.
+    Stworzył też platformę do umawiania wizyt [TimeHub.io](https://www.timehub.io/).

@@ -1,0 +1,15 @@
+---
+import { kindToLocalizedString } from '../lib/data';
+import type { Event } from '../lib/types';
+
+interface Props {
+  event: Pick<Event, 'kind' | 'venue'>;
+  className?: string | string[];
+}
+
+const { event, className = '' } = Astro.props;
+---
+
+<span class:list={['event-kind', className]}>
+  <span><b>{event.venue?.location?.city?.name}</b>{kindToLocalizedString(event.kind)}</span>
+</span>

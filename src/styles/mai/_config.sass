@@ -1,0 +1,176 @@
+@use "sass:color"
+@use "sass:list"
+@use "sass:map"
+@use "sass:math"
+@use "sass:meta"
+
+$m-global-em: 16px !default
+
+@function stripUnit($num)
+  @return math.div($num, $num * 0 + 1)
+
+@function -zf-to-rem($value, $base: null)
+  @if meta.type-of($value) != 'number'
+    @warn meta.inspect($value) + ' was passed to rem-calc(), which is not a number.'
+    @return $value
+  @if math.unit($value) != 'rem'
+    $value: math.div(stripUnit($value), stripUnit($base)) * 1rem
+  @if $value == 0rem
+    $value: 0
+  @return $value
+
+@function rem($values, $base: null)
+  $rem-values: ()
+  $count: list.length($values)
+  @if $base == null
+    $base: $m-global-em
+  @if math.unit($base) == '%'
+    $base: math.div($base, 100%) * 16px
+  @if $count == 1
+    @return -zf-to-rem($values, $base)
+  @for $i from 1 through $count
+    $rem-values: list.append($rem-values, -zf-to-rem(list.nth($values, $i), $base))
+  @return $rem-values
+
+@function toEm($value)
+  @if math.unit($value) == 'px' or math.is-unitless($value)
+    $value: rem($value, $base: $m-global-em)
+  @return stripUnit($value) * 1em
+
+@function em($pxWidth)
+  @return math.div($pxWidth, $m-global-em) * 1em
+
+$m-global-margin-size: rem(15px)
+
+$m-color-foreground: #222 !default
+$m-color-background: white !default
+$m-color-blur: color.adjust($m-color-foreground, $lightness: 15%, $space: hsl) !default
+$m-color-blur-more: color.adjust($m-color-blur, $lightness: 20%, $space: hsl) !default
+$m-color-highlight: #6ECFF5 !default
+$m-color-highlight-less: color.adjust($m-color-highlight, $lightness: -20%, $space: hsl) !default
+$m-color-highlight-more: color.adjust(color.adjust($m-color-highlight, $lightness: 20%, $space: hsl), $saturation: -20%, $space: hsl) !default
+$m-color-white: #fff !default
+$m-color-red: #d9555c !default
+$m-color-positive: #A1CF64 !default
+$m-color-negative: $m-color-red !default
+$m-color-brand-facebook: #3b5998 !default
+$m-color-brand-twitter: #1da1f2 !default
+$m-color-brand-youtube: #cd201f !default
+$m-color-brand-linkedin: #0077b5 !default
+$m-color-brand-github: #333333 !default
+$m-color-brand-slack: #e01563 !default
+$m-color-special-rss: #ffaf00 !default
+
+$m-ui-border-size: 1px !default
+$m-ui-border-style: solid !default
+$m-ui-border-color: color.adjust($m-color-foreground, $lightness: 65%, $space: hsl) !default
+$m-ui-border-color-strong: color.adjust($m-ui-border-color, $lightness: -5%, $space: hsl) !default
+$m-ui-border: $m-ui-border-size $m-ui-border-style $m-ui-border-color !default
+$m-body-font-size: $m-global-em !default
+$m-body-font-family: sans-serif !default
+$m-body-font-color: $m-color-foreground !default
+$m-body-background: $m-color-background !default
+$m-body-line-height: 1.25 !default
+$m-type-text-color-blur: $m-color-blur !default
+$m-type-text-color-blur-more: $m-color-blur-more !default
+$m-type-text-color-highlight: $m-color-highlight !default
+$m-type-text-color-highlight-less: $m-color-highlight-less !default
+$m-type-a-color-base: $m-type-text-color-highlight !default
+$m-type-a-color-hover: $m-type-text-color-highlight-less !default
+$m-type-a-text-decoration: none !default
+$m-type-h-line-height: 150% !default
+$m-type-h-margin: 0 0 .4em !default
+$m-type-p-line-height: 175% !default
+$m-type-p-margin-bottom: $m-global-margin-size !default
+$m-type-list-margin-side: $m-global-margin-size * 2 !default
+$m-type-list-margin-bottom: $m-type-p-margin-bottom !default
+$m-type-list-line-height: $m-type-p-line-height !default
+$m-type-small-font-size: 80% !default
+$m-type-small-font-color: $m-color-blur-more !default
+$m-type-h-small-font-color: $m-type-text-color-blur !default
+$m-type-hr-border: $m-ui-border !default
+$m-type-hr-margin: $m-global-margin-size 0 !default
+
+$m-grid-width-smaller: 720px !default
+$m-grid-width: 960px !default
+$m-grid-width-larger: 1240px !default
+$m-grid-width-largest: 1560px !default
+$m-grid-gutter-single: $m-global-margin-size !default
+$m-grid-gutter: $m-grid-gutter-single * 2 !default
+$m-grid-columns: 12 !default
+$breakpoints: (small: 0, medium: 720px, large: 960px, xlarge: 1400px, xxlarge: 1920px) !default
+$zf-zero-breakpoint: small !default
+@if list.nth(map.values($breakpoints), 1) != 0
+  @error 'Your smallest breakpoint (defined in $breakpoints) must be set to "0".'
+@else
+  $zf-zero-breakpoint: list.nth(map.keys($breakpoints), 1)
+$breakpoint-classes: (medium large xlarge) !default
+
+@function zf-map-next($map, $key)
+  $values: map.keys($map)
+  $i: 0
+  @if (map.has-key($map, $key))
+    $i: list.index($values, $key) + 1
+  @if ($i > list.length($map) or $i == 0)
+    @return null
+  @else
+    @return map.get($map, list.nth($values, $i))
+
+@function breakpoint($val: $zf-zero-breakpoint)
+  $bp: list.nth($val, 1)
+  $bp-max: 0
+  $dir: up
+  @if list.length($val) > 1
+    $dir: list.nth($val, 2)
+  $str: ''
+  $named: false
+  @if $bp == 'landscape' or $bp == 'portrait'
+    @return '(orientation: #{$bp})'
+  @if $bp == 'retina'
+    @return '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)'
+  @if meta.type-of($bp) == 'string'
+    @if map.has-key($breakpoints, $bp)
+      @if $dir == 'only' or $dir == 'down'
+        $bp-max: zf-map-next($breakpoints, $bp)
+      $bp: map.get($breakpoints, $bp)
+      $named: true
+    @else
+      $bp: 0
+      @warn 'breakpoint(): "#{$val}" is not defined in your $breakpoints setting.'
+  $bp: toEm($bp)
+  @if $bp-max
+    $bp-max: toEm($bp-max) - math.div(1, 16)
+  @if $bp > 0em or $dir == 'only' or $dir == 'down'
+    @if $dir == 'only'
+      @if $named == true
+        @if $bp > 0em
+          $str: $str + '(min-width: #{$bp})'
+        @if $bp-max != null
+          $str: $str + ' and '
+      @if $bp-max != null
+        $str: $str + '(max-width: #{$bp-max})'
+      @else
+        @warn 'breakpoint(): Only named media queries can have an `only` range.'
+    @else if $dir == 'down'
+      $max: $bp
+      @if $named
+        $max: $bp-max
+      @if $named or $bp > 0em
+        @if $max != null
+          $str: $str + '(max-width: #{$max})'
+    @else if $bp > 0em
+      $str: $str + '(min-width: #{$bp})'
+  @return $str
+
+@mixin breakpoint($value)
+  $str: breakpoint($value)
+  @if $str == ''
+    @content
+  @else
+    @media screen and #{$str}
+      @content
+
+@mixin zf-each-breakpoint()
+  @each $size in $breakpoint-classes
+    @include breakpoint($size)
+      @content($size)

@@ -1,0 +1,69 @@
+@use "sass:list"
+@use "sass:math"
+@use "sass:map"
+@use "sass:meta"
+@use "config" as *
+
+$m-using-module-grid: true !default
+
+/// Calculates the width of a column based on a number of factors.
+@function grid-column-width($columns)
+  $width: 0%
+  @if meta.type-of($columns) == 'number'
+    @if math.unit($columns) == '%'
+      $width: $columns
+    @else if $columns < 1
+      $width: math.percentage($columns)
+    @else
+      $width: math.percentage(math.div($columns, $m-grid-columns))
+  @else if meta.type-of($columns) == 'list'
+    @if list.length($columns) != 3
+      @error 'Wrong syntax for grid-column(). Use the format "n of n".'
+    @else
+      $width: math.percentage(math.div(list.nth($columns, 1), list.nth($columns, 3)))
+  @else
+    @error 'Wrong syntax for grid-column(). Use a number, decimal, percentage, or "n of n".'
+  @return $width
+
+/// Calculates the `flex` property for a flex grid column.
+@function flex-grid-column-width($columns: null)
+  $flex: 1 1 0px
+  @if $columns == shrink
+    $flex: 0 0 auto
+  @else if $columns != null
+    $flex: 0 0 grid-column-width($columns)
+  @return $flex
+
+/// Creates a column for a flex grid.
+@mixin flex-grid-column($columns: null)
+  position: relative
+  flex: flex-grid-column-width($columns)
+  padding-left: $m-grid-gutter-single
+  padding-right: $m-grid-gutter-single
+  @if $columns == null
+    min-width: initial
+  @if $columns != null and $columns != shrink
+    max-width: grid-column-width($columns)
+
+.grid
+  display: flex
+  flex-flow: row wrap
+  max-width: $m-grid-width
+  margin-left: auto
+  margin-right: auto
+  &.larger
+    max-width: $m-grid-width-larger
+  &.largest
+    max-width: $m-grid-width-largest
+  & &
+    max-width: none
+    margin-left: -1 * $m-grid-gutter-single
+    margin-right: -1 * $m-grid-gutter-single
+.column
+  +flex-grid-column($columns: $m-grid-columns)
+
+// Responsive column classes
+@include zf-each-breakpoint using ($zf-size)
+  @for $i from 1 through $m-grid-columns
+    .#{$zf-size}-#{$i}
+      flex: flex-grid-column-width($i)

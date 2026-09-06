@@ -1,0 +1,1845 @@
+@use "sass:color";
+
+// Single global stylesheet for the entire site. Loads the design-system
+// foundation (config, mai, ui, markdown; see master.sass) plus shared
+// utilities, followed by all component/page styles inlined below
+// (formerly per-component .sass partials).
+@use "sass:map";
+
+@use "sass:math";
+
+@use "config" as *;
+
+@use "master";
+
+@use "utilities" as *;
+
+// Body background (ported from the reference layout). Must come after master
+// so the background override wins.
+body
+  background: $m-color-background url("../assets/bg.png") no-repeat
+
+// -----------------------------------------------------------------------------
+// Logo
+// -----------------------------------------------------------------------------
+
+.logo
+  @extend .u-flex
+  align-content: center
+  transition: transform $g-transition-default-settings
+
+  svg
+    fill: $m-color-foreground
+    transition: fill $g-transition-default-settings
+
+  h2
+    display: inline
+    margin: 0 0 0 $m-grid-gutter-single
+    font-size: 1.75em
+    font-family: $g-font-brand
+    font-style: normal
+    line-height: 1
+    letter-spacing: -2px
+    color: $m-color-foreground
+    transition: color $g-transition-default-settings
+
+    span
+      color: color.adjust($m-color-foreground, $lightness: 25%, $space: hsl)
+      letter-spacing: 0
+      transition: color $g-transition-default-settings
+
+  &:hover, &.logo-active
+    svg
+      fill: $m-color-highlight
+    span
+      color: $m-color-highlight
+
+.logo-inverted
+  svg
+    fill: $m-color-white
+  h2
+    color: $m-color-white
+    span
+      color: rgba($m-color-white, .75)
+  &:hover, &.logo-active
+    svg
+      fill: $m-color-white
+    span
+      color: $m-color-highlight-alt-more
+
+// -----------------------------------------------------------------------------
+// Identities
+// -----------------------------------------------------------------------------
+
+.identities
+  --item-size: 24px
+  a
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: var(--item-size)
+    height: var(--item-size)
+    text-align: center
+    color: $m-color-white
+    background: $m-color-blur-more
+    border-radius: 100%
+    &:hover
+      background: $m-color-highlight
+      color: $m-color-white
+    > svg
+      // 50% matches the reference's FA glyph em-box (`font-size: item-size/2`):
+      // the port's box-filling SVGs otherwise render ~1.5x larger than the
+      // FontAwesome outlines did at the same circle size.
+      width: 50%
+      height: 50%
+      fill: currentColor
+    +brand-hover(background)
+    &:not(:last-child)
+      margin-right: calc(var(--item-size) / 2.5)
+
+  &.identities-bare
+    a
+      width: auto
+      height: auto
+      background: transparent
+      color: $m-color-blur
+      &:hover
+        background: inherit
+        color: $m-color-highlight
+      > svg
+        // ~0.75em approximates the FontAwesome glyph ink (~0.7-0.8em of the
+        // inherited em); a full 1em box-filling SVG reads much larger.
+        width: .75em
+        height: .75em
+      +brand-hover(color)
+
+// -----------------------------------------------------------------------------
+// EventJumbo
+// -----------------------------------------------------------------------------
+
+.event-jumbo
+  margin-top: -1.5 * $g-skew-height-offset
+  background: url("../assets/pattern.gif")
+  color: $m-color-white
+  font-weight: lighter
+
+  // Main event title
+  h1, h2
+    margin: $m-grid-gutter-single 0 $m-grid-gutter 0
+    font-size: 2.5em
+    font-weight: normal
+    text-align: center
+
+.event-jumbo > div
+  padding: ($g-header-offset + $g-skew-height-offset) $m-grid-gutter-single (3 * $m-grid-gutter)
+
+  > img
+    z-index: -1
+    position: absolute
+    top: 0
+    right: 10%
+    width: 562px
+    height: 300px
+    opacity: .25
+    transform: scaleX(-1)
+    background: url("../assets/bubble.png")
+
+.event-jumbo-summary
+  > div
+    padding-bottom: 2 * $m-grid-gutter
+
+.event-jumbo-title-link
+  h2
+    @extend .u-flex
+    align-items: center
+    color: $m-color-white
+
+  .event-jumbo-title-link-icon
+    width: 1em
+    height: 1em
+    color: rgba(white, .75)
+    transition: $g-transition-default-settings
+
+  &:hover
+    .event-jumbo-title-link-icon
+      transform: translateX(.25em)
+      color: $m-color-white
+
+// Additional details column
+.event-jumbo-details li
+  @extend .u-flex
+  border-bottom: 1px solid rgba(white, .25)
+  line-height: 2
+
+  &:last-child
+    border-bottom: none
+
+  > b
+    flex: 0 0 120px
+    padding-right: $m-grid-gutter-single
+    font-weight: normal
+    text-align: right
+
+.event-jumbo-description
+  > div
+    margin-top: $m-grid-gutter
+
++breakpoint(medium)
+  .event-jumbo-description > div
+    margin-top: 0
+    padding-left: $m-grid-gutter
+    border-left: 1px solid rgba(white, .25)
+
++breakpoint(large)
+  .event-jumbo
+    header
+      margin-left: 2 * $m-grid-gutter
+    h1, h2
+      text-align: inherit
+
+// -----------------------------------------------------------------------------
+// EventList
+// -----------------------------------------------------------------------------
+
+.event-list
+  @extend %list-dividers
+
+  span.kind
+    text-transform: uppercase
+    b
+      &:after
+        content: "//"
+
+  span.timeframe
+    flex-basis: 100%
+
+  a
+    @extend .u-row-wrap
+    padding: $m-grid-gutter-single 0
+    color: $m-color-foreground
+
+    > span
+      color: $m-color-blur-more
+      font-size: $g-font-size-smallest
+      transition: $g-transition-default-settings
+
+    > h4
+      @extend %list-heading
+      flex-basis: 100%
+
+    &:hover
+      color: $m-color-highlight-alt
+      span
+        color: $m-color-foreground
+        b:after
+          color: $m-color-highlight-alt
+
+  +breakpoint(medium)
+    span.kind
+      flex-basis: 200px
+    span.timeframe
+      flex: 1
+      text-align: right
+
+// -----------------------------------------------------------------------------
+// EventMetadata
+// -----------------------------------------------------------------------------
+
+.event-metadata
+  @extend .u-row-wrap
+  width: 100%
+  justify-content: center
+  filter: drop-shadow($g-element-expose-box-shadow)
+
+  +breakpoint(large)
+    justify-content: flex-start
+
+  > span
+    flex-basis: 100%
+    margin-left: $m-grid-gutter-single
+    border-radius: $g-skew-border-radius-default
+    transition: $g-transition-default-settings
+    transform: skewX(-1 * $g-skew)
+    > span
+      display: inline-block
+      transform: skewX($g-skew) !important
+
+  > span.upcoming
+    flex-basis: auto
+    background: $m-color-highlight-alt
+
+  > span.kind
+    flex-basis: 100%
+    b
+      &:after
+        content: "//"
+        color: $m-color-highlight-more
+
+    @media(min-width: 640px)
+      flex-basis: auto
+
+  > span.timeframe
+    text-transform: none
+    background: $m-color-white
+    color: $m-color-blur
+
+    @media(min-width: 640px)
+      flex-basis: auto
+
+    b
+      color: $m-color-foreground
+
+// -----------------------------------------------------------------------------
+// EventsIndex
+// -----------------------------------------------------------------------------
+
+// /wydarzenia index. Scoped by #wydarzenia so inner names stay short
+// (timeline/year/month/day/event) with no collision risk and no prefix.
+$l-timeline-border-color: color.adjust($m-ui-border-color, $lightness: -5%, $space: hsl)
+$l-timeline-margin: 6 * $m-grid-gutter
+$l-timeline-dates-inset: -1 * $l-timeline-margin
+$l-timeline-dates-width: $l-timeline-margin - $m-grid-gutter
+
+#wydarzenia
+  @extend .u-container
+  padding-top: $g-header-height
+  h2
+    width: 100%
+    margin: $m-grid-gutter 0
+    color: $m-color-blur-more
+    font-size: 1.25em
+    font-family: $g-font-brand
+    font-weight: normal
+    text-align: center
+    &:before, &:after
+      content: ""
+      display: inline-block
+      width: 25%
+      margin: 0 1em 0 -25%
+      vertical-align: middle
+      border-bottom: $m-ui-border
+    &:after
+      margin: 0 -25% 0 1em
+
+  .timeline
+    position: relative
+    padding: 0 $m-grid-gutter-single $m-grid-gutter
+    border-left: 1px solid $l-timeline-border-color
+    .year, .month, .day
+      display: none
+    +breakpoint(medium)
+      margin: 0 0 3 * $m-grid-gutter $l-timeline-margin
+      padding: $m-grid-gutter 0
+      .timeline-arrow
+        position: absolute
+        left: calc(-0.5 * #{$m-grid-gutter} + 0.5px)
+        width: $m-grid-gutter
+        height: $m-grid-gutter
+        color: $m-color-blur-more
+      .timeline-arrow-top
+        top: -1 * $m-grid-gutter
+      .timeline-arrow-bottom
+        bottom: -1 * $m-grid-gutter
+      // Shared date-label layout hoisted from year/month/day.
+      .year, .month, .day
+        display: block
+        margin-left: $l-timeline-dates-inset
+        width: $l-timeline-dates-width
+        font-weight: lighter
+        text-align: right
+      .year
+        font-size: 2em
+        font-family: $g-font-brand
+        &.prehistory
+          font-size: 1.5em
+          color: $m-color-blur-more
+        &.prehistory, &:not(:first-of-type)
+          margin-top: 2 * $m-grid-gutter
+        &:not(:first-of-type):not(:last-of-type)
+          &:after
+            position: absolute
+            content: ""
+            margin-top: $m-grid-gutter-single
+            margin-left: 2 * $m-grid-gutter
+            width: 100%
+            max-width: calc(#{$m-grid-width} - #{$l-timeline-margin + $m-grid-gutter})
+            height: 1px
+            background: $l-timeline-border-color
+      .month
+        font-size: 1.5em
+        color: $m-color-blur
+        &.break
+          margin-top: 2 * $m-grid-gutter
+      .day
+        float: left
+        margin-top: 1.5em
+        font-size: 1.25em
+        color: $m-color-blur
+        letter-spacing: -1px
+        font-family: $g-font-brand
+        &.upcoming
+          color: $m-color-white
+
+  .event
+    @extend .u-flex
+    align-items: center
+    position: relative
+    margin-bottom: $m-grid-gutter-single
+    padding: $m-grid-gutter-single
+    color: $m-color-blur
+    font-size: .75em
+    background: $m-color-white
+    line-height: 2
+    +breakpoint(medium)
+      margin: 0 0 $m-grid-gutter-single $m-grid-gutter
+      &:before, &:after
+        content: ""
+        position: absolute
+        left: -2.25 * $m-grid-gutter-single
+        width: .5 * $m-grid-gutter-single
+        height: .5 * $m-grid-gutter-single
+        background: $m-color-blur-more
+        border-radius: 100%
+        transition: $g-transition-default-settings
+    &:hover
+      &:before
+        left: -2.5 * $m-grid-gutter-single
+        width: $m-grid-gutter-single
+        height: $m-grid-gutter-single
+        background: $m-color-highlight
+      &:after
+        background: transparent
+      h3
+        color: $m-color-highlight
+    > div
+      h3
+        margin: 0
+        font-size: 1.5em
+        font-weight: normal
+        line-height: 1
+        transition: color $g-transition-default-settings
+      span
+        color: $m-color-blur-more
+    > span
+      flex: 0 1 100px
+      margin-right: $m-grid-gutter-single
+      padding: .5 * $m-grid-gutter-single $m-grid-gutter-single
+      text-align: right
+      text-transform: uppercase
+      color: $m-color-white
+      background: $m-color-blur-more
+      transition: background-color $g-transition-default-settings
+    &.upcoming
+      background: $m-color-highlight
+      color: $m-color-white
+      &:hover
+        background: $m-color-highlight-more
+        h3
+          color: inherit
+      > div span
+        color: $m-color-white
+      > span
+        background: $m-color-white
+        color: $m-color-highlight
+      &:before, &:after
+        background: $m-color-highlight
+      &:after
+        --animation-wave-color: #{$m-color-highlight-more}
+        animation: wave 2s linear infinite
+
+// -----------------------------------------------------------------------------
+// EventsShow
+// -----------------------------------------------------------------------------
+
+.people-section
+  @extend .u-container
+  padding: 0 $m-grid-gutter
+
+.prizes-results
+  @extend .u-row-wrap
+  max-width: $m-grid-width-largest
+  margin: 4 * $m-grid-gutter auto 0 auto
+  &.prizes-no-results
+    max-width: $m-grid-width
+    margin: 0 auto
+  +breakpoint(large)
+    margin: 4 * $m-grid-gutter auto
+
+.prizes, .results
+  padding: 2 * $m-grid-gutter $m-grid-gutter
+  +breakpoint(large)
+    padding: 2 * $m-grid-gutter
+    flex: 50%
+    &:only-child
+      flex: 100%
+
+.results
+  padding-bottom: 0
+  ol
+    counter-reset: results
+    margin-left: 2 * $m-grid-gutter
+    li
+      counter-increment: results
+      position: relative
+      list-style: none
+      margin-top: .5 * $m-grid-gutter-single
+      padding-top: .5 * $m-grid-gutter-single
+      &:not(:first-child)
+        border-top: $m-ui-border
+      &:before
+        position: absolute
+        top: .25 * $m-grid-gutter
+        left: -2 * $m-grid-gutter
+        content: counter(results)
+        width: 2em
+        height: 2em
+        line-height: calc(2em - 4px)
+        text-align: center
+        font-weight: bold
+        border-radius: 50%
+        border: 2px solid $m-color-highlight
+        color: $m-color-highlight
+    a
+      font-weight: bold
+    em
+      font-style: normal
+      font-size: $g-font-size-smaller
+      color: $m-color-blur
+
+.resources
+  margin-top: 2 * $m-grid-gutter
+  margin-bottom: 0
+  article
+    flex-basis: 100%
+    padding: 0 $m-grid-gutter
+    &:not(:first-child)
+      margin-top: $m-grid-gutter
+      margin-right: auto
+  li
+    position: relative
+    padding-right: $m-grid-gutter-single
+    line-height: 3
+    &:not(:first-child)
+      border-top: 1px solid $m-ui-border-color-strong
+    a
+      color: $m-color-foreground
+      @extend .u-flex
+      align-items: center
+    .resources-link-icon
+      width: 1em
+      height: 1em
+      margin-left: auto
+      color: $m-color-blur
+      transition: $g-transition-default-settings
+    &:hover
+      .resources-link-icon
+        color: $m-color-highlight
+        transform: translateX(-1 * $m-grid-gutter-single)
+  +breakpoint(large)
+    article
+      flex-basis: 50%
+      padding: 0 2 * $m-grid-gutter
+      &:not(:first-child)
+        margin-top: 0
+
+.event-show
+  > section:last-child
+    margin-bottom: 4 * $m-grid-gutter
+
+$l-timeline-item-person-inset: $m-grid-gutter-single
+$l-schedule-item-flat-line-height: 3em
+
+.schedule-item
+  @extend %unskew-kids
+  flex: 100%
+  margin: 4 * $m-grid-gutter 0 0 0
+  &:first-of-type
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
+  > header
+    span
+      font-weight: bold
+    h3
+      font-weight: normal
+      a
+        color: $m-color-blur
+  > div
+    font-style: italic
+  > footer
+    margin-top: $m-grid-gutter
+    border-top: $m-ui-border
+    div:first-child
+      margin-top: -1 * $l-timeline-item-person-inset
+      p:first-child
+        margin-top: 2 * $l-timeline-item-person-inset
+      h4
+        margin-top: 2 * $l-timeline-item-person-inset
+  +breakpoint(large)
+    &:first-of-type
+      border-radius: 2 * $g-skew-border-radius-big 2 * $g-skew-border-radius-big 0 0
+    &:nth-child(even)
+      margin-right: -2 * $m-grid-gutter
+    &:nth-child(odd)
+      margin-left: -2 * $m-grid-gutter
+
+.schedule-flat-item
+  > span
+    min-width: 50px
+    color: $m-color-blur
+  > i
+    position: relative
+    &:after
+      position: absolute
+      content: ""
+      top: .5 * $l-schedule-item-flat-line-height
+      width: 100%
+      height: 1px
+      background: $m-ui-border-color-strong
+  &:not(:last-child)
+    > div
+      margin-bottom: $m-grid-gutter-single
+      padding-bottom: $m-grid-gutter-single
+      border-bottom: $m-ui-border
+  > div
+    width: 100%
+    h4
+      margin: 0
+      font-weight: normal
+    p
+      font-size: $g-font-size-smallest
+      color: $m-color-blur
+  +breakpoint(large)
+    display: flex
+    flex-flow: row wrap
+    line-height: $l-schedule-item-flat-line-height
+    &:not(:last-child)
+      > div
+        margin-bottom: 0
+        padding-bottom: 0
+        border-bottom: 0
+    > i
+      flex: 1
+      margin-right: 1em
+    > span
+      text-align: right
+    > div
+      width: 65%
+      margin-left: 2 * $m-grid-gutter
+      h4
+        line-height: math.div($l-schedule-item-flat-line-height, $g-type-headers-4-font-size)
+
+.event-timeline
+  position: relative
+  margin: -8 * $m-grid-gutter auto 2 * $m-grid-gutter auto
+  max-width: $m-grid-width
+  &.timeline-empty-first
+    margin: -5 * $m-grid-gutter auto 2 * $m-grid-gutter auto
+  > h3
+    width: 100%
+    margin: 0 0 $m-grid-gutter 0
+    color: $m-color-white
+    text-align: center
+  +breakpoint(large)
+    margin-top: -10 * $m-grid-gutter
+    padding: $m-grid-gutter
+    &.timeline-empty-first
+      margin-top: -7 * $m-grid-gutter
+      > h3
+        top: 158px
+        left: -75px
+        width: 120px
+        padding-left: 20px
+        text-align: left
+    > h3
+      position: absolute
+      top: 209px
+      left: -125px
+      width: 200px
+      padding: .5 * $m-grid-gutter-single 0
+      background: $m-color-foreground
+      font-size: .85rem
+      font-weight: bold
+      text-transform: uppercase
+      border-radius: 0 $g-skew-border-radius-big $g-skew-border-radius-big 0
+      transform: rotateZ(-90deg) skewX(-$g-container-skew-y)
+      &:after
+        content: ""
+        position: absolute
+        top: 0
+        right: -10px
+        height: 100%
+        width: 40px
+        background: $m-color-foreground
+        border-radius: 7.5px
+        transform: skewX($g-skew)
+
+.jumbo:not(.jumbo-no-schedule)
+  padding-bottom: 8 * $m-grid-gutter
+  &.jumbo-empty-first
+    padding-bottom: 4 * $m-grid-gutter
+
+.jumbo.jumbo-no-schedule
+  > div
+    padding-bottom: 2 * $m-grid-gutter
+
+// -----------------------------------------------------------------------------
+// EventOrgs
+// -----------------------------------------------------------------------------
+
+.event-orgs
+  &.event-orgs-first
+    margin-top: 4 * $m-grid-gutter
+  h3
+    flex: 100%
+  // Logo rows reuse the shared OrganizationsLogoList markup; only the flex
+  // share is event-specific (margin: 0 neutralizes .org-logo-list's auto
+  // centering, matching the old plain-ul rendering).
+  .org-logo-list
+    flex: 3
+    margin: 0
+  +breakpoint(large)
+    h3
+      flex: 1
+
+// -----------------------------------------------------------------------------
+// Projects
+// -----------------------------------------------------------------------------
+
+.projects
+  margin: 4 * $m-grid-gutter 0
+  > div
+    @extend .u-flex
+    flex-flow: row wrap
+    justify-content: center
+    max-width: $m-grid-width-larger
+    margin: $m-grid-gutter auto 0 auto
+  a
+    display: block
+    margin: $m-grid-gutter-single
+    width: 175px
+    text-align: center
+    color: $m-color-blur
+    &:hover
+      h4
+        color: $m-color-highlight-alt
+        &:after
+          width: 100px
+      p
+        opacity: 1
+      svg
+        transform: scale(1.25)
+        use
+          &:nth-child(1)
+            opacity: 1
+          &:nth-child(2)
+            opacity: 0
+    +breakpoint(medium)
+      width: 280px
+    +breakpoint(large)
+      p
+        opacity: 0
+  svg
+    width: 50%
+    transition: $g-transition-default-settings
+    use
+      transition: 1s ease
+      &:nth-child(1)
+        fill: url(#gradient)
+        opacity: 0
+      &:nth-child(2)
+        fill: $m-color-blur-more
+        opacity: 1
+  h4
+    margin: $m-grid-gutter-single 0
+    font-family: $g-font-brand
+    font-size: 1em
+    transition: color $g-transition-default-settings
+    &:after
+      width: 25px
+  p
+    font-size: $g-font-size-smallest
+    color: $m-color-blur
+    transition: opacity $g-transition-default-settings
+
+// -----------------------------------------------------------------------------
+// Live
+// -----------------------------------------------------------------------------
+
+.live
+  @extend .u-column
+
+  article
+    flex: 1
+    @extend .u-row-wrap-center
+
+    > div
+      flex: 1
+      max-width: $m-grid-width
+      margin: 0 auto
+      padding: 3 * $m-grid-gutter
+      background: #fff
+      text-align: center
+
+    h2
+      font-size: 3em
+      line-height: 1
+
+    sup
+      color: $m-color-red
+
+// -----------------------------------------------------------------------------
+// OrganizationsLogoList
+// -----------------------------------------------------------------------------
+
+.org-logo-list
+  @extend .u-row-wrap-center
+  justify-content: space-evenly
+  margin: 0 auto
+
+  li
+    margin: $m-grid-gutter $m-grid-gutter-single
+
+// -----------------------------------------------------------------------------
+// Partners
+// -----------------------------------------------------------------------------
+
+.partners
+  padding-top: $g-header-offset
+
+  ul
+    margin-bottom: 4 * $m-grid-gutter
+    max-width: $m-grid-width
+
+// -----------------------------------------------------------------------------
+// Contact
+// -----------------------------------------------------------------------------
+
+.contact
+  @extend .u-flex
+  padding-top: $g-header-offset
+
+  > div
+    display: inherit
+    flex: 1
+
+    > section
+      padding: 0 $m-grid-gutter 2 * $m-grid-gutter $m-grid-gutter
+      flex-basis: 100%
+
+    > section:nth-child(2)
+      @extend .u-column
+      justify-content: flex-end
+      align-self: flex-end
+      padding: 2 * $m-grid-gutter $m-grid-gutter 3 * $m-grid-gutter $m-grid-gutter
+      background: $m-color-white
+
+    +breakpoint(large)
+      > section:nth-child(1)
+        flex-basis: 60%
+      > section:nth-child(2)
+        flex-basis: 40%
+
+  h3
+    font-size: 2em
+
+.contact dl
+  border-left: $m-ui-border
+  padding-left: $m-grid-gutter
+  > div.open
+    dt:before
+      background-color: $m-color-highlight
+      transform: rotate(180deg)
+    dt:hover:before
+      background-color: $m-color-highlight-more
+
+  +breakpoint(medium)
+    margin: $m-grid-gutter
+
+.contact dt
+  position: relative
+  margin: $m-grid-gutter-single 0
+  font-size: 1.25em
+  font-weight: normal
+  cursor: pointer
+  &:before
+    content: ""
+    position: absolute
+    left: -3 * $m-grid-gutter-single
+    width: 1.5em
+    height: 1.5em
+    background-color: $m-color-foreground
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2024%2024'%3E%3Cpath%20d%3D'M12%207l-6%208h12l-6-8z'%20fill%3D'none'%20stroke%3D'%23FFF'%20stroke-width%3D'2'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 1em
+    border-radius: 50%
+    transition: $g-transition-default-settings
+  &:hover:before
+    background-color: $m-color-blur
+
+.contact dd
+  margin: 0
+
+// FAQ accordion toggle (moved from the <style is:global> block in
+// src/pages/kontakt.astro). Closed items hide their answers; `.contact dt`
+// above already inherits its color, so no extra color rule is needed.
+.faq > div:not(.open) dd
+  display: none
+
+// -----------------------------------------------------------------------------
+// PeopleIndex
+// -----------------------------------------------------------------------------
+
+$l-vertical-spacing: 4 * $m-grid-gutter !default
+$l-photo-dimensions: (small: 125px, large: 175px) !default
+
+.people-index
+  padding-top: $g-header-offset
+
+.people-strip
+  &:last-child
+    padding-bottom: $l-vertical-spacing
+  +breakpoint(large)
+    padding: .5 * $l-vertical-spacing $m-grid-gutter
+    &:nth-child(even)
+      background: $m-color-white
+
+.person
+  @extend .u-row-wrap
+  flex: 100%
+  justify-content: center
+  padding: $m-grid-gutter
+  text-align: center
+  border-bottom: 1px solid $m-ui-border-color-strong
+  cursor: pointer
+  transition: background $g-transition-default-settings
+  transform: skewY($g-container-skew-y)
+  @extend %unskew-kids
+  &:hover
+    background: $m-color-white
+    h3:after
+      width: 100px
+      background: $m-color-highlight
+  header
+    flex: 200px
+    text-align: center
+    h3
+      margin: $m-grid-gutter-single 0 0 0
+      font-weight: normal
+      font-style: normal
+      line-height: 1
+      text-align: center
+      &:after
+        margin: $m-grid-gutter-single auto
+      a
+        color: $m-color-foreground
+      span
+        @extend %given-name
+  img
+    @extend .u-avatar
+    width: map.get($l-photo-dimensions, small)
+    height: map.get($l-photo-dimensions, small)
+  > div
+    display: none
+  @media screen and (min-width: 480px)
+    align-items: center
+    text-align: left
+    padding: $m-grid-gutter
+    > header
+      flex: auto
+      text-align: right
+      h3
+        margin-bottom: $m-grid-gutter-single
+        text-align: right
+        &:after
+          margin-left: auto
+          margin-right: 0
+    > div
+      flex: 100%
+      order: 3
+      display: block
+      margin: $m-grid-gutter 0
+    &.person-right
+      > header
+        order: 1
+        text-align: left
+        h3
+          text-align: left
+          &:after
+            margin-left: 0
+            margin-right: auto
+      img
+        order: 2
+  +breakpoint(large)
+    flex: initial !important
+    width: 90%
+    margin: $m-grid-gutter 0 0 auto
+    padding: 0 !important
+    justify-content: center
+    border: none
+    transform: none
+    > *
+      transform: none
+    &:hover
+      background: transparent
+    header
+      order: 1 !important
+      flex: 0 0 200px !important
+    img
+      order: 3 !important
+      width: map.get($l-photo-dimensions, large)
+      height: map.get($l-photo-dimensions, large)
+      margin: 0 $m-grid-gutter
+    div
+      order: 4 !important
+      flex: 1 !important
+      margin: 0 !important
+    &.person-right
+      margin: 0 auto 0 0
+      > div
+        order: 1 !important
+        text-align: right
+      img
+        order: 2 !important
+      header
+        order: 3 !important
+  +breakpoint(xlarge)
+    width: 82.5%
+
+// -----------------------------------------------------------------------------
+// PeopleShow
+// -----------------------------------------------------------------------------
+
+.people-show
+  margin-bottom: 8 * $m-grid-gutter
+  margin-top: $g-header-offset + 3 * $m-grid-gutter
+  > div
+    @extend .u-flex
+    justify-content: space-between
+
+.bio
+  @extend .u-flex
+  order: 1
+  position: relative
+  flex: 100%
+  margin: 0 $m-grid-gutter
+  padding: 0 !important
+  z-index: 1
+  > a
+    @extend .u-flex
+    flex: 0 0 2 * $m-grid-gutter
+    align-items: center
+    justify-content: center
+    color: $m-color-foreground
+    cursor: pointer
+    transition: $g-transition-default-settings
+    text-decoration: none
+    svg
+      width: 32px
+      height: 32px
+      padding: 9px
+      background: $m-color-white
+      border-radius: 100%
+      fill: none
+      stroke: $m-color-foreground
+      stroke-width: 2
+      stroke-linecap: round
+      stroke-linejoin: round
+      transition: inherit
+    &:hover
+      background: rgba($m-color-foreground, .05)
+      svg
+        background: $m-color-foreground
+        stroke: $m-color-white
+    &:first-child
+      margin-left: -1 * $m-grid-gutter
+      border-radius: 2 * $g-skew-border-radius-big 0 0 2 * $g-skew-border-radius-big
+    &:last-child
+      margin-right: -1 * $m-grid-gutter
+      border-radius: 0 2 * $g-skew-border-radius-big 2 * $g-skew-border-radius-big 0
+  > div
+    flex: 1
+    padding: 2 * $m-grid-gutter $m-grid-gutter
+  @extend %unskew-kids
+  header
+    @extend .u-flex
+    flex-flow: row wrap
+    justify-content: center
+    align-items: center
+    > div
+      flex: 100%
+  h1
+    margin-top: $m-grid-gutter
+    font-size: 1.5em
+    font-weight: normal
+    font-style: normal
+    text-align: center
+    line-height: 1
+    span
+      @extend %given-name
+  img
+    @extend .u-avatar
+    margin-top: -4 * $m-grid-gutter
+    width: 175px
+    height: 175px
+    background: $m-color-white
+  +breakpoint(large)
+    margin: 0 auto
+    max-width: $m-grid-width-smaller
+  +breakpoint(xlarge)
+    order: 2
+    max-width: 33.3%
+
+.bio-content
+  margin-top: $m-grid-gutter
+  font-style: italic
+
+.people-identities
+  margin: -1 * $m-grid-gutter-single -2 * $m-grid-gutter 0
+  text-align: center
+
+.nav-inactive
+  cursor: default !important
+  opacity: 0
+
+.talks, .events
+  padding: 2 * $m-grid-gutter
+  margin-top: 1 * $m-grid-gutter
+  li
+    border-color: $m-ui-border-color-strong !important
+  a
+    color: $m-color-blur
+
+.events
+  order: 2
+  text-align: right
+  li a
+    justify-content: flex-end
+  +breakpoint(xlarge)
+    order: 1
+
+.talks
+  order: 3
+
+// -----------------------------------------------------------------------------
+// PersonStripView
+// -----------------------------------------------------------------------------
+
+.person-strip
+  @extend .u-row-wrap-center
+  margin-top: $m-grid-gutter-single
+
+  &:nth-child(even)
+    h4
+      order: 1
+      text-align: right
+    img
+      order: 2
+    > div
+      order: 3
+
+  h4
+    order: 3
+    flex: 1
+    font-weight: normal
+    line-height: 1
+    +breakpoint(medium)
+      flex: 0 0 100px
+    > a
+      color: $m-color-foreground
+      span
+        @extend %given-name
+    > span
+      --item-size: 24px
+      display: block
+      margin-top: $m-grid-gutter-single
+
+  img
+    @extend .u-avatar
+    order: 2
+    width: 100px
+    height: 100px
+    margin: 0 $m-grid-gutter
+    background: $m-color-white
+    +breakpoint(medium)
+      width: 125px
+      height: 125px
+
+  > div
+    display: none
+    order: 1
+    flex: 1
+    +breakpoint(medium)
+      display: block
+
+// -----------------------------------------------------------------------------
+// TalkList
+// -----------------------------------------------------------------------------
+
+.talk-list
+  @extend %list-dividers
+  li
+    a
+      display: block
+      padding: $m-grid-gutter-single 0
+      color: $m-color-blur
+      &:hover
+        color: $m-color-highlight-alt
+    h4
+      @extend %list-heading
+      line-height: 1
+    span
+      font-size: $g-font-size-smallest
+      font-weight: lighter
+      color: $m-color-blur-more
+      b
+        font-weight: normal
+
+// -----------------------------------------------------------------------------
+// Home
+// -----------------------------------------------------------------------------
+
+.home-events
+  padding: 2 * $m-grid-gutter !important
+  margin-top: -2 * $m-grid-gutter
+  @extend %unskew-kids
+
+  h3
+    > a[href*="rss"]
+      margin-left: .5em
+      color: $m-color-blur-more
+      &:hover
+        color: $m-color-special-rss
+
+  p
+    margin-bottom: $m-grid-gutter
+  ul
+    width: 100%
+
+  > a
+    z-index: 1
+    margin: 3 * $m-grid-gutter-single 0 -5 * $m-grid-gutter-single auto
+    transform: skewY(0)
+
+  +breakpoint(medium)
+    p
+      margin: 0
+    h3
+      flex: auto
+
+  +breakpoint(large)
+    border-radius: 2 * $g-skew-border-radius-big 2 * $g-skew-border-radius-big 0 0
+
+.home-pitch
+  justify-content: center
+  margin: 4 * $m-grid-gutter auto 0 auto
+  padding: 0 2 * $m-grid-gutter
+  color: $m-color-blur
+  text-align: center
+
+  p
+    font-size: $g-font-size-smaller
+  ul
+    margin: $m-grid-gutter 0
+
+.home-about
+  margin-top: 4 * $m-grid-gutter
+
+  img
+    display: none
+
+  article
+    position: relative
+    padding: 2 * $m-grid-gutter
+    background: $m-color-white
+    @extend %unskew-kids
+    > p
+      font-style: italic
+
+  +breakpoint(medium)
+    margin-top: 6 * $m-grid-gutter
+    padding: 1px $m-grid-gutter
+    background: url(../assets/about-bg.jpg)
+    background-position-x: 75%
+    background-size: cover
+
+    section
+      display: block
+    section, article
+      margin: -2 * $m-grid-gutter auto 4 * $m-grid-gutter auto
+
+    // We use an intermediate wrapper to fake the drop shadow since we need to offset it vertically to start
+    // along with the underlying skewed background, not with our own box (and box-shadows offsets don't allow
+    // us to keep the Y shadow at a fixed size when we offset Y). This also allows us to avoid fiddling with
+    // z-index.
+    section
+      &:before
+        content: ""
+        position: absolute
+        width: 100%
+        max-width: $m-grid-width
+        height: calc(100% - 4 * #{$m-grid-gutter} + #{$g-element-expose-box-shadow-distance})
+        background: $g-element-expose-box-shadow-color
+        margin: 2 * $m-grid-gutter $g-element-expose-box-shadow-distance 0 -1 * $g-element-expose-box-shadow-distance
+
+  +breakpoint(large)
+    img
+      display: block
+      float: right
+      margin: -1 * $m-grid-gutter -5 * $m-grid-gutter 0 0
+      shape-outside: circle(75% at 120% 35%)
+
+.home-more-link
+  flex: 100%
+  align-content: flex-end
+  justify-content: flex-end
+  flex-wrap: wrap
+  margin-top: $m-grid-gutter
+  color: $m-color-blur
+  > div
+    flex: 100%
+    text-align: right
+  > svg
+    display: none
+
+  @media(min-width: 380px)
+    > svg
+      display: inline
+      margin-left: $m-grid-gutter-single
+
+// -----------------------------------------------------------------------------
+// About
+// -----------------------------------------------------------------------------
+
+.about
+  padding-top: $g-header-offset + $m-grid-gutter
+  .g-type-title-right.floating
+    margin-top: -2 * $m-grid-gutter-single
+
+.about-intro
+  > h1
+    transform: skewY($g-container-skew-y)
+  p
+    font-style: italic
+
+.about-conduct
+  padding: $m-grid-gutter-single 2 * $m-grid-gutter
+  margin-top: 2 * $m-grid-gutter
+
+.about-identities
+  justify-content: center
+  align-items: center
+  padding: 4 * $m-grid-gutter $m-grid-gutter
+
+  a
+    @extend .u-flex
+    align-items: center
+    font-size: $g-font-size-smaller
+    padding: $m-grid-gutter
+    color: inherit
+
+    &:hover
+      svg
+        opacity: 1
+
+  svg
+    width: 50px
+    height: 50px
+    margin-right: $m-grid-gutter
+    fill: currentColor
+    opacity: .5
+    transition: $g-transition-default-settings
+
+  +breakpoint(medium)
+    a
+      width: 50%
+  +breakpoint(large)
+    a
+      width: 33.3%
+
+.about-organizers
+  > div
+    @extend .u-container
+
+    > div
+      margin-bottom: 2 * $m-grid-gutter
+
+// -----------------------------------------------------------------------------
+// Header
+// -----------------------------------------------------------------------------
+
+$l-header-pinned-height: $g-header-height - 2 * $m-grid-gutter
+
+.header
+  position: fixed
+  top: 0
+  z-index: 100
+  width: 100vw
+  transition: $g-transition-default-settings
+  transform: translateY(0)
+
+  &:before
+    content: ""
+    display: block
+    height: 5px
+    background: $m-color-foreground
+    opacity: .75
+    transition: $g-transition-default-settings
+
+  &.header-inverted
+    &:before
+      opacity: .5
+
+  // Note: `.header` already sets `transform: translateY(0)`, so the
+  // `unfixed`/`pinned` states only override the top bar here.
+  &.header-pinned
+    &:before
+      background-color: color.adjust($m-color-foreground, $lightness: -10%, $space: hsl)
+      opacity: 1
+
+// Grid container
+.header > div
+  position: relative
+  align-items: center
+  justify-content: space-between
+  padding: 0 $m-grid-gutter
+  height: $g-header-height
+  transition: $g-transition-default-settings
+
+.header-logo
+  h2
+    display: none
+  @media screen and (min-width: 340px)
+    h2
+      display: block
+
+.header-nav
+  @extend .u-flex
+  align-items: center
+  text-transform: uppercase
+
+  &.header-nav-expanded
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    background: $m-color-highlight url("../assets/pattern.gif")
+
+    > a
+      transform: translateY(10px)
+      i
+        margin-top: 0 !important
+        background: $m-color-white
+        &:nth-child(1)
+          transform: rotate(-45deg)
+        &:nth-child(2)
+          transform: rotate(45deg) translate(-2.5px, -2.5px)
+        &:nth-child(3)
+          opacity: 0
+      &:hover
+        i
+          background: $m-color-highlight-more
+
+    > ul
+      display: block
+
+.header-expander
+  position: absolute
+  top: 3 * $m-grid-gutter-single
+  right: 3 * $m-grid-gutter-single
+  width: 40px
+  transition: $g-transition-default-settings
+  cursor: pointer
+
+  i
+    display: block
+    width: 100%
+    height: 5px
+    background: $m-color-blur-more
+    border-radius: 2.5px
+    transition: $g-transition-default-settings
+    &:not(:first-child)
+      margin-top: 5px
+  &:hover
+    i
+      background: $m-color-highlight
+      &:not(:first-child)
+        margin-top: 10px
+
+  +breakpoint(medium)
+    display: none
+
+.header-pinned .header-expander
+  top: $m-grid-gutter-single
+
+.header-nav > ul
+  display: none
+  width: 100%
+  text-align: center
+
+  li
+    &:not(:last-child)
+      margin-right: 1em
+
+  a
+    position: relative
+    color: $m-color-white
+    font-size: 3em
+    line-height: 2
+    &:hover
+      &:before
+        background: $m-color-highlight-alt
+    &.header-nav-active
+      font-weight: bold
+      &:before
+        background: $m-color-highlight
+
+    &[href="/live"]
+      position: relative
+      padding-right: 2 * $m-grid-gutter-single
+      color: rgba($m-color-foreground, .25)
+      cursor: default
+      i, i:after
+        content: ""
+        display: block
+        height: 10px
+        width: 10px
+        position: absolute
+        border-radius: 50%
+        background: $m-color-blur-more
+      i
+        top: 10%
+        right: 1 * $m-grid-gutter-single
+      i:after
+        top: 0
+        right: 0
+      &:not(.header-nav-active):hover:after
+        width: 0
+
+  +breakpoint(medium)
+    display: block
+    li
+      display: inline
+
+    a
+      color: $m-color-foreground
+      font-size: $g-font-size-smaller
+      &:before
+        content: ""
+        position: absolute
+        top: calc(-1 * #{$g-header-height * 0.5} + 3px)
+        left: -12px
+        width: calc(100% + 22px)
+        height: 5px
+        transition: $g-transition-default-settings
+
+  +breakpoint(large)
+    a
+      padding-left: 1em
+      padding-right: 1em
+      letter-spacing: 2px
+
+.header > div > svg
+  position: absolute
+  top: 0
+  height: 100%
+  fill: transparent
+  transition: $g-transition-default-settings
+  &:first-child
+    left: -4 * $m-grid-gutter
+  &:last-child
+    right: -4 * $m-grid-gutter
+
+// ID scope wins over the base nav rules without !important.
+#site-header.header-inverted, #site-header.header-pinned
+  nav
+    .header-expander i
+      background: $m-color-white
+    ul a
+      color: $m-color-white
+      &[href="/live"]
+        color: rgba(white, .5)
+        i, i:after
+          background: rgba(white, .25)
+
+.header-pinned
+  > div
+    position: relative
+    height: $l-header-pinned-height
+    background: $m-color-foreground
+
+    // Logo
+    > a
+      transform: scale(.75) translateX(-1 * $m-grid-gutter)
+      // Keep the wordmark/icon legible on the dark pinned bar even when the page
+      // didn't opt into `invertedTop` (which would have passed `inverted` to the
+      // Logo). Mirrors the reference React: `inverted = layoutHasInvertedTop || pinned`.
+      svg
+        fill: $m-color-white
+      h2
+        color: $m-color-white
+        span
+          color: rgba($m-color-white, .75)
+
+    // Corners
+    > svg
+      fill: $m-color-foreground
+      &:first-child
+        left: -2 * ($l-header-pinned-height * 0.5)
+      &:last-child
+        // FIXME(alcore) Slight aliasing glitch due to the way we simultaneously animate the size, which causes
+        // a thin (subpixel) see-through background to be visible between the corner svg and the container.
+        // The opacity overlap due to the magic pixel is less noticeable, but is still suboptimal.
+        right: calc(-2 * (#{$l-header-pinned-height} / 2) + 1px)
+
+  nav ul a
+    &:before
+      top: calc(-1 * (#{$l-header-pinned-height} / 2) + 3px)
+
+// -----------------------------------------------------------------------------
+// Footer
+// -----------------------------------------------------------------------------
+
+$l-local-root-border-width: 10px
+
+.footer-wrapper
+  position: relative
+
+.footer-skewer
+  width: 100%
+  height: 2 * $g-skew-height-offset
+  background: $m-color-foreground
+  transform: skewY($g-container-skew-y)
+
+  &:before
+    +g-gradient-pseudo-simpler
+    top: 0
+    height: $l-local-root-border-width
+
+.footer
+  margin-top: calc(-1 * (#{$g-skew-height-offset} + 10px))
+  background: $m-color-foreground
+  color: $m-color-white
+
+  > div
+    padding: 0 $m-grid-gutter
+
+.footer-background
+  z-index: -10
+  position: absolute
+  top: -740px
+  left: 0
+  width: 100%
+  height: 740px
+  // Path is relative to styles/global.sass (single-unit @import compile),
+  // same as the body background rule there — both use assets/bg.png.
+  background: url("../assets/bg.png") no-repeat
+  // Horizontal flip only, matching production (`scale(-1)`): bg.png's bottom
+  // rows are ragged-transparent, so a vertical flip would put that speckled
+  // edge against page content (visible hairline) instead of tucking it
+  // underneath the opaque footer.
+  transform: scale(-1)
+
+// ---- Newsletter ----
+
+.footer-newsletter
+  flex: 1
+  position: relative
+  margin-top: -2 * $m-grid-gutter
+  margin-bottom: $m-grid-gutter
+  padding: $m-grid-gutter
+  background: color.adjust($m-color-foreground, $lightness: -10%, $space: hsl)
+  border-radius: 0 0 $g-skew-border-radius-big $g-skew-border-radius-big
+  box-shadow: $g-element-expose-box-shadow
+
+  > span
+    position: absolute
+    top: -1.25 * $m-grid-gutter-single
+    left: 0
+    width: 100%
+    height: 1.25 * $m-grid-gutter
+    background: inherit
+    +g-skew-vertical
+
+  h3
+    margin-bottom: $m-grid-gutter-single
+    font-size: $g-font-size-smaller
+    font-style: normal
+    a
+      display: block
+      color: $m-color-highlight-alt-more
+      font-family: $g-font-brand
+
+  div
+    @extend .u-flex
+
+  input
+    background: $m-color-foreground
+    color: $m-color-white
+    border: 0
+    width: 100%
+    &::placeholder
+      color: $m-color-blur
+
+  button
+    margin: 0
+    &:before, &:after
+      display: none
+
+  +breakpoint(medium)
+    flex: 50%
+
+  +breakpoint(large)
+    flex: initial
+    margin-bottom: calc(-1 * #{$m-grid-gutter-single} - 1px)
+    border-radius: 0
+    box-shadow: -1 * $g-element-expose-box-shadow-distance 2.75 * $m-grid-gutter-single 0 $g-element-expose-box-shadow-color
+
+    > h3
+      margin-bottom: $m-grid-gutter
+
+// ---- Logo ----
+
+.footer-logo
+  order: 3
+  flex: 1
+  justify-content: center
+  text-align: center
+  z-index: 1
+
+  @media (max-width: 480px)
+    flex: 100%
+    margin-bottom: $m-grid-gutter
+
+  +breakpoint(medium)
+    order: 4
+
+  +breakpoint(large)
+    order: 2
+    flex: initial
+    margin: 0 $m-grid-gutter
+    transform: scale(.75)
+
+// ---- Nav ----
+
+$footer-nav-border: 3px solid rgba(black, .05)
+
+.footer-nav
+  @extend .u-column
+  flex: 100%
+  align-content: space-around
+  height: 4 * $m-grid-gutter
+  margin: $m-grid-gutter 0
+  padding: $m-grid-gutter-single $m-grid-gutter-single $m-grid-gutter-single $m-grid-gutter
+  border-bottom: $footer-nav-border
+  z-index: 1
+
+  a
+    position: relative
+    margin-right: $m-grid-gutter
+    color: $m-color-blur-more
+    font-size: $g-font-size-smaller
+    line-height: 2.5
+    text-transform: uppercase
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      top: 0
+      margin-right: (.5 * $m-grid-gutter-single)
+      font-weight: bold
+      color: $m-color-blur
+      transition: $g-transition-default-settings
+      width: 10px
+      height: 1px
+      background: $g-gradient-brand-simpler
+    &:hover
+      color: $m-color-white
+      &:before
+        width: 20px
+
+  +breakpoint(medium)
+    order: 2
+    flex: 50%
+    margin-top: -1 * $m-grid-gutter
+    font-size: $g-font-size-smaller
+    border-bottom: 0
+
+  +breakpoint(large)
+    order: 3
+    flex: 200px
+    border-left: $footer-nav-border
+
+// ---- Identities ----
+
+.footer-identities
+  --item-size: 32px
+  order: 4
+  flex: 1
+  text-align: center
+  z-index: 1
+
+  a
+    background: color.adjust($m-color-foreground, $lightness: -10%, $space: hsl)
+
+  +breakpoint(medium)
+    order: 3
+
+  +breakpoint(large)
+    order: 4
+    flex: 50px
+    max-width: 50px
+    margin: -2 * $m-grid-gutter -1 * $m-grid-gutter 0 0
+    text-align: left
+
+    a
+      margin-top: $m-grid-gutter-single
+
+  @media (min-width: 1200px)
+    max-width: initial
+    margin: calc(-2 * #{$m-grid-gutter} + #{$l-local-root-border-width}) 0 0 0
+    transform: skewY($g-container-skew-y)
+    a
+      transform: skewY(-$g-container-skew-y)
+      &:after
+        content: ""
+        position: absolute
+        top: calc(-1 * #{$m-grid-gutter} - #{$l-local-root-border-width})
+        left: 45%
+        width: 3px
+        height: calc(#{$m-grid-gutter} + #{$l-local-root-border-width})
+        background: $g-gradient-brand-simpler-reversed-vertical
+
+// ---- PS ----
+
+.footer-ps
+  order: 6
+  flex: 100%
+  margin-top: $m-grid-gutter
+  padding-bottom: $m-grid-gutter
+  color: $m-color-blur
+  font-size: $g-font-size-smallest
+  // Fixed 17px line (measured on production): the old FontAwesome heart left
+  // descender space making this line 17px; our middle-aligned SVG collapses
+  // it to ~15.3px, which shortens the footer just enough for the negatively
+  // margined newsletter box to overshoot it by a fraction (hairline below
+  // the footer at large breakpoints). Pinning the rhythm matches production.
+  line-height: 17px
+  text-align: center
+
+  svg.heart
+    margin: 0 10px
+    font-size: 1.25em
+
+  +breakpoint(medium)
+    text-align: left
+
+  +breakpoint(large)
+    margin-top: -1 * $m-grid-gutter
+    padding-right: 2 * $m-grid-gutter
+    text-align: right
+
+  @media (min-width: 1200px)
+    padding-right: 0

@@ -1,0 +1,27 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "gamedevjs-pl",
+	"main": "src/worker.ts",
+	"compatibility_date": "2026-09-01",
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS",
+		"html_handling": "drop-trailing-slash",
+		"not_found_handling": "404-page",
+		"run_worker_first": [
+			"/api/*",
+			"/contact"
+		]
+	},
+	"routes": [
+		{
+			"pattern": "gamedevjs.pl",
+			"zone_name": "gamedevjs.pl",
+			"custom_domain": true,
+			"enabled": true,
+			"previews_enabled": false
+		}
+	],
+	"workers_dev": false,
+	"preview_urls": false
+}

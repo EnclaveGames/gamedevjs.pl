@@ -1,0 +1,203 @@
+---
+import {
+  eventToPeopleHeaderString,
+  excerpt,
+  getEvent,
+  getEvents,
+  timeframeToLocalizedString,
+  kindToLocalizedString,
+  personFullName,
+  personPhotoUrl,
+  personUrl,
+} from '../../lib/data';
+import type { Organization, Link } from '../../lib/types';
+import Layout from '../../layouts/Layout.astro';
+import EventJumbo from '../../components/EventJumbo.astro';
+import EventLink from '../../components/EventLink.astro';
+import Identities from '../../components/Identities.astro';
+import OrganizationsLogoList from '../../components/OrganizationsLogoList.astro';
+
+export const getStaticPaths = () =>
+  getEvents().map((event) => ({ params: { slug: event.slug } }));
+
+const { slug } = Astro.params;
+const event = getEvent(slug!);
+
+if (!event) return Astro.notFound();
+
+const schedule = event.schedule ?? [];
+const showFlatSchedule = !schedule.some((item) => (item.people?.length ?? 0) > 0);
+const people = event.people;
+const peopleHeader = eventToPeopleHeaderString(event);
+const hasPrizes = event.data?.prizes !== undefined;
+const hasResults = event.data?.results !== undefined;
+const links = event.data?.links as Link[] | undefined;
+
+const ORG_DEFS = [
+  { key: 'sponsors', singular: 'Sponsor', plural: 'Sponsorzy' },
+  { key: 'organizers', singular: 'Organizator', plural: 'Organizatorzy' },
+  { key: 'partners', singular: 'Partner', plural: 'Partnerzy' },
+  { key: 'friends', singular: 'Zaprzyjaźniona inicjatywa', plural: 'Zaprzyjaźnione inicjatyki' },
+];
+
+const orgSections = ORG_DEFS
+  .map((def) => ({ def, list: (event.data?.[def.key] as Organization[] | undefined) ?? [] }))
+  .filter(({ list }) => list.length > 0);
+---
+
+<Layout
+  title={event.title + ' | Gamedev.js'}
+  description={excerpt(event.description)}
+  invertedTop={600}
+>
+  <main>
+    <article class:list={['event-show', event.kind]}>
+      <EventJumbo
+        class:list={[
+          'jumbo',
+          { 'jumbo-no-schedule': schedule.length === 0 },
+          { 'jumbo-empty-first': schedule.length > 0 && schedule[0].description === undefined },
+          'skewed',
+        ]}
+        event={event}
+      />
+
+      {schedule.length > 0 &&
+        (showFlatSchedule ? (
+          <section class:list={['event-timeline', { 'timeline-empty-first': schedule[0].description === undefined }]}>
+            <h3>Program</h3>
+            <article class:list={['schedule-item', 'skewed exposed-soft border-bottom']}>
+              <ul>
+                {schedule.map((child) => (
+                  <li class="schedule-flat-item">
+                    <i />
+                    {child.timeframe !== undefined && (
+                      <span set:html={timeframeToLocalizedString(child.timeframe, event.timeframe)} />
+                    )}
+                    <div>
+                      <h4>{child.title}</h4>
+                      {child.description !== undefined && (
+                        <div class="markdown" set:html={child.description} />
+                      )}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </section>
+        ) : (
+          <section class:list={['event-timeline', 'grid', { 'timeline-empty-first': schedule[0].description === undefined }]}>
+            <h3>Program</h3>
+            {schedule.map((child) => (
+              <article class:list={['schedule-item', child.kind, 'skewed exposed-soft border-bottom']}>
+                <header>
+                  {(child.kind !== undefined || child.timeframe !== undefined) && (
+                    <span>
+                      {child.timeframe !== undefined && (
+                        <span set:html={timeframeToLocalizedString(child.timeframe, event.timeframe)} />
+                      )}
+                      {child.timeframe !== undefined && child.kind !== undefined && ' / '}
+                      {child.kind !== undefined && kindToLocalizedString(child.kind)}
+                    </span>
+                  )}
+                  <h3 class="line-post">
+                    <EventLink event={child} parent={event}>{child.title}</EventLink>
+                  </h3>
+                </header>
+                {child.description !== undefined && (
+                  <div class="markdown g-type-major" set:html={child.description} />
+                )}
+                {child.people !== undefined && (
+                  <footer>
+                    {child.people.map((person) => (
+                      <div class="person-strip">
+                        <h4>
+                          <a href={personUrl(person)}>
+                            <span>{person.name.given}</span> {person.name.family}
+                          </a>
+                          <Identities person={person} bare element="span" />
+                        </h4>
+                        <img src={personPhotoUrl(person)} alt={'Zdjęcie ' + personFullName(person)} />
+                        <div class="g-type-minor" set:html={person.bio.summary || person.bio.full} />
+                      </div>
+                    ))}
+                  </footer>
+                )}
+              </article>
+            ))}
+          </section>
+        ))
+      }
+
+      {(schedule.length === 0 || showFlatSchedule) && people && (
+        <section class="people-section">
+          <h3 class="g-type-title-section line-flat">{peopleHeader}</h3>
+          {people.map((person) => (
+            <div class="person-strip">
+              <h4>
+                <a href={personUrl(person)}>
+                  <span>{person.name.given}</span> {person.name.family}
+                </a>
+                <Identities person={person} bare element="span" />
+              </h4>
+              <img src={personPhotoUrl(person)} alt={'Zdjęcie ' + personFullName(person)} />
+              <div class="g-type-minor" set:html={person.bio.summary || person.bio.full} />
+            </div>
+          ))}
+        </section>
+      )}
+
+      {(hasPrizes || hasResults) && (
+        <section class:list={['prizes-results', { 'prizes-no-results': !hasResults }]}>
+          {hasPrizes && (
+            <div class:list={['prizes', { 'exposed-soft border-bottom skewed-opposite': hasResults }]}>
+              <h3 class:list={['g-type-title-section', hasResults ? 'g-type-title-right floating' : 'line-flat']}>
+                Nagrody
+              </h3>
+              <div class="markdown g-type-major" set:html={event.data?.prizes} />
+            </div>
+          )}
+          {hasResults && (
+            <div class="results">
+              <h3 class="g-type-title-section g-type-title-left line-flat">Wyniki</h3>
+              <div class="markdown g-type-major" set:html={event.data?.results} />
+            </div>
+          )}
+        </section>
+      )}
+
+      {orgSections.map(({ def, list }, index) => (
+        <section class:list={['event-orgs', { 'event-orgs-first': index === 0 }]}>
+          <div class="larger grid">
+            <h3 class="g-type-title-section line-flat">
+              {list.length === 1 ? def.singular : def.plural}
+            </h3>
+            <OrganizationsLogoList organizations={list} />
+          </div>
+        </section>
+      ))}
+
+      {links !== undefined && links.length > 0 && (
+        <section class:list={['resources', 'exposed-soft skewed']}>
+          <div class="larger grid">
+            <article>
+              <h3 class="g-type-title-section g-type-title-left line-flat">Przydatne linki</h3>
+              <ul>
+                {links.map((link) => (
+                  <li>
+                    <a href={link.href}>
+                      {link.label}
+                      <svg class="resources-link-icon" viewBox="0 0 24 24">
+                        <use href="/icons.svg#i-angle-right" />
+                      </svg>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        </section>
+      )}
+    </article>
+  </main>
+</Layout>

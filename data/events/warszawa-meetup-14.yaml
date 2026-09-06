@@ -1,0 +1,61 @@
+kind: meetup
+title: "Gamedev.js Warszawa #14"
+time: 2019-11-19 18:00 - 21:00
+venue: pl/warszawa/wework-grzybowska62
+
+description: |-
+  Zapraszamy na czternaste spotkanie **Gamedev.js Warszawa** - meetupu zrzeszającego twórców gier HTML5 w stolicy!
+  Meetup odbędzie się we wtorek, **19 listopada**, start o godzinie **18:00** w siedzibie **WeWork** przy ulicy **Grzybowskiej 62**.
+  Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - dołącz do wydarzenia [na Meetup.com](https://www.meetup.com/GamedevJS-Warsaw/events/265833278/)
+  - label: Atrakcje
+    content: pizza, napoje i przekąski, konkurs z nagrodami
+
+schedule:
+
+  - kind: talk
+    title: Good luck with learning 3D graphics programming in one week
+    description: |-
+      Chciałbym zaprosić was na tydzień wspólnej nauki niskopoziomowych aspektów programowania grafiki 3D.
+      Celem jest napisanie prostej gry w WebGL z oświetleniem i teksturami.
+    people:
+      - Kacper Pietrzak
+
+  - kind: talk
+    title: Fundamenty Game Designu - kreacja przez destrukcję
+    description: |-
+      Podczas tego wykładu dowiemy się jakie istnieją podstawowe zasady designu gier komputerowych, poszukamy wykorzystania
+      tych zasad w istniejących tytułach oraz zbadamy ich wpływ na rozgrywkę przez ich dekonstrukcję. Poznamy sposoby na
+      minimalizację ryzyka podczas podejmowania kreatywnych decyzji których dokonamy w roli game designera oraz metody na
+      szybką ewaluację nowych elementów rozgrywki które zamierzamy dodać.
+    people:
+      - Mateusz Kietliński
+
+  - kind: talk
+    title: Ludzie kontra roboty
+    description: |-
+      Czy dzisiejsza technologia jest w stanie sprostać wyzwaniom rzuconym prawie 40 lat temu przez wybitnych naukowców
+      Związku Radzieckiego? Czy może tego dokonać, używając JavaScriptu? O czym Ty bredzisz Michał? 
+      Na te i inne pytania postaram się odpowiedzieć już dziś wieczorem, na kolejnym spotkaniu z serii GamedevJS.
+    people:
+      - Michał Budzyński
+
+  - title: Showcase
+    description: |-
+      Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+  - title: Konkurs
+    description: |-
+      Quiz, do wygrania nagrody dla najlepszych.
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - Codility
+
+~resolve(partners|kind organization|by name|flat):
+  - Iterators
+  - Postmark
+  - Mozilla

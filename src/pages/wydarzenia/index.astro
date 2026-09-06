@@ -1,0 +1,48 @@
+---
+import { buildEventTimeline, getEvents, kindToLocalizedString, timeframeToLocalizedString } from '../../lib/data';
+import Layout from '../../layouts/Layout.astro';
+
+const events = getEvents();
+const timeline = buildEventTimeline(events);
+---
+
+<Layout title="Wydarzenia | Gamedev.js" description="Wydarzenia organizowane przez społeczność Gamedev.js">
+  <main id="wydarzenia">
+    {
+      events.length > 0 && (
+        <div class="timeline">
+          <svg class="timeline-arrow timeline-arrow-top" viewBox="0 0 24 24">
+            <use href="/icons.svg#i-angle-up" />
+          </svg>
+          {
+            timeline.map((item) => {
+              if (item.type === 'year') return <span class="year">{item.year}</span>;
+              if (item.type === 'month')
+                return <span class:list={['month', { 'break': item.isBreak }]}>{item.month}</span>;
+              if (item.type === 'day')
+                return (
+                  <span class:list={['day', { 'upcoming': item.upcoming }]}>
+                    <span>{item.day}</span>
+                  </span>
+                );
+              if (item.type === 'prehistory') return <span class="year prehistory">Prekambr</span>;
+              return (
+                <a href={'/wydarzenia/' + item.event.slug} class:list={['event', { 'upcoming': item.upcoming }]}>
+                  <span>{kindToLocalizedString(item.event.kind)}</span>
+                  <div>
+                    <h3>{item.event.title}</h3>
+                    <span set:html={timeframeToLocalizedString(item.event.timeframe)} />
+                  </div>
+                </a>
+              );
+            })
+          }
+          <svg class="timeline-arrow timeline-arrow-bottom" viewBox="0 0 24 24">
+            <use href="/icons.svg#i-angle-down" />
+          </svg>
+        </div>
+      )
+    }
+  </main>
+</Layout>
+

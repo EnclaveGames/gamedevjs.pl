@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+
+        <symbol viewBox='0 0 24 24' id="i-gh">
+            <path d='M12 0a12 12 0 0 0-3.8 23.38c.6.11.83-.25.83-.57l-.01-2.23c-3.02.56-3.8-.73-4.04-1.41-.14-.35-.72-1.41-1.23-1.7-.42-.22-1.02-.78-.02-.79.95-.02 1.62.87 1.85 1.23 1.08 1.81 2.8 1.3 3.5.99.1-.78.41-1.3.76-1.6-2.67-.3-5.46-1.34-5.46-5.93 0-1.3.47-2.39 1.23-3.23-.12-.3-.54-1.53.12-3.18 0 0 1-.31 3.3 1.23a11.14 11.14 0 0 1 6 0c2.3-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18a4.63 4.63 0 0 1 1.23 3.23c0 4.6-2.8 5.62-5.47 5.92.43.38.8 1.1.8 2.22l-.01 3.3c0 .32.23.7.82.57A12.02 12.02 0 0 0 24 12 12 12 0 0 0 12 0z' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-twitter">
+            <path d='m13.8 10.5 7-8.5h-1.6l-6.1 7.4L8 2H2.6L10 13.1 2.5 22h1.7l6.5-7.8 5.1 7.8h5.7l-7.7-11.5zm-2.3 2.7-.7-1-6-8.9h2.6l4.8 7.1.7 1.1 6.3 9.3h-2.6l-5-7.6z' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-bsky">
+            <path d='M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364q.204-.03.415-.056c-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a9 9 0 0 1-.415-.056q.21.026.415.056c2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-mastodon">
+            <path d='M12.2 0C9 0 6.2.4 4.4 1.1 4.4 1.1 1 2.7 1 8v4c.1 5.1 1 10.1 5.7 11.4 2.1.5 4 .7 5.5.6 2.7-.2 4.2-1 4.2-1v-2s-2 .6-4.2.6c-2.1-.1-4.4-.3-4.8-3a5.4 5.4 0 0 1 0-.7s2.1.6 4.8.7l4.8-.3c3-.4 5.6-2.2 6-4 .4-2.6.4-6.4.4-6.4C23.4 2.7 20 1 20 1c-1.7-.6-4.7-.9-7.8-1zM8.7 4c1.3 0 2.2.6 2.9 1.5l.6 1 .6-1c.7-1 1.6-1.4 2.9-1.4 1.1 0 2 .4 2.7 1.1a5 5 0 0 1 1 3v6.4h-2.5V8.5c0-1.3-.6-2-1.7-2-1.2 0-1.8.8-1.8 2.3v3.4H11V8.8c0-1.5-.6-2.3-1.9-2.3-1 0-1.6.7-1.6 2v6H5V8.4c0-1.3.4-2.3 1-3A3 3 0 0 1 8.7 4z' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-slack">
+            <path d='M9 1a2.2 2.2 0 1 0 0 4.4h2.3V3.2A2.2 2.2 0 0 0 9 1zm0 5.9H3.3a2.2 2.2 0 0 0 0 4.4h5.9a2.2 2.2 0 1 0 0-4.4zM23 9a2.2 2.2 0 0 0-4.4 0v2.3h2.2A2.2 2.2 0 0 0 23 9zm-5.9 0V3.3a2.2 2.2 0 0 0-4.4 0v5.9a2.2 2.2 0 1 0 4.4 0zM15 23a2.2 2.2 0 1 0 0-4.4h-2.3v2.2c0 1.2 1 2.2 2.2 2.2zm0-5.9h5.8a2.2 2.2 0 0 0 0-4.4h-5.9a2.2 2.2 0 0 0 0 4.4zM1 15a2.2 2.2 0 0 0 4.4 0v-2.3H3.2A2.2 2.2 0 0 0 1 15zm5.9 0v5.8a2.2 2.2 0 0 0 4.4 0v-5.9a2.2 2.2 0 0 0-4.4 0z' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-discord">
+            <path d='M20.3 4.5A20 20 0 0 0 15.4 3l-.7 1.3a18.6 18.6 0 0 0-5.4 0A12.4 12.4 0 0 0 8.6 3a20 20 0 0 0-5 1.5c-3 4.6-4 9-3.5 13.5a20 20 0 0 0 6 3h.1c.5-.7.9-1.3 1.2-2a13.2 13.2 0 0 1-1.9-.9V18l.4-.3c4 1.8 8.2 1.8 12.1 0h.1l.4.3v.1c-.6.4-1.3.7-2 .9v.1l1.3 2a20 20 0 0 0 6-3h.1c.5-5.1-.8-9.6-3.6-13.5zM8 15.3c-1.2 0-2.1-1-2.1-2.4 0-1.3 1-2.4 2.1-2.4 1.2 0 2.2 1.1 2.2 2.4 0 1.3-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1-2.2-2.4 0-1.3 1-2.4 2.2-2.4 1.2 0 2.2 1.1 2.2 2.4 0 1.3-1 2.4-2.2 2.4z' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-fb">
+            <path d='M0 12c0 6 4.3 11 10 12v-8.7H7V12h3V9.3c0-3 2-4.6 4.7-4.6l2.6.2V8h-1.5c-1.5 0-1.8.7-1.8 1.7V12h3.2l-.5 3.3H14V24c5.7-1 10-6 10-12 0-6.6-5.4-12-12-12S0 5.4 0 12z' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-youtube">
+            <path d='M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z' />
+        </symbol>
+
+        <!-- Glyph icons below are extracted from the Font Awesome 4.7 webfont (SIL OFL), so the
+             site no longer loads the FontAwesome stylesheet/webfont. Single-color outlines;
+             consumers color them via `fill: currentColor`. -->
+        <symbol viewBox='0 0 24 24' id="i-heart">
+            <path d='M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-check">
+            <path d='M4 12l6 6L20 6' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-mail">
+            <path d='M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6z' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+            <path d='M2 8l7.501 6.001a4 4 0 0 0 4.998 0L22 8' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-rss">
+            <path d='M4 10.418c6.068-.319 9.9 3.514 9.582 9.582' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+            <circle cx='5' cy='19' r='1' fill='currentColor' />
+            <path d='M4 4.03C14.114 3.5 20.501 9.887 19.97 20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-globe">
+            <circle cx='12' cy='12' r='10' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+            <ellipse cx='12' cy='12' rx='10' ry='4' transform='rotate(90 12 12)' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+            <path d='M2 12h20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-linkedin">
+            <path d='M9.43 8.97h3.71v1.85c.54-1.06 1.91-2.02 3.97-2.02 3.95 0 4.89 2.12 4.89 6V22h-4v-6.31c0-2.21-.54-3.46-1.9-3.46-1.89 0-2.67 1.35-2.67 3.46V22h-4V8.97zM2.57 21.83h4V8.8h-4v13.03zM7.14 4.55a2.53 2.53 0 0 1-.75 1.8A2.57 2.57 0 0 1 4.57 7.1a2.59 2.59 0 0 1-1.82-.75A2.55 2.55 0 0 1 2 4.55c0-.68.27-1.33.75-1.8A2.58 2.58 0 0 1 4.57 2c.68 0 1.34.27 1.82.75.48.48.75 1.13.75 1.8z' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-calendar">
+            <rect x='2' y='4' width='20' height='18' rx='4' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+            <path d='M8 2v4' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+            <path d='M16 2v4' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+            <path d='M2 10h20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-clock">
+            <circle cx='12' cy='12' r='10' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+            <path d='M15 16l-2.414-2.414A2 2 0 0 1 12 12.172V6' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-angle-right">
+            <path d='M17 12L9 6v12l8-6z' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-angle-up">
+            <path d='M12 7l-6 8h12l-6-8z' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-angle-down">
+            <path d='M12 17L6 9h12l-6 8z' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+        <symbol viewBox='0 0 24 24' id="i-angle-left">
+            <path d='M8 4l-8 8 8 8' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
+        </symbol>
+
+</svg>

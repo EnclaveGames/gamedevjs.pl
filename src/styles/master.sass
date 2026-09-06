@@ -1,0 +1,224 @@
+@use "sass:meta";
+
+@use "config" as *;
+
+@use "mai/base";
+
+@use "mai/grid";
+
+@use "mai/icons";
+
+
+
+body
+  overflow-x: hidden
+  overflow-y: scroll
+
+  &::-webkit-scrollbar
+    width: .5 * $m-grid-gutter-single
+    background-color: $m-ui-border-color
+  &::-webkit-scrollbar-thumb
+    background-color: $m-color-foreground
+
+#app
+  display: flex
+  flex-flow: column wrap
+  min-height: 100vh
+
+main
+  flex: 1
+
+
+a
+  transition-property: color, background-color
+  transition-duration: .25s
+  transition-timing-function: ease
+
+
+
+
+h1, h2, h3, h4
+  font-weight: 100
+
+h1, h2, h3
+  font-style: italic
+h1, h2
+  font-size: 2em
+h3
+  font-size: $g-type-headers-3-font-size
+h4
+  font-size: $g-type-headers-4-font-size
+
+.g-type-title-section
+  flex: 100%
+  text-align: center
+  color: $m-color-blur
+  > a
+    color: inherit
+
+
+
+
+.line-post, .g-type-title-section
+  margin-bottom: $m-grid-gutter
+  &:after
+    display: block
+    content: ""
+    margin: $m-grid-gutter-single auto 0 0
+    width: 100px
+    height: 2px
+    background: $g-gradient-brand-simpler
+    transition: $g-transition-default-settings
+
+.g-type-title-section:after, .line-center:after
+  margin: $m-grid-gutter-single auto 0 auto
+.line-right:after
+  margin: $m-grid-gutter-single 0 0 auto
+.line-flat:after
+  background: $m-ui-border-color-strong
+.line-s:after
+  width: 50px
+.line-xs:after
+  width: 25px
+
+
+
+ul
+  margin: 0
+
+p a, .markdown li a
+  display: inline-block
+  position: relative
+  color: inherit
+  &:before, &:after
+    content: ""
+    position: absolute
+    bottom: 0
+    height: 1px
+    transition: $g-transition-default-settings
+  &:before
+    left: -3px
+    background: $m-color-blur-more
+    width: calc(100% + 6px)
+  &:after
+    right: -3px
+    background: $m-color-highlight
+    width: 0
+  &:hover
+    &:before
+      width: 0
+    &:after
+      width: calc(100% + 6px)
+
+
+
+.inverted
+  p a, .markdown li a
+    color: $m-color-white
+    &:before
+      background-color: rgba(white, .5)
+    &:after
+      background-color: $m-color-white
+
+
+
+.g-type-major, .g-type-major p, .g-type-major li
+  line-height: 2
+
+.g-type-minor
+  color: $m-color-blur
+  font-size: $g-font-size-smaller
+
+.g-type-title-right
+  text-align: right
+  &.floating
+    margin: -1 * $m-grid-gutter-single 0 1 * $m-grid-gutter 3 * $m-grid-gutter
+    float: right
+  &:after
+    margin: $m-grid-gutter-single 0 0 auto
+
+.g-type-title-left
+    text-align: left
+    &.floating
+      margin: -1 * $m-grid-gutter-single 3 * $m-grid-gutter 1 * $m-grid-gutter 0
+      float: left
+    &:after
+      margin: $m-grid-gutter-single auto 0 0
+
+
+.skewed
+  transform: skewY($g-container-skew-y)
+  > div
+    transform: skewY(-$g-container-skew-y)
+
+.skewed-opposite
+  transform: skewY(-$g-container-skew-y)
+  > div
+    transform: skewY($g-container-skew-y)
+
+
+
+.border-top
+  position: relative
+  &:before
+    +g-gradient-pseudo
+    top: 0
+
+.border-bottom
+  position: relative
+  &:after
+    +g-gradient-pseudo
+    bottom: 0
+
+.border-simpler
+  &:before, &:after
+    background: $g-gradient-brand-simpler
+
+.border-reversed
+  &:before, &:after
+    background: $g-gradient-brand-reversed
+  &.border-simpler:before, &border-simpler:after
+    background: $g-gradient-brand-simpler-reversed
+
+
+.exposed-soft
+  background: $m-color-white
+  +g-element-soft-box-shadow-large
+
+
+section.skewed.exposed-soft
+  padding: 3 * $m-grid-gutter 2 * $m-grid-gutter
+
+article.skewed.exposed-soft, article.skewed-opposite.exposed-soft
+
+  padding: 2 * $m-grid-gutter
+
+
+.loader
+  position: absolute
+  height: 100vh
+  margin: $g-header-height 0 $g-skew-height-offset 0
+  color: $m-color-highlight
+
+.label
+  padding: .5 * $m-grid-gutter-single $m-grid-gutter-single
+  font-size: $g-font-size-smallest
+  text-transform: uppercase
+  background: $m-color-foreground
+  color: $m-color-white
+
+.status
+  &.positive
+    color: $m-color-positive
+  &.negative
+    color: $m-color-negative
+  &.highlight
+    color: $m-color-highlight
+
+
+
+@include meta.load-css("markdown")
+
+@include meta.load-css("ui/forms")
+@include meta.load-css("ui/buttons")
+@include meta.load-css("ui/animations/wave")

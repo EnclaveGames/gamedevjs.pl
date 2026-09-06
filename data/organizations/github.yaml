@@ -1,0 +1,9 @@
+name: GitHub
+slug: github
+homepage: http://github.com/
+logo:
+  normal: img/organizations/github.png
+description: |-
+  Hostingowy serwis internetowy przeznaczony dla projektów programistycznych wykorzystujących system kontroli wersji Git.
+  Stworzony został przy wykorzystaniu frameworka Ruby on Rails i języka Erlang. Serwis działa od kwietnia 2008 roku.
+  W kwietniu 2011 ogłoszono, iż GitHub obsługuje 2 miliony repozytoriów.

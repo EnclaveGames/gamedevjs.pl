@@ -1,0 +1,27 @@
+---
+import type { Event } from '../lib/types';
+import { timeframeToLocalizedString } from '../lib/data';
+import EventLink from './EventLink.astro';
+import EventKind from './EventKind.astro';
+
+interface Props {
+  events: Event[];
+  class?: string;
+}
+
+const { events, class: className = '' } = Astro.props;
+---
+
+<ul class:list={['event-list', className]}>
+  {
+    events.map((event) => (
+      <li>
+        <EventLink event={event}>
+          <EventKind event={event} className="kind" />
+          <span class="timeframe" set:html={timeframeToLocalizedString(event.timeframe)} />
+          <h4>{event.title}</h4>
+        </EventLink>
+      </li>
+    ))
+  }
+</ul>

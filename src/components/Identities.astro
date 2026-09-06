@@ -1,0 +1,40 @@
+---
+import { SLACK_INVITE_URL } from '../lib/data';
+import type { Person } from '../lib/types';
+
+interface Identity {
+  href: string;
+  title?: string;
+  sprite: string;
+}
+
+interface Props {
+  items?: Identity[];
+  person?: Pick<Person, 'homepage' | 'github' | 'twitter' | 'slack' | 'linkedin'>;
+  bare?: boolean;
+  class?: string;
+  element?: string;
+}
+
+const { items, person, bare = false, class: className = '', element = 'div' } = Astro.props;
+const Tag = element as any;
+
+const identities = items ? [...items] : [];
+if (person) {
+  if (person.homepage) identities.push({ href: person.homepage, title: 'Homepage', sprite: 'i-globe' });
+  if (person.github) identities.push({ href: 'https://github.com/' + person.github, title: 'GitHub: ' + person.github, sprite: 'i-gh' });
+  if (person.twitter) identities.push({ href: 'https://twitter.com/' + person.twitter, title: 'Twitter: @' + person.twitter, sprite: 'i-twitter' });
+  if (person.slack) identities.push({ href: SLACK_INVITE_URL, title: 'Gamedev.js Slack: ' + person.slack, sprite: 'i-slack' });
+  if (person.linkedin) identities.push({ href: person.linkedin, title: 'Profil LinkedIn', sprite: 'i-linkedin' });
+}
+---
+
+<Tag class:list={['identities', { 'identities-bare': bare }, className]}>
+  {
+    identities.map((item) => (
+      <a href={item.href} title={item.title} aria-label={item.title}>
+        <svg><use href={'/icons.svg#' + item.sprite}></use></svg>
+      </a>
+    ))
+  }
+</Tag>

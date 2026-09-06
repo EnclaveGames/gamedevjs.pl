@@ -1,0 +1,43 @@
+kind: meetup
+title: "Gamedev.js Warszawa #16 podczas WDI 2020"
+time: 2020-12-11 9:00 - 21:00
+venue: pl/online/online
+
+description: |-
+  Zapraszamy na szesnaste spotkanie Gamedev.js - meetupu zrzeszającego twórców gier HTML5!
+  Tym razem, z racji panującej pandemii, edycja specjalna odbędzie się **online** podczas [Warszawskich Dni Informatyki 2020](https://warszawskiedniinformatyki.pl/).
+  Meetup odbędzie się w piątek **11 grudnia** podczas dedykowanej nam ścieżce **Gamedev.js**, a wszystkie prezentacje będzie można obejrzeć w systemie VOD.
+  Spotkanie jest w pełni darmowe, obejrzeć może każdy.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego**
+  - label: Bilety
+    ~markdown(content): darmowa [rejestracja](https://warszawskiedniinformatyki.pl/registration.html#!/register-package/WDI2020)
+
+schedule:
+
+  - kind: talk
+    title: Zarabianie na grach HTML5 z pomocą Web Monetization API
+    description: |-
+      Monetyzacja gier tworzonych w języku JavaScript jest coraz trudniejsza. Dostępne opcje ograniczają się głównie do
+      licencjonowania gier portalom, publikacja w natywnych sklepach, lub implementacja reklam i handlowanie prywatnością
+      użytkowników w zamian za zysk. Z pomocą nowego Web Monetization API będziemy w stanie zarabiać pieniądze bezpośrednio
+      i natychmiastowo - bez poświęcania wrażliwych danych użytkowników, i na dobre pozbyć się reklam. Najlepsze jest to,
+      że nowe API już teraz działa w przeglądarce!
+    people:
+      - Andrzej Mazur
+
+  - title: Prelekcje z odtworzenia
+    description: |-
+      Dla uczestników Warszawskich Dni Informatyki 2020 udostępnione zostaną poniższe nagrania z dwóch poprzednich naszych spotkań w Warszawie (#14 i #15):
+
+      - Mateusz Kietliński: Fundamenty Game Designu - kreacja przez destrukcję
+      - Piotr Bogdan: Gra AAA w przeglądarce w 30 minut! WebGL w Unity
+      - Kacper Pietrzak: Good luck with learning 3D graphics programming in one week
+      - Michał Budzyński: Ludzie kontra roboty
+      - Paweł Marczewski: Kaboom - bezlitosna gra w sapera
+
+~resolve(organizers|kind organization|by name|flat):
+  - Academic Partners
+  - Enclave Games

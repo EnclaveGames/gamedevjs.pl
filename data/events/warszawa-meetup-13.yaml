@@ -1,0 +1,65 @@
+kind: meetup
+title: "Gamedev.js Warszawa #13 z js13kGames"
+time: 2019-10-15 18:00 - 21:00
+venue: pl/warszawa/wework-grzybowska62
+
+description: |-
+  Zapraszamy na trzynaste spotkanie **Gamedev.js Warszawa** - meetupu zrzeszającego twórców gier HTML5 w stolicy!
+  Z okazji okrągłej, trzynastej edycji, posłuchamy o tym jak tworzyć gry mieszczące się w 13 kilobajtach.
+  Ekipy **meet.js** Warszawa i **Codility** nadal wspierają nasze działania.
+  Meetup odbędzie się we wtorek, **15 października**, start o godzinie **18:00** w siedzibie **WeWork** przy ulicy **Grzybowskiej 62**.
+  Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - dołącz do wydarzenia [na Meetup.com](https://www.meetup.com/GamedevJS-Warsaw/events/264686323/)
+  - label: Atrakcje
+    content: pizza, napoje i przekąski, konkurs z nagrodami
+
+schedule:
+
+  - kind: talk
+    title: Podsumowanie js13kGames 2019
+    description: |-
+      Krótkie podsumowanie i garść ciekawostek o konkursie js13kGames w tym roku.
+    people:
+      - Andrzej Mazur
+
+  - kind: talk
+    title: Space Wizard Toast Spinning, czyli sens życia
+    description: |-
+      Opowiem trochę o tym jak pisałem grę i o różnych przemyśleniach z tym związanych.
+    people:
+      - Rafał Ruciński
+
+  - kind: talk
+    title: Good Luck — Dziki Zachód gamedevu
+    description: |-
+      Jak pisać kod, który jest szybki, dobrze się kompresuje, jest łatwy w utrzymaniu i nie robi się po kilku dniach bałaganem? Jak szybko prototypować nowe funkcje i jak wykorzystywać istniejące komponenty do tworzenia nowych zachowań?
+
+      Napisanie gry, która mieści się w 13 kilobajtach, wymaga niekonwencjonalnych rozwiązań. Good Luck to nie-do-końca-silnik do robienia małych gier i prototypów, który stworzyliśmy specjalnie z myślą o konkursie js13kGames. We wtorek opowiemy o naszych doświadczeniach i wnioskach. Tymczasem zagrajcie w [Backcountry](https://js13kgames.com/entries/backcountry), czyli Diablo na Dzikim Zachodzie!
+    people:
+      - Michał Budzyński
+      - Staś Małolepszy
+
+  - title: Showcase
+    description: |-
+      Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+  - title: Konkurs wiedzy o js13k
+    description: |-
+      Quiz, do wygrania tematyczne nagrody dla najlepszych.
+
+  - title: Pokaz gier WebXR
+    description: |-
+      Zagraj w gry WebXR (na urządzeniu Oculus Quest) zgłoszone do konkursu js13kGames w tym roku.
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - Codility
+  - Meet.js
+
+~resolve(partners|kind organization|by name|flat):
+  - Iterators
+  - Mozilla
+  - Battlestash

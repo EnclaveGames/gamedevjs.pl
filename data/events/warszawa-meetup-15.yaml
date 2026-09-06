@@ -1,0 +1,61 @@
+kind: meetup
+title: "Gamedev.js Warszawa #15"
+time: 2020-02-11 18:00 - 21:00
+venue: pl/warszawa/wework-grzybowska62
+
+description: |-
+  Zapraszamy na piętnaste spotkanie **Gamedev.js Warszawa** - meetupu zrzeszającego twórców gier HTML5 w stolicy!
+  Meetup odbędzie się we wtorek, **11 lutego**, start o godzinie **18:00** w siedzibie **WeWork** przy ulicy **Grzybowskiej 62** (drugie piętro).
+  Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - dołącz do wydarzenia [na Meetup.com](https://www.meetup.com/GamedevJS-Warsaw/events/267874960/)
+  - label: Atrakcje
+    content: pizza, napoje i przekąski, konkurs z nagrodami
+
+schedule:
+
+  - kind: talk
+    title: Gra AAA w przeglądarce w 30 minut! WebGL w Unity
+    description: |-
+      Baitowy tytuł już jest, więc tak naprawdę to nie zrobimy w 30 minut “tripyleja”, ale Unity warto się zainteresować.
+      Web jest silną i ważną platformą, a dzięki WASM i WebGL wsparcie dla niej w wiodących engine’ach gier nie jest już
+      ubogim krewnym innych. Postaram się Was zachęcić do zgłębienia tajników Jedynego (sic!) silnika.
+    people:
+      - Piotr Bogdan
+
+  - kind: talk
+    title: "Kaboom: bezlitosna gra w sapera"
+    description: |-
+      Znany Windowsowy saper jest grą logiczną, ale zachęca do zgadywania, a czasem wręcz do niego zmusza. Moja wersja
+      jest inna! Każdy niepewny ruch jest karany natychmiast i bezlitośnie. Opowiem o tym, gdzie zaprowadziła mnie
+      implementacja - pomysł na grę wydawał się prosty, ale wymagał zastosowania różnych ciekawych metod i narzędzi.
+    people:
+      - Paweł Marczewski
+
+  - kind: talk
+    title: Ewolucja gier HTML5
+    description: |-
+      Dziesięć lat temu tylko nieliczni zastanawiali się czy tworzenie gier HTML5 jest w ogóle możliwe, dziś natomiast
+      ciężko wyobrazić sobie elektroniczną rozrywkę bez JavaScriptu. Podczas prezentacji zobaczymy jak zmieniła się branża
+      w ciągu dekady, i czego możemy spodziewać się w przyszłości.
+    people:
+      - Andrzej Mazur
+
+  - title: Showcase
+    description: |-
+      Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+  - title: Konkurs
+    description: |-
+      Quiz, do wygrania nagrody dla najlepszych.
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - Meet.js
+
+~resolve(partners|kind organization|by name|flat):
+  - Codility
+  - Iterators
+  - Postmark

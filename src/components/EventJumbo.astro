@@ -1,0 +1,65 @@
+---
+import type { Event } from '../lib/types';
+import EventLink from './EventLink.astro';
+import EventMetadata from './EventMetadata.astro';
+
+interface Props {
+  event: Event;
+  summary?: boolean;
+  class?: string;
+}
+
+const { event, summary = false, class: className = '' } = Astro.props;
+const details = (event.data?.details ?? []) as Array<{ label: string; content: string }>;
+---
+
+<section class:list={['event-jumbo', { 'event-jumbo-summary': summary }, 'inverted', className]}>
+  <div class="larger grid">
+    <header class="column">
+      <EventMetadata event={event} />
+      {
+        !summary ? (
+          <h1>{event.title}</h1>
+        ) : (
+          <EventLink class="event-jumbo-title-link" event={event}>
+            <h2>
+              {event.title}
+              <svg class="event-jumbo-title-link-icon" viewBox="0 0 24 24">
+                <use href="/icons.svg#i-angle-right" />
+              </svg>
+            </h2>
+          </EventLink>
+        )
+      }
+    </header>
+    {
+      !summary && (
+        <>
+          <div class:list={['medium-6 large-5 column', 'event-jumbo-details']}>
+            <ul>
+              {
+                event.venue && (
+                  <li>
+                    <b>Gdzie</b>
+                    <span>
+                      {event.venue.name.short || event.venue.name.full}, {event.venue.location.address}
+                    </span>
+                  </li>
+                )
+              }
+              {details.map((detail) => (
+                <li>
+                  <b>{detail.label}</b>
+                  <div set:html={detail.content} />
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class:list={['medium-6 large-7 column', 'event-jumbo-description']}>
+            <div class="g-type-major" set:html={event.description} />
+          </div>
+        </>
+      )
+    }
+  </div>
+</section>

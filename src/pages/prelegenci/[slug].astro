@@ -1,0 +1,89 @@
+---
+import {
+  getPerson,
+  getEvent,
+  getPeople,
+  splitPersonEvents,
+  personFullName,
+  personPhotoUrl,
+  personUrl,
+  excerpt,
+} from '../../lib/data';
+import Layout from '../../layouts/Layout.astro';
+import Identities from '../../components/Identities.astro';
+import EventList from '../../components/EventList.astro';
+import EventLink from '../../components/EventLink.astro';
+
+export const getStaticPaths = () =>
+  getPeople().map((person) => ({ params: { slug: person.slug } }));
+
+const { slug } = Astro.params;
+const person = getPerson(slug!);
+
+if (!person) return Astro.notFound();
+
+const { events, talks } = splitPersonEvents(person.events, getEvent);
+---
+
+<Layout
+   title={personFullName(person) + ' | Gamedev.js'}
+   description={excerpt(person.bio.summary)}
+>
+  <main>
+    <div class:list={['people-show', 'largest grid']}>
+    <article class:list={['bio', 'xlarge-4 column exposed-soft skewed border-top border-simpler']}>
+      <a
+        class:list={[{ 'nav-inactive': !person.previous }]}
+         href={person.previous ? personUrl(person.previous) : undefined}
+         aria-label={'Poprzedni prelegent: ' + (person.previous ? personFullName(person.previous) : '')}
+      >
+        <svg viewBox="0 0 24 24"><path d="M15 4l-8 8 8 8" /></svg>
+      </a>
+      <div>
+        <header>
+          <img src={personPhotoUrl(person)} alt={'Zdjęcie ' + personFullName(person)} />
+          <div>
+            <h1 class="line-post line-center line-flat">
+              <span>{person.name.given}</span>{person.name.family}
+            </h1>
+            <Identities class="people-identities" person={person} />
+          </div>
+        </header>
+        <div class:list={['bio-content', 'g-type-major markdown']} set:html={person.bio.full} />
+      </div>
+      <a
+        class:list={[{ 'nav-inactive': !person.next }]}
+         href={person.next ? personUrl(person.next) : undefined}
+         aria-label={'Następny prelegent: ' + (person.next ? personFullName(person.next) : '')}
+      >
+        <svg viewBox="0 0 24 24"><path d="M8 4l8 8-8 8" /></svg>
+      </a>
+    </article>
+
+    <section class:list={['events', 'medium-6 xlarge-4 column']}>
+      <h2 class="g-type-title-section g-type-title-right line-flat">Wydarzenia</h2>
+      {events.length > 0 && <EventList events={events} />}
+    </section>
+
+    <section class:list={['talks', 'medium-6 xlarge-4 column']}>
+      <h2 class="g-type-title-section g-type-title-left line-flat">Prezentacje</h2>
+      {
+        talks.length > 0 && (
+          <ul class="talk-list">
+            {
+              talks.map((talk) => (
+                <li>
+                  <EventLink event={talk}>
+                    <h4>{talk.title}</h4>
+                    {talk.parent && <span>W ramach <b>{talk.parent.title}</b></span>}
+                  </EventLink>
+                </li>
+              ))
+            }
+          </ul>
+        )
+      }
+    </section>
+    </div>
+  </main>
+</Layout>

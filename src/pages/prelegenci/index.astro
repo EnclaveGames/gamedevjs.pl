@@ -1,0 +1,45 @@
+---
+import { getPeople, personPhotoUrl, personUrl } from '../../lib/data';
+import type { PersonMinimal } from '../../lib/types';
+import Layout from '../../layouts/Layout.astro';
+import Identities from '../../components/Identities.astro';
+
+const people = getPeople();
+
+const sections: Array<{ skewed: boolean; items: Array<{ person: PersonMinimal; right: boolean }> }> = [];
+for (let i = 0; i < people.length; i++) {
+  if (i % 2 === 0) sections.push({ skewed: true, items: [] });
+  sections[sections.length - 1].items.push({ person: people[i], right: i % 2 === 0 });
+}
+---
+
+<Layout title="Prelegenci | Gamedev.js" description="Prelegenci i prowadzący spotkań Gamedev.js">
+  <main>
+    <div class="people-index">
+    {
+      sections.map((section) => (
+        <section class:list={['people-strip', { skewed: section.skewed }]}>
+          <div class="larger grid">
+            {
+              section.items.map((item) => (
+                <article class:list={['person', { 'person-right': item.right }]}>
+                   <img src={personPhotoUrl(item.person)} />
+                  <header>
+                    <h3 class="g-type-title-section g-type-title-left line-flat line-xs">
+                       <a href={personUrl(item.person)}>
+                        <span>{item.person.name.given}</span> {item.person.name.family}
+                      </a>
+                    </h3>
+                    <Identities person={item.person} />
+                  </header>
+                  <div class="g-type-minor" set:html={item.person.bio.summary || item.person.bio.full} />
+                </article>
+              ))
+            }
+          </div>
+        </section>
+      ))
+    }
+    </div>
+  </main>
+</Layout>

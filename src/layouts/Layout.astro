@@ -1,0 +1,235 @@
+---
+import Logo from '../components/Logo.astro';
+import Identities from '../components/Identities.astro';
+import { SOCIAL_LINKS } from '../lib/data';
+import '../styles/global.sass';
+
+interface Props {
+  title?: string;
+  description?: string;
+  /** Enables the inverted header (over a hero) and shifts the body background. */
+  invertedTop?: number | boolean;
+}
+
+const {
+  title = 'Gamedev.js',
+  description = 'Gamedev.js to społeczność organizująca spotkania związane z tworzeniem gier w technologii HTML5 i języku JavaScript, także na urządzenia mobilne',
+  invertedTop = false,
+} = Astro.props;
+
+const inverted = !!invertedTop;
+const path = Astro.url.pathname.replace(/\.html$/, '');
+
+const navLinks = [
+  { to: '/wydarzenia', label: 'Wydarzenia' },
+  { to: '/prelegenci', label: 'Prelegenci' },
+  { to: '/partnerzy', label: 'Partnerzy' },
+  { to: '/live', label: 'Live' },
+  { to: '/o-nas', label: 'O nas' },
+  { to: '/kontakt', label: 'Kontakt' },
+];
+
+const isActive = (to: string) =>
+  to === '/' ? path === '/' : path === to || path.startsWith(to + '/');
+---
+
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#00bede" />
+    <meta name="msapplication-TileImage" content="/img/fav/144x144.png" />
+    <meta name="theme-color" content="#00bede" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/fav/57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/fav/60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/fav/72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/fav/76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/fav/114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/fav/120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/fav/144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/fav/152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/fav/180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/fav/192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/fav/32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/fav/96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/fav/16x16.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;1,200;0,400;1,400;0,600;1,600;1,700&family=Graduate&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;1,200;0,400;1,400;0,600;1,600;1,700&family=Graduate&display=swap" rel="stylesheet" /></noscript>
+    <link rel="alternate" type="application/rss+xml" title="Gamedev.js - Wydarzenia" href="/events.rss" />
+    <!-- External SVG sprite served at /icons.svg replaces the FontAwesome 4
+         webfont; glyph symbols are referenced via <svg><use href="/icons.svg#i-*"></use></svg>. -->
+  </head>
+  <body>
+    <!-- Flex column wrapper (see #app in styles/master.sass): keeps the footer stuck to the
+         bottom of the viewport on short pages, mirroring the reference client's #app div. -->
+    <div id="app">
+      <header
+        id="site-header"
+        class:list={[
+          'header',
+          {
+            'header-unfixed': true,
+            'header-pinned': false,
+            'header-inverted': inverted,
+          },
+        ]}
+        data-header
+        data-class-unfixed="header-unfixed"
+        data-class-pinned="header-pinned"
+      >
+        <div class="larger grid">
+          <svg viewBox="0 0 30 30">
+            <path d="M30 0v30s-8.57 0-13.37-7.07C13.8 18.77 0-.21 0-.21" />
+          </svg>
+          <Logo href="/" inverted={inverted} className="header-logo" />
+          <nav class="header-nav" data-nav>
+            <a class="header-expander" data-expander href="#" aria-label="Menu">
+              <i></i><i></i><i></i>
+            </a>
+            <ul>
+              {
+                navLinks.map((link) => (
+                  <li>
+                    <a
+                      href={link.to}
+                      class:list={[{ 'header-nav-active': isActive(link.to) }]}
+                    >
+                      {link.label}
+                      {link.to === '/live' && <i></i>}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </nav>
+          <svg viewBox="0 0 30 30" transform="scale(-1,1)">
+            <path d="M30 0v30s-8.57 0-13.37-7.07C13.8 18.77 0-.21 0-.21" />
+          </svg>
+        </div>
+      </header>
+      <slot />
+      <footer id="site-footer" class="footer-wrapper">
+        <div class="footer-skewer"></div>
+        <div class="footer">
+          <div class="larger grid">
+            <form
+              class="footer-newsletter"
+              method="post"
+              action="//gamedevjs.us3.list-manage.com/subscribe/post?u=4ad274b490aa6da8c2d29b775&id=bacab0c8ca"
+            >
+              <span></span>
+              <h3>Newsletter<a href="http://gamedevjsweekly.com">Gamedev.js Weekly</a></h3>
+              <div>
+                <input type="hidden" name="b_4ad274b490aa6da8c2d29b775_bacab0c8ca" value="" />
+                <input type="email" name="EMAIL" placeholder="twoj@email.com" required />
+                <button class="alt button" aria-label="Wyślij"><svg class="check icon"><use href="/icons.svg#i-check"></use></svg></button>
+              </div>
+            </form>
+
+            <Logo href="/" inverted className="footer-logo" />
+
+            <nav class="footer-nav">
+              {navLinks.map((link) => <a href={link.to} aria-label={link.label}>{link.label}</a>)}
+            </nav>
+
+            <Identities class="footer-identities" items={SOCIAL_LINKS.slice(0, SOCIAL_LINKS.length - 1)} />
+
+            <div class="footer-ps">Stitched together with a <b>whole lotta</b> <svg class="icon heart"><use href="/icons.svg#i-heart"></use></svg></div>
+            <div class="footer-background"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+<script>
+  const header = document.querySelector('[data-header]') as HTMLElement | null;
+  const navEl = document.querySelector('[data-nav]') as HTMLElement | null;
+  const expander = document.querySelector('[data-expander]') as HTMLElement | null;
+
+  if (expander && navEl) {
+    expander.addEventListener('click', () => {
+      const willExpand = !navEl.classList.contains('header-nav-expanded');
+      navEl.classList.toggle('header-nav-expanded');
+      document.body.style.overflowY = willExpand ? 'hidden' : '';
+    });
+    navEl.querySelectorAll('ul a').forEach((a) =>
+      a.addEventListener('click', () => {
+        navEl.classList.remove('header-nav-expanded');
+        document.body.style.overflowY = '';
+      })
+    );
+  }
+
+  if (header) {
+    const unfixedCls = header.dataset.classUnfixed;
+    const pinnedCls = header.dataset.classPinned;
+
+    const PIN_START = 25;
+    const UP_TOLERANCE = 7.5;
+    const DOWN_TOLERANCE = 5;
+
+    let headroomState = 'pinned';
+    let visual = window.scrollY <= PIN_START ? 'unfixed' : 'pinned';
+    let lastKnownScrollY = window.scrollY;
+    let ticking = false;
+
+    const applyState = () => {
+      if (unfixedCls) header.classList.toggle(unfixedCls, visual === 'unfixed');
+      if (pinnedCls) header.classList.toggle(pinnedCls, visual !== 'unfixed');
+    };
+    applyState();
+
+    const update = () => {
+      const y = window.scrollY;
+      const scrollingDown = y > lastKnownScrollY;
+      const pastTolerance =
+        Math.abs(y - lastKnownScrollY) >= (scrollingDown ? DOWN_TOLERANCE : UP_TOLERANCE);
+
+      let action = null;
+      if (y <= PIN_START) {
+        action = 'unfix';
+      } else if (scrollingDown && pastTolerance && headroomState === 'pinned') {
+        action = 'unpin';
+      } else if (!scrollingDown && pastTolerance && headroomState === 'unpinned') {
+        action = 'pin';
+      }
+
+      if (action === 'unfix') {
+        headroomState = 'pinned';
+        visual = 'unfixed';
+      } else if (action === 'unpin') {
+        headroomState = 'unpinned';
+        visual = 'pinned';
+      } else if (action === 'pin') {
+        headroomState = 'pinned';
+        visual = 'pinned';
+      }
+
+      applyState();
+      lastKnownScrollY = y;
+      ticking = false;
+    };
+
+    window.addEventListener(
+      'scroll',
+      () => {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(update);
+        }
+      },
+      { passive: true }
+    );
+  }
+</script>

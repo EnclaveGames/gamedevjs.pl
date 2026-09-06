@@ -1,0 +1,117 @@
+---
+import { getPage } from '../lib/data';
+import Layout from '../layouts/Layout.astro';
+
+const page = getPage('contact');
+
+const faqItems = (page?.data?.faq as Array<{ question: string; answer: string }> | undefined) ?? [];
+
+const endpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || '/api/contact';
+---
+
+<Layout title="Kontakt | Gamedev.js" description="Skontaktuj się z Gamedev.js">
+  <main class="contact">
+    <div class="larger grid">
+      <section>
+        <h3 class="line-post line-flat">Szablonowe sprawy</h3>
+        <dl class="faq">
+            {
+              faqItems.map((qa, i) => (
+              <div class:list={[{ open: i === 0 }]} data-term>
+                <dt>{qa.question}</dt>
+                <dd class="g-type-minor" set:html={qa.answer}></dd>
+              </div>
+            ))
+          }
+        </dl>
+      </section>
+      <section class="skewed border-top border-simpler exposed-soft">
+        <div>
+          <h3 class="line-post">Coś innego?</h3>
+          <p>Po prostu do nas napisz!</p>
+          <form data-contact-form data-endpoint={endpoint}>
+            <div data-status></div>
+
+            <div class="field">
+              <div class="input">
+                <input name="email" type="email" placeholder="twoj@email.com" required />
+              </div>
+            </div>
+            <div class="field">
+              <div class="input">
+                <input name="subject" type="text" placeholder="Temat" required />
+              </div>
+            </div>
+            <div class="field">
+              <div class="input">
+                <textarea name="text" rows="10" required></textarea>
+              </div>
+            </div>
+
+            <!-- Honeypot: hidden from humans, bots filling it get a fake success.
+                 Clipped 1px box (not left:-9999px) so it can't extend the page's
+                 scrollable overflow region past the footer. -->
+            <div style="position:absolute;height:1px;width:1px;overflow:hidden;clip:rect(0 0 0 0)">
+              <input name="company" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div style="text-align:right">
+              <button class="primary button">Wyślij</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  document.querySelectorAll('[data-term] > dt').forEach((dt) => {
+    dt.addEventListener('click', () => dt.parentElement?.classList.toggle('open'));
+  });
+
+  document.querySelectorAll<HTMLFormElement>('[data-contact-form]').forEach((form) => {
+    const status = form.querySelector<HTMLElement>('[data-status]');
+    const button = form.querySelector<HTMLButtonElement>('button');
+    const endpoint = form.dataset.endpoint || '/api/contact';
+
+    const setStatus = (cls: string, html: string) => {
+      if (status) {
+        status.className = cls;
+        status.innerHTML = html;
+      }
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      setStatus('status processing', 'Momencik, wysyłamy wiadomość...');
+      if (button) button.disabled = true;
+
+      const data = new FormData(form);
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: (data.get('email') || '').toString(),
+            subject: (data.get('subject') || '').toString(),
+            text: (data.get('text') || '').toString(),
+            company: (data.get('company') || '').toString(),
+          }),
+        });
+
+        if (!response.ok) throw new Error('Request failed with status ' + response.status);
+
+        setStatus('status positive', 'Dzięki, odezwiemy się ASAP!');
+        form.reset();
+      } catch {
+        setStatus(
+          'status negative',
+          '<b>Oops</b>...<br /> Nasze chomiki odmawiają posłuszeństwa. Spróbuj ponownie za moment!'
+        );
+      } finally {
+        if (button) button.disabled = false;
+      }
+    });
+  });
+</script>

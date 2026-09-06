@@ -1,0 +1,31 @@
+---
+import { getImageDimensions } from '../lib/data';
+
+interface Props {
+  organizations: Array<{ logo: { normal: string }; homepage: string }>;
+  class?: string;
+}
+
+const { organizations, class: className = '' } = Astro.props;
+---
+
+<ul class:list={['org-logo-list', className]}>
+  {
+    organizations.map((organization) => {
+      const alt = organization.logo.normal.split('/').pop()?.replace('.png', '').replace('-', ' ')
+      const dimensions = getImageDimensions(organization.logo.normal);
+      return (
+        <li>
+          <a href={organization.homepage} aria-label={alt}>
+            <img
+              src={organization.logo.normal}
+              alt={alt}
+              loading="lazy"
+              {...dimensions}
+            />
+          </a>
+        </li>
+      )
+    })
+  }
+</ul>

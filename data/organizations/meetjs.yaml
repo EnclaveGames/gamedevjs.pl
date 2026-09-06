@@ -1,0 +1,14 @@
+name: Meet.js
+slug: meetjs
+homepage: http://meetjs.pl/
+logo:
+  normal: img/organizations/meetjs.png
+description: |-
+  Niekomercyjne spotkania front-endowe typu meetup, organizowane przez społeczność dla społeczności w Poznaniu,
+  Warszawie, Krakowie, Wrocławiu, Gdańsku, Katowicach, Łodzi, Szczecinie i Białymstoku, Lublinie, Bydgoszczy.
+  Zero komercji, czysta wiedza.
+
+  Na każdym meet.js można liczyć na kilka prelekcji na tematy webowo-front-endowe (JS, CSS, HTML etc.).
+  Każda z nich trwa 10-15 minut. Duży nacisk kładziemy na Q&A po danym speechu. Spikerami jesteśmy
+  my sami - fani front-endu. Tylko od specjalistów można dowiedzieć się najwięcej. Każdy może
+  przemawiać na meet.js - wystarczy się zgłosić! Zabawa i cenne doświadczenie gwarantowane!

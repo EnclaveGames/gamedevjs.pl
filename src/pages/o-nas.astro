@@ -1,0 +1,61 @@
+---
+import { getPage, SOCIAL_LINKS, personFullName, personPhotoUrl, personUrl } from '../lib/data';
+import type { PersonMinimal } from '../lib/types';
+import Layout from '../layouts/Layout.astro';
+import Identities from '../components/Identities.astro';
+
+const page = getPage('about');
+
+if (!page) return Astro.notFound();
+
+interface AboutData {
+  conduct?: string;
+  organizers?: PersonMinimal[];
+}
+
+const data = page.data as AboutData | undefined;
+---
+
+<Layout title={page.title + ' | Gamedev.js'} description={page.title}>
+  <main class="about">
+    <section class="larger grid">
+      <article class:list={['about-intro', 'large-6 column skewed-opposite exposed-soft border-top']}>
+        <h1 class="floating g-type-title-right line-post">{page.title}</h1>
+        <div class="markdown g-type-major" set:html={page.content} />
+      </article>
+
+      <article class:list={['about-conduct', 'large-6 column']}>
+        <h3 class="g-type-title-section g-type-title-left line-flat">Code of Conduct</h3>
+        <div class="markdown g-type-minor" set:html={data?.conduct} />
+      </article>
+    </section>
+
+    <section class:list={['about-identities', 'grid']}>
+      <h3 class="g-type-title-section line-post line-center line-flat">Znajdziesz nas bez problemu!</h3>
+      {SOCIAL_LINKS.map((link) => (
+        <a href={link.href}>
+          <svg><use href={`/icons.svg#${link.sprite}`}></use></svg>
+          <span>{link.label}</span>
+        </a>
+      ))}
+    </section>
+
+    <section class:list={['about-organizers', 'exposed-soft skewed']}>
+      <div class="grid">
+        <h3 class="g-type-title-section line-post line-center">Za bałagan odpowiadają...</h3>
+        {data?.organizers?.map((person) => (
+          <div class="person-strip">
+            <h4>
+              <a href={personUrl(person)}>
+                <span>{person.name.given}</span> {person.name.family}
+              </a>
+              <Identities person={person} bare element="span" />
+            </h4>
+            <img src={personPhotoUrl(person)} alt={'Zdjęcie ' + personFullName(person)} />
+            <div class="g-type-minor" set:html={person.bio.summary || person.bio.full} />
+          </div>
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>

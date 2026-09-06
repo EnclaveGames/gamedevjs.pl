@@ -1,0 +1,28 @@
+@use "config" as *;
+@use "utilities" as *;
+
+.markdown
+
+  ol li
+    display: list-item
+
+  ul
+    margin: 0 0 $m-grid-gutter-single $m-grid-gutter-single
+
+  li
+    position: relative
+    padding-left: $m-grid-gutter-single
+    &:before
+      position: absolute
+      left: -.5em
+      top: .5em
+      +g-icon($g-icon-circle-o, $g-font-size-smallest)
+      color: $m-color-blur-more
+      transition: $g-transition-default-settings
+
+  img
+    float: left
+    margin-right: $m-grid-gutter
+    .right
+      float: right
+      margin-left: $m-grid-gutter

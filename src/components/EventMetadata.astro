@@ -1,0 +1,27 @@
+---
+import type { Event } from '../lib/types';
+import EventKind from './EventKind.astro';
+import { timeframeToLocalizedString } from '../lib/data';
+
+interface Props {
+  event: Pick<Event, 'kind' | 'venue' | 'timeframe'>;
+  className?: string;
+}
+
+const { event, className = '' } = Astro.props;
+const upcoming = !!event.timeframe?.start && new Date() < new Date(event.timeframe.start);
+---
+
+<span class:list={['event-metadata', className]}>
+  <EventKind event={event} className={['kind', 'label']} />
+  <span class="timeframe label">
+    <span set:html={timeframeToLocalizedString(event.timeframe)} />
+  </span>
+  {
+    upcoming && (
+      <span class="upcoming label">
+        <span>Wkrótce</span>
+      </span>
+    )
+  }
+</span>

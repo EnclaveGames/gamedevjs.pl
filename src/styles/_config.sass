@@ -1,0 +1,75 @@
+@use "sass:color";
+
+@forward "mai/config" with (
+  $m-body-font-family:          ("Fira Sans", Helvetica, Arial, sans-serif),
+  $m-color-foreground:          #46535d,
+  $m-color-background:          #f9f9f9,
+  $m-color-highlight:           #00bede,
+  $m-ui-border-color:           color.adjust(#46535d, $lightness: 62.5%, $space: hsl)
+)
+
+@use "mai/config" as *;
+
+$m-color-highlight-alt:        #b59bda
+$m-color-highlight-alt-more:   #deceea
+
+$m-color-brand-javascript:     #f7df1e
+
+$g-font-brand: 'Graduate', 'Times New Roman', serif !default
+$g-font-size-smaller: .85em
+$g-font-size-smallest: .75em
+
+$g-type-headers-3-font-size: 1.5em
+$g-type-headers-4-font-size: 1.25em
+
+$g-header-height: 4 * $m-grid-gutter
+$g-header-offset: $m-grid-gutter + $g-header-height
+
+$g-transition-default-settings: .25s ease
+
+$g-skew: 30deg
+
+$g-container-skew-y: -3deg
+$g-skew-height-offset: 2 * $m-grid-gutter
+
+$g-skew-border-radius-default:   5px
+$g-skew-border-radius-small:    .5 * $g-skew-border-radius-default
+$g-skew-border-radius-big:       2 * $g-skew-border-radius-default
+
+=g-skew-vertical
+  transform: skewY($g-container-skew-y)
+
+$g-element-expose-box-shadow-distance: .75 * $m-grid-gutter-single
+$g-element-expose-box-shadow-color:    rgba(black, .15)
+$g-element-expose-box-shadow:         -1 * $g-element-expose-box-shadow-distance $g-element-expose-box-shadow-distance 0 $g-element-expose-box-shadow-color
+$g-element-expose-box-shadow-closer: -.5 * $g-element-expose-box-shadow-distance .5 * $g-element-expose-box-shadow-distance 0 rgba(black, .25)
+
+$g-element-expose-box-shadow-soft:    -1 * $g-element-expose-box-shadow-distance $g-element-expose-box-shadow-distance 4em rgba($m-color-blur, .25)
+
+$g-gradient-brand:                            linear-gradient(to right, $m-color-blur-more, $m-color-highlight-alt, $m-color-highlight-more)
+$g-gradient-brand-reversed:                   linear-gradient(to left, $m-color-blur-more, $m-color-highlight-alt, $m-color-highlight-more)
+$g-gradient-brand-simpler:                    linear-gradient(to right, $m-color-highlight-alt, $m-color-highlight-more)
+$g-gradient-brand-simpler-reversed:           linear-gradient(to left, $m-color-highlight-alt, $m-color-highlight-more)
+$g-gradient-brand-simpler-reversed-vertical:  linear-gradient(to top, $m-color-highlight-alt, $m-color-highlight-more)
+
+=g-gradient-pseudo
+  content: ""
+  position: absolute
+  left: 0
+  width: 100%
+  height: 5px
+  background: $g-gradient-brand
+
+=g-gradient-pseudo-simpler($reversed: false)
+  content: ""
+  position: absolute
+  left: 0
+  width: 100%
+  height: 5px
+  @if not $reversed
+    background: $g-gradient-brand-simpler
+  @else
+    background: $g-gradient-brand-simpler-reversed
+
+=g-element-soft-box-shadow-large
+  box-shadow: $g-element-expose-box-shadow-soft

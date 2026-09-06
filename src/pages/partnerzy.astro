@@ -1,0 +1,13 @@
+---
+import { getPartners } from '../lib/data';
+import Layout from '../layouts/Layout.astro';
+import OrganizationsLogoList from '../components/OrganizationsLogoList.astro';
+
+const partners = getPartners();
+---
+
+<Layout title="Partnerzy | Gamedev.js" description="Organizacje współpracujące z Gamedev.js">
+  <main class="partners">
+    <OrganizationsLogoList organizations={partners} />
+  </main>
+</Layout>

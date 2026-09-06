@@ -1,0 +1,81 @@
+kind: meetup
+title: "Gamedev.js Warszawa #11 z meet.js"
+time: 2019-04-25 18:30 - 21:00
+venue: pl/warszawa/codility
+
+description: |-
+  Zapraszamy na jedenaste spotkanie **Gamedev.js Warszawa** - meetupu zrzeszającego twórców gier HTML5 w stolicy!
+  Tym razem połączyliśmy siły z ekipą **meet.js** Warszawa, którzy wesprą nasze działania.
+  Meetup odbędzie się **25 kwietnia**, start o godzinie **18:30** w siedzibie **Codility** przy ulicy **Dobrej 56/66**.
+  Spotkanie jest w pełni darmowe, przyjść może każdy. Oprócz prelekcji będzie też miejsce na nieoficjalną integrację.
+
+details:
+  - label: Wejście
+    ~markdown(content): całkowicie **darmowe** i otwarte **dla każdego** - oznacz się [na Facebooku](https://www.facebook.com/events/563862214108246/)
+  - label: Atrakcje
+    content: pizza, napoje i przekąski, konkurs z nagrodami
+
+schedule:
+
+  - kind: talk
+    title: Dostępność w grach
+    description: |-
+      Gry to angażujące medium które dostarcza ogromną ilość wrażeń - co jednak w sytuacji, gdy nie możemy doświadczyć
+      wszystkich bodźców które dany tytuł oferuje? Jak tworzyć gry dostępne dla jak najszerszego grona odbiorców?
+      Odpowiedź na te i inne pytania znajdziesz w prezentacji „Dostępność w grach”.
+    people:
+      - Wojtek Połowniak
+
+  - kind: talk
+    title: Nie myśl tyle, tylko koduj!
+    description: |-
+      Czyli jak nie przeintelektualizować swojego pomysłu i po prostu zacząć pisać kod. Spróbujemy w krótkim czasie
+      zaimplementować prostą grę nie używając przeznaczonych do tego frameworków. Dziś żyjemy w złotych czasach jeśli
+      chodzi o narzędzia pozwalające wydajnie pisać gry, ale czasami wysiłek wymagany do ich nauki może nas zniechęcić
+      do rozpoczęcia naszego pierwszego projektu. Podczas prezentacji postaram się pokazać, że czasami jedyną przeszkodą
+      na drodze są nasze własne przekonania.
+    people:
+      - Piotr Błaszczak
+
+  - kind: talk
+    title: Heroes of Might and Magic 3 w 1 KB JavaScriptu (prawie!)
+    description: |-
+      Pamiętacie Heroes of Might and Magic 3? W tym roku hirosy obchodzą 20. urodziny.
+      Z tej okazji zrobiłem minigrę na konkurs, w którym zgłoszenia muszą mieć poniżej 1 KB kodu. 
+
+      Zagrajcie online: [js1k.com/4210](https://js1k.com/4210).
+
+      Celem gry jest złapanie smoka, który grasuje po królestwie. Na białym koniu wasz wierny bohater — czyli "ludek",
+      bo tak go zawsze nazywam w myślach.
+
+      Na spotkaniu opowiem o wyzwaniach, z którymi zmierzyłem się podczas tworzenia tej miniatury.
+      W 1017 bajtach zmięściły się: grafika, losowe generowanie terenu, przewijanie głównego widoku gry minimapą,
+      path-finding, sztuczna inteligencja smoka i ekran zwycięstwa. Wymagało to kompromisów, nietypowych trików
+      i wielu prób i błędów.
+
+      Na zachętę zdradzę, że każdy obrazek zapisany jest jedną liczbą, której kolejne cyfry odpowiadają kolorom 16 pikseli.
+      Na przykład: 1111111002102211 to smok a 0707016107307762 to ludek.
+
+      I jeszcze dla porównania: opis, który teraz czytacie, zajmuje 1041 bajtów – czyli więcej, niż cała gra :)
+    people:
+      - Staś Małolepszy
+
+  - title: Showcase
+    description: |-
+      Zgłoś się, by w ciągu 3 minut opowiedzieć o swojej grze.
+
+  - title: Konkurs
+    description: |-
+      Quiz, do wygrania karcianki od Battlestash dla najlepszych.
+
+~resolve(organizers|kind organization|by name|flat):
+  - Enclave Games
+  - Meet.js
+
+~resolve(partners|kind organization|by name|flat):
+  - Codility
+  - Mozilla
+  - Battlestash
+
+~resolve(friends|kind organization|by name|flat):
+  - WarsawJS

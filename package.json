@@ -16,7 +16,7 @@
     "@astrojs/check": "^0.9.10",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^26.5.0",
-    "astro": "^5.0.0",
+    "astro": "^7.3.3",
     "js-yaml": "^4.1.0",
     "lightningcss": "^1.33.0",
     "marked": "^14.0.0",
